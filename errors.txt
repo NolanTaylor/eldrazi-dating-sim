@@ -1,0 +1,18 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 1014: end of line expected.
+    show sorin at xpos 0.5
+                       ^
+
+File "game/script.rpy", line 1130: end of line expected.
+    show nissa at xpos 0.25
+                       ^
+
+File "game/script.rpy", line 2145: end of line expected.
+    show kozilek at xpos 0.5
+                         ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Wed Jul 14 17:02:07 2021
