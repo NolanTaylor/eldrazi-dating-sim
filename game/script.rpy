@@ -13,6 +13,13 @@ python:
     name_2 = "mc2"
     gender = "non-binary"
 
+    # flags
+    date_1 = ""
+    date_2 = ""
+    date_3 = ""
+
+    emrakul_date_1 = ""
+
 label start:
 
     python:
@@ -262,7 +269,7 @@ label day1_scene2:
     "You vaguely {i}recall{/i} Nissa's {i}relentless assault{/i} of invitations
     to previous school {i}festival{/i}s and events"
 
-    "Well, actually. You remember them quite {i}clear{i}ly. You've just
+    "Well, actually. You remember them quite {i}clear{/i}ly. You've just
     selectively ignored those {i}agonizing memories{/i} to avoid the
     {i}burden of guilt{/i} you'd feel for systematically declining them"
 
@@ -347,8 +354,8 @@ label day1_scene3:
         right
         linear 0.2 left
 
-    show ulamog at xpos 0.3
-    show kozilek at xpos 0.6
+    show ulamog at Position(xpos = 0.3)
+    show kozilek at Position(xpos = 0.6)
     show chandra at right
 
     nissa "Hi hi everyone! Sorry I'm late"
@@ -358,7 +365,7 @@ label day1_scene3:
     mc "Uh.. Hi guys"
 
     if gender == "male":
-        ulamog "Hi [name-2]-kun!!"
+        ulamog "Hi [name_2]-kun!!"
     elif gender == "female":
         ulamog "Hi [name_2]-chan!!"
     else:
@@ -450,7 +457,7 @@ label day1_scene3:
     three very sexually arousing tentacle monsters sitting across the table"
 
     emrakul "Actually tentacles became so ubiquitous in Japanese pornography
-    as a way to circumvent censorship laws at the time"
+    as a way to circumvent {i}censorship{/i} laws at the time"
 
     "Wait"
 
@@ -469,12 +476,12 @@ label day1_scene3:
 
     "What is going on?"
 
-    emrakul "They argued this did not violate the censorship laws at the time
-    due to it being mostly suggestive in nature"
+    emrakul "They argued this did not violate the {i}censorship{/i} laws at the
+    time due to it being mostly suggestive in nature"
 
-    emrakul "This form of censorship evasion became wildly popular. And as a
-    result, much of modern hentai still depicts tentacles despite the relevant
-    censhorship laws having been {i}repeal{i}ed years ago"
+    emrakul "This form of {i}censorship{/i} evasion became wildly popular. And
+    as a result, much of modern hentai still depicts tentacles despite the
+    relevant {i}censorship{/i} laws having been {i}repeal{i}ed years ago"
 
     "Did you say all that out loud?"
 
@@ -494,7 +501,7 @@ label day1_scene3:
 
     emrakul "Umm... Oh, sorry"
 
-    emrakul "I just thought-- Because [name-2]-san.."
+    emrakul "I just thought-- Because [name_2]-san.."
 
     emrakul "Nevermind.. I'm sorry"
 
@@ -673,8 +680,8 @@ label day1_scene4:
     "Oh boy, okay. Considerably easier. You are an expert when it comes to
     multiple choice"
 
-    "You have a 25% success rate. Which is a significant step up from your
-    usual 4% on short answer questions"
+    "You have a 25 percent success rate. Which is a significant step up from
+    your usual 4 percent on short answer questions"
 
     "But you're getting ahead of yourself. Right now you just need to pick an
     answer"
@@ -797,7 +804,7 @@ label day2_scene2:
 
     "Students around you are packing up and preparing to leave"
 
-    "You don't have anything to put away considering you didn't take any
+    "You don't have anything to {i}put away{/i} considering you didn't take any
     notes or even remotely engage with the class on any level"
 
     "So you just take you bag and walk out the door"
@@ -958,7 +965,7 @@ label day2_scene3_ulamog:
 
     scene bg hall with dissolve
 
-    "Ulamog makes a brisk pace down the hall with a skip in their step"
+    "Ulamog makes an {i}expedite{/i}d pace down the hall with a skip in their step"
 
     "Well, not a literal skip as they have tentacles in place of legs, but a
     metaphorical skip"
@@ -998,22 +1005,584 @@ label day2_scene3_ulamog:
     "Maybe it's best not to {i}dwell on the past{/i}, you turn around and
     start walking back as well"
 
-    scene bg library 2 with dissolve
+    scene bg library 3 with dissolve
 
     show nissa at left
     show ulamog at center
 
-    nissa "Oh, there you 
+    nissa "Oh, there you are. Where did you two go?"
+
+    ulamog "We got a kitchen!!"
+
+    nissa "You got a kitchen?"
+
+    mc "I am just as {i}bewilder{/i}ed as you are"
+
+    mc "No, actually. Probably a bit more"
+
+    ulamog "Now we just need to get dough and flour and baking soda..."
+
+    "Ulamog starts to ramble off ingredients as he moves toward his usual spot
+    at the back of the library"
+
+    show ulamog:
+        center
+        linear 0.5 xpos 1.0
+
+    nissa "So umm... I see it went well"
+
+    mc "As well as one might expect I suppose"
+
+    ulamog "... And parchment paper and rollers and trays..."
+
+    nissa "Well, I'm glad you two are getting along"
+
+    mc "Yeah, I guess that just--"
+
+    show ulamog:
+        xpos 1.0
+        linear 0.25 center
+
+    ulamog "YOINK!!"
+
+    show ulamog:
+        center
+        linear 0.25 xpos 1.0
+
+    show bg library 3 with moveinright
+
+    show ulamog at center
+
+    "And with that, Ulamog grabs your arm and pulls you toward the tables in
+    the back"
+
+    "You spend the rest of the time ironing out details with Ulamog as you
+    craft your {i}brilliant plan{/i}"
+
+    python:
+        date_1 = "ulamog"
+
+    jump day2_scene4
+
+    return
 
 label day2_scene3_kozilek:
 
+    "You spot Kozilek reading in the corner of the library sitting up against a
+    bookshelf"
+
+    scene bg library 1 with dissolve
+
     show kozilek at center
+
+    "You wander over and take a seat next to him"
+
+    "As you sit down Kozilek glances up at you"
+
+    "But when your eyes meet he quickly averts his {i}otherworldly gaze{/i}
+    back down to his book"
+
+    mc "So... \"Kozi-kun\" huh?"
+
+    kozilek "Don't call me that"
+
+    mc "Hmm.. \"Kozilek-tan\" then?"
+
+    kozilek "..."
+
+    "Kozilek moves their body to {i}turn against{/i} you, but in doing so
+    pushes himself closer to you"
+
+    mc "Alright alright, message received. \"Kozilek-kun\" then"
+
+    mc "Shouldn't you be preparing your class' event?"
+
+    kozilek "What does it look like I'm doing?"
+
+    "You lean over Kozilek's shoulder to get a better glimpse of what he's
+    reading"
+
+    mc "They ran their slimy tentacles across my body, the black {i}void{/i}
+    of their eyes looking deeply in--"
+
+    # book slam sound
+
+    kozilek "NOTHING!!"
+
+    "They slam the book shut before you can read any further"
+
+    kozilek "It's research obviously, ugh. You are such a {i}nuisance
+    engine{/i}. Don't you have anything better to do!?"
+
+    mc "Well, I thought I could help you organize and plan..."
+
+    mc "But it looks like you've got everything sorted out"
+
+    "You stand up"
+
+    kozilek "Wait no!"
+
+    kozilek "I mean.. I do have everything sorted but.. You don't need to
+    leave"
+
+    mc "You want me to stay?"
+
+    kozilek "Yes!"
+
+    kozilek "No!"
+
+    kozilek "Umm... I mean you..."
+
+    "Kozilek finishes the rest of their sentence in an incomprehensible mumble"
+
+    mc "Pardon me, could you repeat that?"
+
+    kozilek "Ugh, just stay.."
+
+    mc "Apologies, a bit louder this time?"
+
+    kozilek "Okay fine!! Just stay idiot!"
+
+    mc "Very well"
+
+    "You find your seat back on the floor and lean up against the bookshelf
+    next to Kozilek"
+
+    kozilek "I'm not reading this because I like it or anything, just saying"
+
+    mc "Hm? I didn't think you were"
+
+    kozilek "Oh.. Yeah, well I'm just letting you know. It really is for
+    research"
+
+    mc "I believe you"
+
+    kozilek "I thought our class could perform a short play for the
+    {i}festival{/i} based on a historical event"
+
+    mc "Quite a realistic endeavor"
+
+    kozilek "So I needed to do some research to make sure our representation
+    was historically accurate"
+
+    mc "That's a very reasonable assessement of the situation"
+
+    kozilek "STOP DOING THAT!!"
+
+    mc "Doing what?"
+
+    kozilek "That!"
+
+    kozilek "You keep agreeing with me!"
+
+    mc "You want me to disagree with you?"
+
+    kozilek "NO!"
+
+    kozilek "I mean.. But you don't need to be so nonchalant about it"
+
+    mc "You want me to agree with you enthusiastically?"
+
+    kozilek "Ugh, nevermind! Just stop talking"
+
+    mc "..."
+
+    "You hold out a thumbs-up to signal your understanding"
+
+    kozilek "..."
+
+    "The next several minutes pass in awkward silence"
+
+    "Well, awkward for Kozilek, you're more just amused"
+
+    "Kozilek tries pretending to read his book but it's obvious he's just
+    uncomfortably ignoring you"
+
+    "His eyes flick back and forth between you and the open book, never
+    stopping to scan the words or flip the page"
+
+    "After an {i}hour of eternity{/i}--or well, more like four minutes--Kozilek
+    slams the book shut for the second time today and gets up"
+
+    kozilek "Ugh! Why do you have to make it so awkward!?"
+
+    mc "Awkward? I'm not doing anything"
+
+    kozilek "Exactly!"
+
+    "Kozilek aggressively shoves the book into his bag and gets up"
+
+    mc "You're done reading?"
+
+    kozilek "Whatever, I don't need more research anyway"
+
+    mc "Alright, good for you"
+
+    kozilek "I'm going to go draft the script now"
+
+    mc "Enjoy"
+
+    show kozilek:
+        center
+        linear 0.5 xpos 1.0
+
+    show kozilek:
+        xpos 1.0
+        linear 0.5 right
+
+    kozilek "Aren't you going to come with me?"
+
+    mc "Oh, did you want me to?"
+
+    kozilek "Yes. No! I mean..."
+
+    kozilek "I don't really care. You can come if you want to"
+
+    "Well that's awfully kind of you"
+
+    scene bg library 3 with dissolve
+
+    show kozilek at center
+
+    "You follow Kozilek back to the tables as he sits down with blank lined
+    paper"
+
+    mc "I should ask, as I never did find out. What is it exactly your play
+    is about?"
+
+    kozilek "It's about the Eldrazi Winter, not like you would understand"
+
+    mc "No, I suppose not. After all, it's not like I wasn't living under
+    a rock during 2016"
+
+    kozilek "No, you weren't. So just don't bother alright?"
+
+    mc "Mhm"
+
+    "There were too many negative comparatives for you to process in that
+    interaction"
+
+    "You could probably figure out what Kozilek meant. But the warranty on your
+    braincell has already expired, so it might be a bad idea to stress it too
+    much"
+
+    "You pass the rest of the time in relative comfort as Kozilek makes a crude
+    attempt to {i}reconstruct history{/i}"
+
+    "With you correcting him on several key details"
+
+    python:
+        date_1 = "kozilek"
+
+    jump day2_scene4
 
     return
 
 label day2_scene3_emrakul:
 
     show emrakul at center
+
+    mc "Uhhh.. Emrakul, right?"
+
+    "But Emrakul doesn't reply. Instead, she looks up at you and raises a
+    tentacle in greeting"
+
+    "Or, at least, you think she looks at you. The massive eye in the center
+    of Emrakul's body seems to pierce your very soul"
+
+    mc "What're you working on?"
+
+    "You take a seat next to Emrakul and look down to see a mildly concerning
+    amount of pornographic light novels spread out across the floor"
+
+    mc "Ummm..."
+
+    "Emrakul doesn't seem to notice your {i}falter{/i}, she just looks down and
+    idly moves the hentai comics around with her tentacle"
+
+    mc "Maybe I should leave..?"
+
+    emrakul "I think you'd look good in this one"
+
+    "Emrakul holds up a comic to reveal a suggestively posed human clad
+    in what barely qualifies as clothing"
+
+    menu:
+        "Compliment her back":
+            "Without a second thought to your social setting, or a first regard
+            to what card game you're playing, you flick your wrist and down
+            your sleeve flies your trusty old UNO reverse card"
+
+            "You twist your fingers to let the metaphorical ace up your sleeve
+            face Emrakul"
+
+            "You mutter the {i}magic word{/i}s \"Go fish\" and prepare to banish
+            her to the shadow realm"
+
+            "Then, with a fervent {i}display of dominance{/i}, you thrust the
+            UNO reverse card in Emrakul's face and scream"
+
+            mc "NO U!!"
+
+            mc "You would look far better in that attire than myself"
+
+            python:
+                emrakul_date_1 = "compliment"
+        "Sit in awkward silence":
+            "You look at the near-naked human drawn in the comic, then back at
+            Emrakul"
+
+            "Then back at the drawing, all the while maintaining the most
+            uncomfortable aura between you and Emrakul"
+
+            "She seems to get the message as she lowers the comic and turns
+            away from you"
+
+            python:
+                emrakul_date_1 = "silence"
+        "Run out of the library screaming":
+            "It's a {i}rouse{/i}, you can smell it"
+
+            "Emrakul is trying to seduce you, but you won't fall for it"
+
+            "You will not be tempted by her {i}captivating glance{/i}"
+
+            "Bitches are temporary, the sigma grindset is eternal"
+
+            "You prepare to {i}declare dominance{/i} by sprinting out of the
+            library screaming at the top of your lungs"
+
+            "But just as you stand up to T-Pose, Chandra and Nissa walk up
+            behind you"
+
+            python:
+                emrakul_date_1 = "scream"
+
+    show nissa at left
+    show chandra at right
+
+    nissa "Hey guys, what's going on over here?"
+
+    chandra "Quite the cultured collection you've got, respect"
+
+    nissa "EEEEEEEEEEEEK!!"
+
+    "It seems Nissa too, fell victim to the classic blunder: looking down"
+
+    nissa "E-Emrakul-chan, I told you yesterday that this isn't appropriate for
+    a school event"
+
+    chandra "You said nothing of the sort"
+
+    nissa "I had meant to, b-but I shouldn't need to!"
+
+    nissa "Emrakul-chan, can you please just put these away for now"
+
+    "Nissa looks away and gestures a sweeping motion toward the floor covered
+    in disproportionate drawings of naked humans"
+
+    chandra "Now hold on a minute. I think this is exactly what our school
+    {i}festival{/i} needs this year"
+
+    "Chandra leans over and takes a comic to {i}select for inspection{/i}"
+
+    "Nissa averts her eyes as Chandra gives the hentai a {i}careful study{/i}"
+
+    "After few too many seconds of {i}silence{/i} Chandra nods in impressed
+    approval and tosses the comic back on the floor"
+
+    chandra "Why don't we let these two carry on with their endeavors"
+
+    show chandra:
+        right
+        linear 1.0 xpos 0.25
+
+    "Chandra turns Nissa around and walks her away from the scene"
+
+    chandra "And we'll worry about your own event"
+
+    show nissa:
+        left
+        linear 1.0 xpos -1.0
+
+    show chandra:
+        xpos 0.25
+        linear 1. xpos -1.0
+
+    if emrakul_date_1 == "compliment":
+        mc "Huh"
+
+        mc "Well"
+
+        "You return the UNO card to your sleeve, having served its purpose"
+    elif emrakul_date_1 == "silence":
+        mc "Huh"
+    elif emrakul_date_1 == "scream":
+        mc "Huh"
+
+        mc "Well"
+
+        "You sit back down, the threat to your sigma ways having
+        {i}dissipate{/i}d"
+
+    mc "Are you uhh.. Sure you should be doing this?"
+
+    emrakul "I think it's fine"
+
+    mc "Remind me again. What is it you're doing exactly?"
+
+    emrakul "Mmmmmm..."
+
+    "Emrakul gestures to the ungodly quantity of porn strewn across the
+    floor"
+
+    mc "Ah, I see"
+
+    "You do not see"
+
+    mc "Well then, is there any way I can help?"
+
+    emrakul "Fufufufufu"
+
+    mc "Oh, wonderful"
+
+    "Not wonderful"
+
+    show emrakul:
+        center
+        linear 0.5 xpos 1.0
+
+    show emrakul:
+        xpos 1.0
+        linear 0.5 center
+
+    "Emrakul floats over to the tables and returns with a set of..."
+
+    "Technically clothes, in the same way {i}mind rot{/i} is technically
+    draw because it's card advantage"
+
+    "Which is to say, it's not draw at all"
+
+    "And similarly, what Emrakul's holding in her tentacles aren't really
+    clothes at all"
+
+    "You recognize them from the hentai drawing she just showed you"
+
+    mc "Uhhh, wait.. Is that?"
+
+    mc "Why do you have that!?"
+
+    emrakul "Fufufu. Put it on"
+
+    mc "You brought that to school?"
+
+    emrakul "Just put it on!"
+
+    "She extends a tentacle for you to grab the questionable attire"
+
+    "You reach your hand out and grab the clothes"
+
+    mc "I'm not putting this on in a public library"
+
+    emrakul "B-b-but"
+
+    emrakul "Pleeeeaaase"
+
+    "Emrakul's one eye scrunches up in the most pitiful manner"
+
+    "Gosh, how can you say no to that?"
+
+    "Well, you can think of many ways to say no"
+
+    mc "Fine, I'll do it"
+
+    "..."
+
+    "Why did you say yes?"
+
+    emrakul "Yay~"
+
+    mc "Uhh..."
+
+    scene bg library 2 with dissolve
+
+    "You wander around the library, the {i}shock{/i} of the entire situation
+    still setting in"
+
+    show nissa at left
+
+    if gender == "male":
+        nissa "Oh, uhh.. What're you doin' [name_1]-kun?"
+    elif gender == "female":
+        nissa "Oh, uhh.. What're you doin' [name_1]-chan?"
+    else:
+        nissa "Oh, uhh.. What're you doin' [name_1]-san?"
+
+    mc "I.. Uh..."
+
+    "Nissa glances down at your hands"
+
+    nissa "..."
+
+    nissa "Do I umm.."
+
+    "Umm.. Need to end the meeting today?"
+
+    mc "..."
+
+    nissa "So umm... Hey guys!"
+
+    show ulamog:
+        xpos 1.0
+        linear 0.25 center
+
+    show kozilek:
+        xpos 1.0
+        linear 0.25 xpos 0.6
+
+    show emrakul:
+        xpos 1.0
+        linear 0.25 xpos 0.8
+
+    nissa "I think we should stop here for today, you've all done great work"
+
+    ulamog "Awwwww, but it's only been an hour, the library doesn't close until
+    18:00"
+
+    nissa "Oh, well uh.. The library was reserved today. By another club, so
+    we need to clean up before they get here"
+
+    ulamog "Awww"
+
+    kozilek "Hmphf"
+
+    show ulamog:
+        center
+        linear 0.25 xpos 1.0
+
+    show kozilek:
+        xpos 0.6
+        linear 0.25 1.0
+
+    show emrakul:
+        xpos 0.8
+        linear 0.25 1.0
+
+    "The rest shuffle out of the library leaving you, Nissa, and dubious set of
+    clothes in your arms"
+
+    scene bg hallway with dissolve
+
+    show nissa at center
+
+    nissa "So I'll uh.. See you tomorrow?"
+
+    mc "Yeah yeah, that uh.. Sounds about right, sure"
+
+    python:
+        date_1 = "emrakul"
+
+    jump day3_scene1
 
     return
 
@@ -1048,11 +1617,11 @@ label day2_scene3_nissa:
 
     mc "Umm.. Chameleons?"
 
-    chandra "Well I had brought up to her that the fact we know chameleons
-    even exist means they suck at their job"
+    chandra "Well I had brought up to her that the fact we know
+    chameleons even exist means they suck at their job"
 
     chandra "But Revane-chan, for some god-forsaken reason, knows that
-    chameleons apparently change color as a means of communication rather than
+    chameleons actually change color as a means of communication rather than
     camoflauge"
 
     chandra "Sexual communication, she made that part quite explicit"
@@ -1060,7 +1629,7 @@ label day2_scene3_nissa:
     nissa "Well, when you put it like that..."
 
     chandra "Which of course, like any respectable pursuers of science, left us
-    {i}wonder{/i}ing which color means \"I want to bang\""
+    {i}wonder{/i}ing which color means \"I want to fuck\""
 
     nissa "Only you wanted to know that"
 
@@ -1105,29 +1674,177 @@ label day2_scene3_nissa:
             chandra "Contrary to mainstream media, having an opinion is a
             privilege, not a right"
 
-            chandra "And right now you are very close to losing that privelege"
+            chandra "And right now you are very close to losing that
+            {i}priveleged position{/i}"
 
             mc "Uhhh.. Okay?"
 
-            chandra "I'm glad you understand. Now please,"
+            chandra "I'm glad you understand. Now please, take a seat. Your
+            mother and I need to have a serious talk with you"
+
+            "Chandra attempts her best Dad-voice and places her hand on top
+            of Nissa's"
+
+            "Nissa looks away, but doesn't move her hand"
+
+            "You take take a seat, like a child about to be disciplined"
+
+            mc "Look, if this is about the children in the basement, I already
+            said I'm sorry"
+
+            if gender == "male":
+                chandra "No [name_2]-kun, I couldn't give a {i}tarmogoyf{/i}'s
+                toughness about your \"collection\""
+            elif gender == "female":
+                chandra "No [name_2]-chan, I couldn't give a {i}tarmogoyf{/i}'s
+                toughness about your \"collection\""
+            else:
+                chandra "No [name_2]-san, I couldn't give a {i}tarmogoyf{/i}'s
+                toughness about your \"collection\""
+
+            chandra "We need to address your attitude towards the color pie"
+
+            mc "But Dad! All colors are equal"
+
+            chandra "That is NOT how I raised you!"
+
+            chandra "Green must be able to do everything the other colors can,
+            but better. That way it's balanced!"
+
+            mc "But what about color diversity!?"
+
+            chandra "After all this time? You're still spouting that
+            \"Balanced Design\" {i}conspiracy{/i} nonsense"
+
+            chandra "That's it, go to your room!"
+
+            mc "But--"
+
+            chandra "One more word and I replace your modern deck with seventy
+            five {i}colossal dreadmaw{/i}s"
+
+            mc "..."
+
+            nissa "What is  h a p p e n i n g ?"
         "Blue":
             mc "I think it'd probably have to be blue"
 
             chandra "Blue!? Excuse you! Only incels and legacy players get
             horny at the sight of blue"
 
-            chandra "g"
+            chandra "..."
+
+            chandra "Oh, wait. Unless you play merfolk.."
+
+            chandra "Do you play merfolk?"
+
+            mc "Uhh...."
+
+            if gender == "male":
+                chandra "Answer the question [name_2]-kun"
+            elif gender == "female":
+                chandra "Answer the question [name_2]-chan"
+            else:
+                chandra "Answer the question [name_2]-san"
+
+            chandra "Do you play merfolk?"
+
+            mc "I play Mono U Tron, does that count?"
+
+            chandra "..."
+
+            chandra "....."
+
+            "Chandra stares at you with {i}harsh scrutiny{/i}, the weight
+            of her judgment pressing down on you"
+
+            chandra "........."
+
+            chandra "Acceptable"
+
+            if gender == "male":
+                chandra "But you are {i}on thin ice{/i} [name_2]-kun"
+            elif gender == "female":
+                chandra "But you are {i}on thin ice{/i} [name_2]-chan"
+            else:
+                chandra "But you are {i}on thin ice{/i} [name_2]-san"
+
+            nissa "I am so  c o n f u s e d"
         "Black":
-            pass
+            mc "Oh, black for sure. no contest"
+
+            chandra "You do realize there's more to Magic than
+            {i}thoughtseize{/i} and {i}Liliana of the Veil{/i}"
+
+            mc "Like {i}leyline of the void{/i}?"
+
+            chandra "No, that doesn't count"
+
+            mc "What about {i}fatal push{/i}?"
+
+            chandra "One more black card out of your mouth and I'll
+            {i}fatal push{/i} you out this window"
+
+            mc "You wouldn't {i}defenestrate{/i} me on the second story now
+            would you?"
+
+            chandra "Alright, that's it"
+
+            nissa "What is  h a p p e n i n g ?"
         "Red":
             mc "Well red's pretty sexy I guess"
 
-            chandra "What!? Who looks at red and thinks \"Yeah, I'd bang that\""
+            chandra "What!? Who looks at red and thinks \"Yeah, I'd fuck
+            that\"?"
+
+            nissa "I think red's a very romantic color"
+
+            chandra "Pffft, romantic? Sex isn't romantic"
+
+            chandra "You think chameleons like romance?"
+
+            nissa "Well I don't know.. I just like the color red"
+
+            chandra "Heh, do you think I'm romantic then?"
+
+            "Chandra gestures to her body clad in various shades of red"
+
+            "Dyed red leather armor under a vibrant red breastplate and a red
+            cloak pinned to her waist"
+
+            "Even her hair is known to burst into flames on occasion. All
+            making for a very striking image"
+
+            nissa "Um.. Well, you look very..."
+
+            "Nissa mumbles the rest of her sentence down into her chest"
+
+            "And although her expression is hidden, you wouldn't be surprised
+            if she was also turning quite red"
         "Green":
-            pass
+            mc "Well, I think green's pretty sexy"
+
+            chandra "Ahhh, finally!"
+
+            chandra "See! I told you, green is the universal color of sex"
+
+            chandra "Even chameleons understand that the power of horny eclipse
+            all language barriers"
+
+            chandra "Not like red"
+
+            chandra "Red's for
+            {i}burning cinder fury of crimson chaos fire{/i}!! Not sex"
+
+            nissa "I just thought red looked romantic.."
+
+            chandra "Well you're objectively, scientifically, empirically
+            wrong"
+
+            nissa "Uhhh.. Okay"
         "Colorless":
-            "Maybe answering \"Colorless\" to a question that expects a color as
-            an answer isn't the smartest move"
+            "Maybe answering \"Colorless\" to a question that expects a color
+            as an answer isn't the smartest play"
 
             "But considering you can count the number of braincells you have
             on one hand, maybe logic and reason aren't the most effective
@@ -1146,552 +1863,188 @@ label day2_scene3_nissa:
 
             mc "... Nevermind"
 
-            pass
+            chandra "Good"
+
+            chandra "I'm glad I didn't need to bring out the
+            {i}ankle shanker{/i}, slash your Achilles tendons"
+
+            mc "Hey, my Achilles tendons have nothing to do with this, you
+            leave them out of it!"
+
+            if gender == "male":
+                chandra "Sorry [name_2]-kun, that's just business"
+            elif gender == "female":
+                chandra "Sorry [name_2]-chan, that's just business"
+            else:
+                chandra "Sorry [name_2]-san, that's just business"
+
+            chandra "It's a {i}cruel reality{/i}"
+
+            nissa "What the  h e c k"
+
+    chandra "So anyways, did you have plan for your class' event Revane-chan?"
+
+    nissa "Uhhhh..."
+
+    "The sudden change in subject doesn't seem to help Nissa's {i}increasing
+    confusion{/i}"
+
+    "But she {i}rebound{/i}s surprisingly quickly and moves on"
+
+    nissa "Oh, I uhh.. Was thinking of hosting a tea ceremony"
+
+    nissa "There's a classroom with tatami we could borrow and--"
+
+    chandra "Nah, that's boring, your class should host a {i}death match{/i} in
+    the courtyard. {i}Last one standing{/i} gets free college admittance"
+
+    nissa "Oh my gosh, no! We aren't going to have a freaking {i}fight to the
+    death{/i} in the middle of school"
+
+    mc "Oh oh, how about ceremonial human {i}sacrifice{/i} to the {i}Lord of
+    Extinction{/i}?"
+
+    chandra "My, well aren't you just a {i}well of ideas{/i}. What a splendid
+    suggestion"
+
+    mc "Happy to be of service"
+
+    nissa "No! No sacrifices to the extinction lord whoever thing"
+
+    mc "How about the {i}Lord of the Forsaken{/i}?"
+
+    chandra "Or the {i}Lord of the Void{/i}?"
+
+    mc "Or {i}Lord of the Pit{/i}"
+
+    chandra "You've got plenty of options"
+
+    nissa "Why are there so many lords?"
+
+    mc "That's not even half of them"
+
+    nissa "Okay okay, stop. I shouldn't've asked"
+
+    chandra "You definitely shouldn't've"
+
+    nissa "We're not doing that. There will be no killing or death during the
+    {i}festival{/i}"
+
+    if gender == "male":
+        chandra "Well [name_2]-kun, how does it feel to have
+        {i}death denied{/i}?"
+    elif gender == "female":
+        chandra "Well [name_2]-chan, how does it feel to have
+        {i}death denied{/i}?"
+    else:
+        chandra "Well [name_2]-san, how does it feel to have
+        {i}death denied{/i}?"
+
+    mc "Not great, I won't lie. It's a bit of a {i}crushing disappointment{/i}"
+
+    chandra "Understandable. Oh well, there's always next year right?"
+
+    mc "That's the spirit"
+
+    nissa "Can we please get back on topic?"
+
+    chandra "Right right, of course. Where were we? Tea ceremony, no death"
+
+    mc "I can't even {i}poison the cup{i}s?"
+
+    chandra "I would argue that matcha is already poison, but no, no poisoning
+    the drinks unfortunately"
+
+    mc "This is a tragedy, I suppose I'll have to settle for spiking them with
+    ketamine"
+
+    nissa "No spiking the drinks either"
+
+    mc "Not even Mexican black-tar heroin?"
+
+    "Nissa plants her face in her hands and leans over the table"
+
+    nissa "I just wanted to plan our class' event"
+
+    chandra "Ooooo, I think we broke her"
+
+    mc "Okay okay, sorry. I'll stop"
+
+    "You and Chandra try to refrain from any more {i}murder{/i} jokes as Nissa
+    starts actually planning her event"
+
+    "The rest of the time passes in relative tedium as productivity often
+    scales inversely with fun"
+
+    "But by the end Nissa seems to be proud of what she's accomplished, not
+    that you really payed attention"
+
+    "It was mostly Chandra helping her while you watched and occasionally
+    interjected with meaningless comments"
+
+    show bg hall with dissolve
+
+    show nissa at center
+
+    maybe have scene here?
+
+    python:
+        date_1 = "nissa"
+
+    jump day3_scene1
 
     return
 
 label day2_scene4:
 
-    scene bg hall with dissolve
-
-    "I exit the classroom in time to see Ulamog turn the corner at the end
-    of the hallway"
-
-    menu:
-
-        "Maybe I should do something about that?"
-
-        "Go after Ulamog":
-            jump day2_scene4_chase
-        "Continue to class":
-            jump day2_scene4_class
-        "Skip class":
-            jump day2_scene4_skip
-
-    return
-
-label day2_scene4_chase:
-
-    scene bg hall
-
-    "I chase after Ulamog weaving my wave through the {i}mob{/i} of students"
-
-    "It's tough to keep up with Ulamog's pace, but fortunately he's
-    {i}tall as a beanstak{/i} and his distinct coloring makes him easily
-    stand out from the crowd"
-
-    scene bg monele with dissolve # courtyard
-
-    "I finally catch up to Ulamog under a tree in the courtyard"
-
-    show ulamog at center
-
-    "He's sitting with his head in two hands while the other two hug his
-    knees (bent tentacles?) to his chest"
-
-    mc "Hey Ulamog-kun. Are you okay?"
-
-    ulamog "Oh, hi senpai. I'm fine"
-
-    mc "Are you sure? You didn't seem fine in class"
-
-    ulamog "Oh, um. I shouldn't've said those things. I didn't really mean
-    them"
-
-    ulamog "It's okay if other colors have card advantage. I shouldn't compare
-    myself to others"
-
-    "// TODO: finish this without being any more cringe"
-
-    return
-
-label day2_scene4_class:
-
-    "Well, knowing Ulamog, it's prolly not a big deal"
-
-    "I continue on to class"
-
-    show chandra at left
-
-    show nissa at xpos 0.25
-
-    "Outside the classroom Chandra and Nissa are talking to each other"
-
-    "Although, Chandra seems to be doing most of the talking as Nissa just
-    stares at the floor sheepishly"
-
-    "As I enter earshot, I can hear Chandra complaining about schoolwork"
-
-    chandra "--Even is the use of flectomancy? I mean, to be honest, most of
-    these problems could be solved with fire"
-
-    nissa "Is that why you're here?"
-
-    chandra "What?"
-
-    nissa "You set your math homework on fire again?"
-
-    chandra "Hey! Just who do you think I am?"
-
-    chandra "..."
-
-    chandra "No, I didn't set my math homework on fire"
-
-    nissa "Oh, okay. I just thought-- Since, I mean.. I could've helped you.
-    Finish it. If you did, but you didn't so--"
-
-    chandra "Wait. Is that what I think it is? Hold that thought"
-
-    "Chandra reaches into her bag and pulls out a thin stack of papers"
-
-    "Then, with one swift motion, she conjures a {i}pillar of flame{i} beneath
-    the papers and lights the edge on fire"
-
-    "The flame travels up the stack, eating away the papers until all that's
-    left is a thin layer of ash on the floor which Chandra nonchalantly
-    sweeps away with her foot"
-
-    chandra "So? You were saying you wanted to help me with my homework?"
-
-    nissa "Umm..."
-
-    chandra "Then, the library, after school. I'll see you there"
-
-    # bell rings
-
-    show chandra:
-        left
-        linear 1.0 xpos -0.5
-
-    "Chandra walks away with a smirk just as the bell rings"
-
-    "Nissa stands there unmoving as the rest of the students funnel into the
-    classroom"
-
-    hide nissa
-
-    scene bg classroom backright with dissolve
-
-    "..."
-
-    # bell rings
+    show bg hall with dissolve
 
     show nissa at center
 
     if gender == "male":
-        nissa "Umm.. [name_1]-kun?"
+        nissa "[name_1]-kun!"
     elif gender == "female":
-        nissa "Umm.. [name_1]-chan?"
+        nissa "[name_1]-chan!"
     else:
-        nissa "Umm.. [name_1]-san?"
+        nissa "[name_1]-san!"
 
-    mc "Yes?"
+    mc "Hey Nissa-chan"
 
-    nissa "I don't know if you overheard, but I kind of agreed to help
-    Nalaar-san with her homework after school"
+    nissa "I saw you helping today, you looked like you were having fun"
 
-    mc "Yeah, I heard something like that, why?"
+    mc "Yeah, I guess you could say that"
 
-    nissa "Well, if it's not too much to ask. Would you be there with me?"
+    nissa "Anyways, walk home with me?"
 
-    mc "What? It seems to me like Nalaar-san wants only you to be there"
+    mc "Always"
 
-    nissa "Mmmph, but I don't want to go alone"
+    show bg park with dissolve
 
-    mc "That's silly, why not?"
+    "You and Nissa make the typical {i}harrowing journey{/i} out of school
+    and down the path toward your homes"
 
-    nissa "She's scary"
+    "Nissa is unusually quite the entire time, like she's {i}ponder{/i}ing
+    something important"
 
-    mc "Scary? How so?"
-
-    menu:
-
-        nissa "Please, can you just come?"
-
-        "Agree to go":
-            mc "Alright, I'll go"
-            $ chandra_homework_flag = True
-        "Make up an excuse":
-            mc "Sorry, I already made plans after school today"
-
-    # jump next scene
-
-    return
-
-label day2_scene4_skip:
-
-    "Well, knowing Ulamog, it's prolly not a big deal"
-
-    if skip_flag:
-        jump day2_scene4_skip_library2
-    else:
-        jump day2_scene4_skip_library1
-        $ skip_flag = True
-
-    return
-
-label day2_scene4_skip_library2:
-
-    "I remember telling Kozilek I'd see them today"
-
-    "Maybe I should follow through with that"
-
-    scene bg library 2 with dissolve
-
-    scene bg library 1 with dissolve
-
-    show kozilek at center
-
-    "I find Kozilek sitting in the back of the library just as they said"
-
-    "I sit down next him and he looks over at me"
-
-    "But when our eyes meet he quickly averts his gaze back to his book"
-
-    if ulamog_lunch_flag:
-        mc "So.. \"Kozi-kun\" huh"
-
-        kozilek "Don't call me that"
-
-        mc "Hmm.. \"Kozilek-tan\" then?"
-
-        kozilek "..."
-
-        show kozilek:
-            center
-            linear 2.0 xpos 0.5
-
-        "Kozilek turns their body away from me, and in doing so pushes up
-        against me such that their back is resting against my arm"
-
-        mc "Okay okay, \"Kozilek-kun\" then?"
-
-        kozilek "..."
-
-    mc "So? What're you reading today?"
-
-    "I look over Kozilek's shoulder at the book in their hands"
-
-    mc "They ran their slimy tentacles across my body, the black {i}void{/i}
-    of their eyes looking deeply in--"
-
-    # book slam sound
-
-    kozilek "NOTHING!!"
-
-    "They slam the book shut before I can read any further"
-
-    kozilek "Ugh, you're such a {i}nuisance engine{/i}. Don't you have anything
-    better to do than bother me all day?"
-
-    mc "Aren't you the one who asked me to come today?"
-
-    kozilek "I never said anything like that!"
-
-    mc "Hmm.. I remember it differently"
-
-    kozilek "Well you're wrong, stupid"
-
-    mc "Fair enough, I'll take my leave then"
-
-    "I stand up"
-
-    show kozilek:
-        xpos 0.5
-        linear 0.5 center
-
-    kozilek "Wait!"
-
-    kozilek "I mean.. You don't have to. I can't make you leave
-    {i}by force{/i} or anything"
-
-    mc "So you want me to stay?"
-
-    kozilek "Yes!"
-
-    kozilek "No!"
-
-    kozilek "Umm.. I mean you..."
-
-    "Kozilek finishes the rest of their sentence in an incomprehensible mumble"
-
-    mc "Pardon me, would you repeat that?"
-
-    kozilek "Ugh, just stay.."
-
-    mc "Apologies, a bit louder this time?"
-
-    kozilek "Okay fine! Just stay idiot!"
-
-    mc "Very well"
-
-    "I sit back down and pass the rest of the period"
-
-    jump day2_scene5
-
-    return
-
-label day2_scene4_skip_library1:
-
-    return
-
-label day2_scene5:
-
-    scene bg classroom backright with dissolve
-
-    scene bg hall with dissolve
-
-    "Ugh, finally, I step out of 4th period ready for lunch break"
-
-    show ulamog at center
-
-    "Waiting for me outside is Ulamog"
-
-    "He grabs my arm and starts draggin me down the hallway"
-
-    ulamog "C'mon [name_1]-senpai! You're eating lunch with us, we need more
-    friendos"
-
-    mc "Wait, the cafeteria's the other way"
-
-    ulamog "Oh, don't worry about that. I brought lots of food"
-
-    mc "Well don't you seem happy, weren't you sulking just an hour ago?"
-
-    ulamog "Eheheh, yeah. But that was an hour ago, now hurry up"
-
-    "Ulamog drags me out to the courtyard where a picnic blanket is layed out
-    under a tree"
-
-    show chandra at left
-
-    "Already sitting there is Chandra with a bemused smile on her face"
-
-    "Ulamog sits down on the blanket and pats the spot next to them, inviting
-    me to sit down"
-
-    ulamog "Have you met Chandra-chan senpai?"
-
-    chandra "Yo"
-
-    mc "Yeah, I've seen her around"
-
-    "I take a seat next to Ulamog"
-
-    if skip_flag:
-        show kozilek at right
-
-        "As I'm sitting down, Kozilek shows up at the picnic blanket"
-
-        ulamog "Ooo, Kozi-kun!! You said you weren't coming!"
-
-        kozilek "Uhh, well. I mean.. I just happened to be--"
-
-        ulamog "Yay! Sit down. More friendos!"
-
-    "Ulamog produces stacks of bento boxes from his bag and passes them
-    around to everyone"
-
-    "Chandra opens her top box and makes an O with her mouth"
-
-    "I open my box and immediately understand her reaction"
-
-    "Meticulously arranged in the box are an assortment of quality foods"
-
-    mc "Wow Ulamog-kun, where'd you get all this?"
-
-    ulamog "I made it!"
-
-    "Ulamog's face lights up with pride"
-
-    chandra "Damn Ulamog-kun, this is impressive"
-
-    ulamog "Thank you!"
-
-    "No further words are spoken as everyone is eager to start eating"
-
-    hide ulamog
-
-    hide chandra
-
-    hide kozilek
-
-    "I look down at by box"
-
-    "It's {i}clelar{/i} how much effort was put into making this"
-
-    "Cutlet strips are stacked neatly in corners"
-
-    "Rice balls are shaped like cat faces with dried seaweed for whiskers"
-
-    "Omelettes are folded and cut into hearts or stars"
-
-    "It all looks so perfect, I'd feel guilty eating it"
-
-    "But I figure Ulamog'd feel bad if I didn't eat anything"
-
-    "As I begin eating I notice a familiar presence in my mind"
-
-    "How long it's been there, I can't be sure"
-
-    "I scan the field, but it's not long before I spot it"
-
-    show emrakul at center
-
-    "Floating across the courtyard, poorly hidden behind a tree is the familiar
-    shape"
-
-    show ulamog at left
-
-    ulamog "What're you looking at senpai?"
-
-    mc "Oh, just--"
-
-    ulamog "Oo! It's Emmy-chan!!"
-
-    "Ulamog starts excitedly waving and motioning for Emrakul to join us"
-
-    "Emrakul floats over to our picnic blanket"
-
-    ulamog "Yay! More friendos!"
-
-    ulamog "This is Emmy-chan, she's super sweet"
-
-    "Emrakul raises a tentacle in greeting"
-
-    emrakul "Hi"
-
-    ulamog "Join us Emmy-chan!"
-
-    "Ulamog hands a stack of bento boxes to Emrakul"
-
-    "I watch as Emrakul struggles to hold the chopsticks in her tentacles"
-
-    show chandra at right
-
-    chandra "Aww, is Emwakul-tan having twouble wiff her chopsticks"
-
-    emrakul "Nnnnnn"
-
-    chandra "Haha, here let me help"
-
-    show chandra:
-        right
-        linear 1.0 xpos 0.5
-
-    "Chandra takes a string and ties a chopstick to Emrakul's tentacle"
-
-    show chandra:
-        xpos 0.5
-        linear 1.0 right
-
-    "Emrakul uses the fastened chopstick to skewer a fish cake from her
-    bento"
-
-    emrakul "Thank you Nalaar-san"
-
-    # bell rings
-
-    # fade black
-
-    if chandra_homework_flag:
-        jump day2_scene6
-    else:
-        jump day3_scene1
-
-    return
-
-label day2_scene6:
-
-    scene bg library 2 with dissolve
-
-    "I arrive at the library after school"
-
-    "I'm a bit late, as I almost forgot that I had promised Nissa I'd be here"
-
-    "Nissa and Chandra are already sitting at a table with textbooks open"
-
-    scene bg library 3 with dissolve
-
-    show nissa at left
-
-    show chandra at center
-
-    "I walk over and take a seat next to Nissa"
-
-    mc "Hey"
-
-    nissa "Oh, hi"
-
-    "Nissa says with audible relief"
+    nissa "..."
 
     if gender == "male":
-        nissa "Um.. Nalaar-san, this is [name_1]-kun. I thought they could
-        join us"
+        nissa "Hey [name_1]-kun?"
     elif gender == "female":
-        nissa "Um.. Nalaar-san, this is [name_1]-chan. I thought they could
-        join us"
+        nissa "Hey [name_1]-chan?"
     else:
-        nissa "Um.. Nalaar-san, this is [name_1]-san. I thought they could
-        join us"
+        nissa "Hey [name_1]-san?"
 
-    chandra "You never said anything about them coming"
+    mc "Yeah?"
 
-    nissa "Oh, well.. They're really good at math so..."
+    nissa "..."
 
-    mc "I am a literal {i}garbage fire{/i} when it comes to math"
+    if date_1 == "ulamog":
+        nissa "Do you like Ulamog-kun?"
+    elif date_1 == "kozilek":
+        nissa "Do you like Kozilek-kun?"
 
-    nissa "Anyways!"
-
-    nissa "Um.. We can start with the chain rule"
-
-    "Nissa begins timidly explaining math terms. It goes through one ear and
-    out the other"
-
-    "Looking over at Chandra, I can tell she isn't understanding anything
-    either. But she's still looking at Nissa and smiling"
-
-    "As Nissa gets further into the homework she grows less aware of Chandra
-    and me, becoming more confident in herself"
-
-    "Although I'm not really paying attention to anything she's saying,
-    it's nice to see her feeling more comfortable"
-
-    hide nissa with fade
-
-    hide chandra with fade
-
-    "As I stare off into space, I start to get that familiar feeling"
-
-    # show emrakul behind window
-
-    "Across the library, I can see Emrakul hovering just outside the window"
-
-    # hide emrakul
-
-    "The presence leaves my mind and they quickly drop down, below my field
-    of view"
-
-    "That's mildly concerning.. If not outright creepy"
-
-    "I'm starting to get a bad feeling"
-
-    "This whole situation is just screaming GTFO"
-
-    "Nissa's consumed in her homework, she probably wouldn't even notice if
-    I left"
-
-    show chandra at center
-
-    "I look up at Chandra, she gives me a wink"
-
-    "I guess I'll take that as my cue to leave"
-
-    "I get up from my chair with bag in hand"
-
-    "Nissa doesn't notice and I don't bother telling her"
-
-    "I wave goodbye to Chandra and step out of the library"
+    jump day3_scene1
 
     return
 
@@ -1701,7 +2054,7 @@ label day3_scene1:
 
     "Fridays are overrated"
 
-    "Yeah, I said it"
+    "Yeah, it's true"
 
     "People don't seem to understand that Fridays are still an entire day of
     work"
@@ -2228,7 +2581,7 @@ label day4_scene2_kozilek:
 
     scene bg classroom frontleft with dissolve
 
-    show kozilek at xpos 0.5
+    show kozilek at center
 
     show chandra at left
 

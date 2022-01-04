@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 324, in script
-    scene bg hall with dissolve(2.0)
-TypeError: 'Dissolve' object is not callable
+  File "game/script.rpy", line 683, in script
+    "You have a 25% success rate. Which is a significant step up from your
+TypeError: not enough arguments for format string
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 324, in script
-    scene bg hall with dissolve(2.0)
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\ast.py", line 1389, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
-    clear=clear)
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\display\core.py", line 3047, in interact_core
-    new_widget=layers_root)
-TypeError: 'Dissolve' object is not callable
+  File "game/script.rpy", line 683, in script
+    "You have a 25% success rate. Which is a significant step up from your
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\exports.py", line 1334, in say
+    what = what % tag_quoting_dict
+TypeError: not enough arguments for format string
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 eldrazi_sim 1.0
-Thu Mar 04 23:44:22 2021
+Tue Dec 28 03:09:47 2021

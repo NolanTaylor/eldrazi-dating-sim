@@ -1,34 +1,43 @@
-Wed Jul 14 17:02:05 2021
+Thu Dec 30 19:10:12 2021
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.21s
+Bootstrap to the start of init.init took 0.22s
 Early init took 0.01s
-Loader init took 0.09s
-Loading error handling took 0.13s
-Loading script took 1.02s
-Loading save slot metadata. took 0.27s
+Loader init took 0.08s
+Loading error handling took 0.16s
+Loading script took 1.01s
+Loading save slot metadata. took 0.30s
 Loading persistent took 0.00s
-
-File "game/script.rpy", line 1014: end of line expected.
-    show sorin at xpos 0.5
-                       ^
-
-File "game/script.rpy", line 1130: end of line expected.
-    show nissa at xpos 0.25
-                       ^
-
-File "game/script.rpy", line 2145: end of line expected.
-    show kozilek at xpos 0.5
-                         ^
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.46s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.19s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
 DPI scale factor: 1.250000
-Interface start took 0.43s
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.02s
+Load screen analysis took 0.09s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.33s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
 
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1733, 975) drawable=(1733, 975)
+Screen sizes: virtual=(1280, 720) physical=(1739, 978) drawable=(1739, 978)
 Vendor: 'ATI Technologies Inc.'
 Renderer: 'AMD Radeon(TM) RX Vega 10 Graphics'
 Version: '4.6.13596 Compatibility Profile Context 20.10.32 27.20.1032.2'
@@ -357,4 +366,46 @@ Texture testing:
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 controller: '3412adbe000000000000504944564944' None 0L
-Total time until interface ready: 3.62199997902s
+Total time until interface ready: 5.13999986649s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.011333 seconds.
+- Frame drawn at 0.027333 seconds.
+- Frame drawn at 0.039334 seconds.
+- Frame drawn at 0.058334 seconds.
+- 0.058334 seconds to render 5 frames.
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1920, 1001) drawable=(1920, 1001)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1739, 978) drawable=(1739, 978)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1205, 978) drawable=(1205, 978)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1719, 978) drawable=(1719, 978)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1920, 1001) drawable=(1920, 1001)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048

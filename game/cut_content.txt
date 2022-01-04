@@ -868,3 +868,528 @@ done"
 jump day2_scene4
 
 return
+
+label day2_scene4_chase:
+
+    scene bg hall
+
+    "I chase after Ulamog weaving my wave through the {i}mob{/i} of students"
+
+    "It's tough to keep up with Ulamog's pace, but fortunately he's
+    {i}tall as a beanstak{/i} and his distinct coloring makes him easily
+    stand out from the crowd"
+
+    scene bg monele with dissolve # courtyard
+
+    "I finally catch up to Ulamog under a tree in the courtyard"
+
+    show ulamog at center
+
+    "He's sitting with his head in two hands while the other two hug his
+    knees (bent tentacles?) to his chest"
+
+    mc "Hey Ulamog-kun. Are you okay?"
+
+    ulamog "Oh, hi senpai. I'm fine"
+
+    mc "Are you sure? You didn't seem fine in class"
+
+    ulamog "Oh, um. I shouldn't've said those things. I didn't really mean
+    them"
+
+    ulamog "It's okay if other colors have card advantage. I shouldn't compare
+    myself to others"
+
+    "// TODO: finish this without being any more cringe"
+
+    return
+
+label day2_scene4_class:
+
+    "Well, knowing Ulamog, it's prolly not a big deal"
+
+    "I continue on to class"
+
+    show chandra at left
+
+    show nissa at xpos 0.25
+
+    "Outside the classroom Chandra and Nissa are talking to each other"
+
+    "Although, Chandra seems to be doing most of the talking as Nissa just
+    stares at the floor sheepishly"
+
+    "As I enter earshot, I can hear Chandra complaining about schoolwork"
+
+    chandra "--Even is the use of flectomancy? I mean, to be honest, most of
+    these problems could be solved with fire"
+
+    nissa "Is that why you're here?"
+
+    chandra "What?"
+
+    nissa "You set your math homework on fire again?"
+
+    chandra "Hey! Just who do you think I am?"
+
+    chandra "..."
+
+    chandra "No, I didn't set my math homework on fire"
+
+    nissa "Oh, okay. I just thought-- Since, I mean.. I could've helped you.
+    Finish it. If you did, but you didn't so--"
+
+    chandra "Wait. Is that what I think it is? Hold that thought"
+
+    "Chandra reaches into her bag and pulls out a thin stack of papers"
+
+    "Then, with one swift motion, she conjures a {i}pillar of flame{i} beneath
+    the papers and lights the edge on fire"
+
+    "The flame travels up the stack, eating away the papers until all that's
+    left is a thin layer of ash on the floor which Chandra nonchalantly
+    sweeps away with her foot"
+
+    chandra "So? You were saying you wanted to help me with my homework?"
+
+    nissa "Umm..."
+
+    chandra "Then, the library, after school. I'll see you there"
+
+    # bell rings
+
+    show chandra:
+        left
+        linear 1.0 xpos -0.5
+
+    "Chandra walks away with a smirk just as the bell rings"
+
+    "Nissa stands there unmoving as the rest of the students funnel into the
+    classroom"
+
+    hide nissa
+
+    scene bg classroom backright with dissolve
+
+    "..."
+
+    # bell rings
+
+    show nissa at center
+
+    if gender == "male":
+        nissa "Umm.. [name_1]-kun?"
+    elif gender == "female":
+        nissa "Umm.. [name_1]-chan?"
+    else:
+        nissa "Umm.. [name_1]-san?"
+
+    mc "Yes?"
+
+    nissa "I don't know if you overheard, but I kind of agreed to help
+    Nalaar-san with her homework after school"
+
+    mc "Yeah, I heard something like that, why?"
+
+    nissa "Well, if it's not too much to ask. Would you be there with me?"
+
+    mc "What? It seems to me like Nalaar-san wants only you to be there"
+
+    nissa "Mmmph, but I don't want to go alone"
+
+    mc "That's silly, why not?"
+
+    nissa "She's scary"
+
+    mc "Scary? How so?"
+
+    menu:
+
+        nissa "Please, can you just come?"
+
+        "Agree to go":
+            mc "Alright, I'll go"
+            $ chandra_homework_flag = True
+        "Make up an excuse":
+            mc "Sorry, I already made plans after school today"
+
+    # jump next scene
+
+    return
+
+label day2_scene4_skip:
+
+    "Well, knowing Ulamog, it's prolly not a big deal"
+
+    if skip_flag:
+        jump day2_scene4_skip_library2
+    else:
+        jump day2_scene4_skip_library1
+        $ skip_flag = True
+
+    return
+
+label day2_scene4_skip_library2:
+
+    "I remember telling Kozilek I'd see them today"
+
+    "Maybe I should follow through with that"
+
+    scene bg library 2 with dissolve
+
+    scene bg library 1 with dissolve
+
+    show kozilek at center
+
+    "I find Kozilek sitting in the back of the library just as they said"
+
+    "I sit down next him and he looks over at me"
+
+    "But when our eyes meet he quickly averts his gaze back to his book"
+
+    if ulamog_lunch_flag:
+        mc "So.. \"Kozi-kun\" huh"
+
+        kozilek "Don't call me that"
+
+        mc "Hmm.. \"Kozilek-tan\" then?"
+
+        kozilek "..."
+
+        show kozilek:
+            center
+            linear 2.0 xpos 0.5
+
+        "Kozilek turns their body away from me, and in doing so pushes up
+        against me such that their back is resting against my arm"
+
+        mc "Okay okay, \"Kozilek-kun\" then?"
+
+        kozilek "..."
+
+    mc "So? What're you reading today?"
+
+    "I look over Kozilek's shoulder at the book in their hands"
+
+    mc "They ran their slimy tentacles across my body, the black {i}void{/i}
+    of their eyes looking deeply in--"
+
+    # book slam sound
+
+    kozilek "NOTHING!!"
+
+    "They slam the book shut before I can read any further"
+
+    kozilek "Ugh, you're such a {i}nuisance engine{/i}. Don't you have anything
+    better to do than bother me all day?"
+
+    mc "Aren't you the one who asked me to come today?"
+
+    kozilek "I never said anything like that!"
+
+    mc "Hmm.. I remember it differently"
+
+    kozilek "Well you're wrong, stupid"
+
+    mc "Fair enough, I'll take my leave then"
+
+    "I stand up"
+
+    show kozilek:
+        xpos 0.5
+        linear 0.5 center
+
+    kozilek "Wait!"
+
+    kozilek "I mean.. You don't have to. I can't make you leave
+    {i}by force{/i} or anything"
+
+    mc "So you want me to stay?"
+
+    kozilek "Yes!"
+
+    kozilek "No!"
+
+    kozilek "Umm.. I mean you..."
+
+    "Kozilek finishes the rest of their sentence in an incomprehensible mumble"
+
+    mc "Pardon me, would you repeat that?"
+
+    kozilek "Ugh, just stay.."
+
+    mc "Apologies, a bit louder this time?"
+
+    kozilek "Okay fine! Just stay idiot!"
+
+    mc "Very well"
+
+    "I sit back down and pass the rest of the period"
+
+    jump day2_scene5
+
+    return
+
+label day2_scene4_skip_library1:
+
+    return
+
+label day2_scene5:
+
+    scene bg classroom backright with dissolve
+
+    scene bg hall with dissolve
+
+    "Ugh, finally, I step out of 4th period ready for lunch break"
+
+    show ulamog at center
+
+    "Waiting for me outside is Ulamog"
+
+    "He grabs my arm and starts draggin me down the hallway"
+
+    ulamog "C'mon [name_1]-senpai! You're eating lunch with us, we need more
+    friendos"
+
+    mc "Wait, the cafeteria's the other way"
+
+    ulamog "Oh, don't worry about that. I brought lots of food"
+
+    mc "Well don't you seem happy, weren't you sulking just an hour ago?"
+
+    ulamog "Eheheh, yeah. But that was an hour ago, now hurry up"
+
+    "Ulamog drags me out to the courtyard where a picnic blanket is layed out
+    under a tree"
+
+    show chandra at left
+
+    "Already sitting there is Chandra with a bemused smile on her face"
+
+    "Ulamog sits down on the blanket and pats the spot next to them, inviting
+    me to sit down"
+
+    ulamog "Have you met Chandra-chan senpai?"
+
+    chandra "Yo"
+
+    mc "Yeah, I've seen her around"
+
+    "I take a seat next to Ulamog"
+
+    if skip_flag:
+        show kozilek at right
+
+        "As I'm sitting down, Kozilek shows up at the picnic blanket"
+
+        ulamog "Ooo, Kozi-kun!! You said you weren't coming!"
+
+        kozilek "Uhh, well. I mean.. I just happened to be--"
+
+        ulamog "Yay! Sit down. More friendos!"
+
+    "Ulamog produces stacks of bento boxes from his bag and passes them
+    around to everyone"
+
+    "Chandra opens her top box and makes an O with her mouth"
+
+    "I open my box and immediately understand her reaction"
+
+    "Meticulously arranged in the box are an assortment of quality foods"
+
+    mc "Wow Ulamog-kun, where'd you get all this?"
+
+    ulamog "I made it!"
+
+    "Ulamog's face lights up with pride"
+
+    chandra "Damn Ulamog-kun, this is impressive"
+
+    ulamog "Thank you!"
+
+    "No further words are spoken as everyone is eager to start eating"
+
+    hide ulamog
+
+    hide chandra
+
+    hide kozilek
+
+    "I look down at by box"
+
+    "It's {i}clelar{/i} how much effort was put into making this"
+
+    "Cutlet strips are stacked neatly in corners"
+
+    "Rice balls are shaped like cat faces with dried seaweed for whiskers"
+
+    "Omelettes are folded and cut into hearts or stars"
+
+    "It all looks so perfect, I'd feel guilty eating it"
+
+    "But I figure Ulamog'd feel bad if I didn't eat anything"
+
+    "As I begin eating I notice a familiar presence in my mind"
+
+    "How long it's been there, I can't be sure"
+
+    "I scan the field, but it's not long before I spot it"
+
+    show emrakul at center
+
+    "Floating across the courtyard, poorly hidden behind a tree is the familiar
+    shape"
+
+    show ulamog at left
+
+    ulamog "What're you looking at senpai?"
+
+    mc "Oh, just--"
+
+    ulamog "Oo! It's Emmy-chan!!"
+
+    "Ulamog starts excitedly waving and motioning for Emrakul to join us"
+
+    "Emrakul floats over to our picnic blanket"
+
+    ulamog "Yay! More friendos!"
+
+    ulamog "This is Emmy-chan, she's super sweet"
+
+    "Emrakul raises a tentacle in greeting"
+
+    emrakul "Hi"
+
+    ulamog "Join us Emmy-chan!"
+
+    "Ulamog hands a stack of bento boxes to Emrakul"
+
+    "I watch as Emrakul struggles to hold the chopsticks in her tentacles"
+
+    show chandra at right
+
+    chandra "Aww, is Emwakul-tan having twouble wiff her chopsticks"
+
+    emrakul "Nnnnnn"
+
+    chandra "Haha, here let me help"
+
+    show chandra:
+        right
+        linear 1.0 xpos 0.5
+
+    "Chandra takes a string and ties a chopstick to Emrakul's tentacle"
+
+    show chandra:
+        xpos 0.5
+        linear 1.0 right
+
+    "Emrakul uses the fastened chopstick to skewer a fish cake from her
+    bento"
+
+    emrakul "Thank you Nalaar-san"
+
+    # bell rings
+
+    # fade black
+
+    if chandra_homework_flag:
+        jump day2_scene6
+    else:
+        jump day3_scene1
+
+    return
+
+label day2_scene6:
+
+    scene bg library 2 with dissolve
+
+    "I arrive at the library after school"
+
+    "I'm a bit late, as I almost forgot that I had promised Nissa I'd be here"
+
+    "Nissa and Chandra are already sitting at a table with textbooks open"
+
+    scene bg library 3 with dissolve
+
+    show nissa at left
+
+    show chandra at center
+
+    "I walk over and take a seat next to Nissa"
+
+    mc "Hey"
+
+    nissa "Oh, hi"
+
+    "Nissa says with audible relief"
+
+    if gender == "male":
+        nissa "Um.. Nalaar-san, this is [name_1]-kun. I thought they could
+        join us"
+    elif gender == "female":
+        nissa "Um.. Nalaar-san, this is [name_1]-chan. I thought they could
+        join us"
+    else:
+        nissa "Um.. Nalaar-san, this is [name_1]-san. I thought they could
+        join us"
+
+    chandra "You never said anything about them coming"
+
+    nissa "Oh, well.. They're really good at math so..."
+
+    mc "I am a literal {i}garbage fire{/i} when it comes to math"
+
+    nissa "Anyways!"
+
+    nissa "Um.. We can start with the chain rule"
+
+    "Nissa begins timidly explaining math terms. It goes through one ear and
+    out the other"
+
+    "Looking over at Chandra, I can tell she isn't understanding anything
+    either. But she's still looking at Nissa and smiling"
+
+    "As Nissa gets further into the homework she grows less aware of Chandra
+    and me, becoming more confident in herself"
+
+    "Although I'm not really paying attention to anything she's saying,
+    it's nice to see her feeling more comfortable"
+
+    hide nissa with fade
+
+    hide chandra with fade
+
+    "As I stare off into space, I start to get that familiar feeling"
+
+    # show emrakul behind window
+
+    "Across the library, I can see Emrakul hovering just outside the window"
+
+    # hide emrakul
+
+    "The presence leaves my mind and they quickly drop down, below my field
+    of view"
+
+    "That's mildly concerning.. If not outright creepy"
+
+    "I'm starting to get a bad feeling"
+
+    "This whole situation is just screaming GTFO"
+
+    "Nissa's consumed in her homework, she probably wouldn't even notice if
+    I left"
+
+    show chandra at center
+
+    "I look up at Chandra, she gives me a wink"
+
+    "I guess I'll take that as my cue to leave"
+
+    "I get up from my chair with bag in hand"
+
+    "Nissa doesn't notice and I don't bother telling her"
+
+    "I wave goodbye to Chandra and step out of the library"
+
+    return
