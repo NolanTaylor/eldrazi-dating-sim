@@ -1999,8 +1999,61 @@ label day2_scene3_nissa:
 
     show bg park with dissolve
 
+    "You and Nissa make the typical {i}harrowing journey{/i} out of school
+    and down the path toward your respective homes"
+
+    "Nissa is unusually quite the entire time, like she's {i}ponder{/i}ing
+    something important"
+
+    nissa "..."
+
+    if gender == "male":
+        nissa "Hey [name_1]-kun?"
+    elif gender == "female":
+        nissa "Hey [name_1]-chan?"
+    else:
+        nissa "Hey [name_1]-san?"
+
+    mc "Yeah?"
+
+    nissa "..."
+
+    nissa "Do you like Nalaar-san?"
+
+    mc "..."
+
+    mc "You think I like her?"
+
+    nissa "Well, I dunno. That's why I'm asking"
+
+    mc "She likes you"
+
+    nissa "Huh?"
+
+    mc "You seriously haven't noticed?"
+
+    mc "She takes every opportunity to be near you"
+
+    mc "She's not even a class president, why do you think she hangs out at
+    the library?"
+
+    nissa "Because she wants to be involved with school spirit?"
+
+    mc "It's because of you"
+
+    show bg street with dissolve
+
+    mc "Well, anyways. I'll let you have your crisis in {i}solitude{/i}, This
+    is my house"
+
+    nissa "... Oh uhh.. Okay, bye then"
+
+    mc "Bye"
+
     python:
         date_1 = "nissa"
+
+    jump day3_scene1
 
     return
 
@@ -2030,7 +2083,7 @@ label day2_scene4:
     show bg park with dissolve
 
     "You and Nissa make the typical {i}harrowing journey{/i} out of school
-    and down the path toward your homes"
+    and down the path toward your respective homes"
 
     "Nissa is unusually quite the entire time, like she's {i}ponder{/i}ing
     something important"
@@ -2053,6 +2106,41 @@ label day2_scene4:
     elif date_1 == "kozilek":
         nissa "Do you like Kozilek-kun?"
 
+    mc "Yeah, I do"
+
+    nissa "No, I meant like, likelike--"
+
+    mc "I know what you meant"
+
+    nissa "Oh"
+
+    if date_1 == "ulamog":
+        nissa "Hehe, that give me cavities"
+
+        mc "Cavities?"
+
+        nissa "Because it's so sweet~"
+
+        nissa "I think you and Ulamog-kun would be very sweet together"
+    elif date_1 == "kozilek":
+        nissa "Haha, that sounds like fun"
+
+        nissa "Uhh, I just mean. You two might have a fun time courting each
+        other"
+
+        mc "Courting?"
+
+        nissa "Well, if he comes off as abrasive at first don't be too
+        discouraged"
+
+    mc "Uhh, okay. I will keep it in mind, thank you"
+
+    show bg street with dissolve
+
+    nissa "Well, looks like we split here. I'll see you tomorrow!"
+
+    mc "Bye.."
+
     jump day3_scene1
 
     return
@@ -2071,10 +2159,10 @@ label day3_scene1:
     "You still need to go to school for the same amount of time as any other
     weekday"
 
-    "Now, don't get me wrong, Fridays are still great. After all, unlike other
+    "Now, don't get it wrong, Fridays are still great. After all, unlike other
     weekdays, there's no homework because it's all been pushed back to Sunday"
 
-    "But despite this, Fridays are still way overvalued"
+    "But despite this, Fridays are still massively overvalued"
 
     jump day3_scene2
 
@@ -2082,159 +2170,45 @@ label day3_scene1:
 
 label day3_scene2:
 
-    scene bg classroom backright w/ dissolve
+    scene bg classroom backleft with dissolve
 
-    show nahiri at center
+    "The teacher stands up begins their lesson on some highly empirical math
+    concept"
 
-    nahiri "Ahem, so as you all know our school's Bunka no Hi celebration
-    will be held next week"
+    "Immediately, it feels like a {i}winter orb{/i} hit the battlefield and
+    nobody has artifact removal"
 
-    "I had absolutely no knowledge of this"
+    "You're trying to follow along, or at least look like you are, but you
+    don't understand a thing"
 
-    nahiri "You will all be required to help"
+    "You don't even recognize half the {i}unspeakable symbol{/i}s on the
+    whiteboard"
 
-    "Heck"
+    "And why are there letters? In fact, there are more letters than there are
+    numbers. You thought this was math, not English"
 
-    nahiri "And because of the testing schedule this year preparations will
-    need to take place over the weekend"
+    "The {i}journey to eternity{/i} begins as you trudge your way through the
+    group slug of public education"
 
-    "Double Heck"
+    scene bg hall with dissolve
 
-    nahiri "Now we need to decide what our class will be doing for the
-    {i}festival{/i}"
+    "Class ends, leaving you with just enough {i}stamina{/i} to survive a trip
+    to the library"
 
-    nahiri "If you have an suggestion, write it down and you can turn it in
-    up front"
+    "And so that's exactly what you end up doing"
 
-    nahiri "I'd say there are no bad ideas, but after last year I think I'll
-    refrain"
-
-    "Some kids take out scraps of paper to write on"
-
-    "I don't have any ideas myself, and I was never really fond of Culture
-    Day to begin with"
-
-    "After some time a few students walk to the front of the class to deposit
-    their suggestions, but it's not many"
-
-    "When it seems like nobody else has anything to add, the class president
-    picks up the meager stack of papers"
-
-    nahiri "Well aren't you guys just a {i}well of ideas{/i} today"
-
-    nahiri "*sigh* Let's see what we have"
-
-    nahiri "\"{i}Death match{/i} in the quad, {i}last one standing{/i} gets
-    college admittance\""
-
-    nahiri "What? What does that even mean?"
-
-    nahir "And oh my gosh, we are not going to have a freaking {i}fight to the
-    death{i} in the middle of the school {i}festival{/i}"
-
-    nahiri "\"Human sacrificial rituals on the {i}altar of dementia{/i}\""
-
-    nahiri "What is wrong with all of you!? We are not going to be killing
-    people!"
-
-    nahiri "*sigh*"
-
-    nahiri "What the hell!? I'm not reading that!"
-
-    nahiri "Next"
-
-    nahiri "\"Drag race\""
-
-    nahiri "*sigh*"
-
-    nahiri "\"Baking contest\""
-
-    nahiri "Finally! Something actually reasonable!"
-
-    nahiri "And of course it ends there"
-
-    nahiri "Well, y'all're voting between the baking and I guess the
-    cross-dressing because everything else we absolutely cannot do"
-
-    nahiri "Write your vote on paper and leave it up front I guess"
-
-    show nahiri:
-        center
-        linear 1.0 left
-
-    "Nahiri unceremoniously dumps the suggestions in the trash before returning
-    to her seat"
-
-    hide nahiri
-
-    "I guess my choice is between a baking competition and a cross-dressing
-    event"
-
-    "Next to me, Ulamog is looking at me expectantly"
-
-    "I already know what he wants me to vote for"
-
-    "I don't have any particularly strong feelings either way, so I suppose
-    I'll help Ulamog's effort"
-
-    "I write down my vote and leave it on the teacher's desk"
-
-    show nahiri at center
-
-    "Once everyone's cast their vote Nahiri gathers the papers and starts
-    counting"
-
-    nahiri "And the winner is.. Baking"
-
-    nahiri "Although it was disturbingly close"
-
-    # bell rings
-
-    nahiri "Okay, we start preparations tomorrow, please be here"
-
-    if skip_flag:
-        jump day3_scene3
-    else:
-        jump day3_scene4
+    jump day3_scene3
 
     return
 
 label day3_scene3:
 
-    scene bg hall with dissolve
+    scene bg library 3 with dissolve
 
-    "Well it's third period and I absolutely do not have the mental energy
-    to deal with that hot mess of a class"
+    "You spot the usual suspects just where they're expected and head over to
+    them"
 
     scene bg library 2 with dissolve
-
-    scene bg library 1 with dissolve
-
-    show kozilek at center
-
-    "Kozilek is in the library as I've come to expect"
-
-    "I sit down across from him"
-
-    mc "So.. What's your class doing for culture day"
-
-    kozilek "A historical play or something. I don't really care"
-
-    mc "Does that mean I get to see you in a yukata?"
-
-    "Kozilek pushes his face further into his book"
-
-    kozilek "It's not that kind of play"
-
-    mc "Hmm.. A cat-maid outfit maybe?"
-
-    kozilek "N-no. I would never agree to something like that"
-
-    mc "Anime schoolgirl uniform"
-
-    kozilek "Shut up!"
-
-    mc "Now that's something I'd pay to see"
 
     jump day3_scene4
 

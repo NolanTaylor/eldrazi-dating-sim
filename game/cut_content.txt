@@ -1393,3 +1393,151 @@ label day2_scene6:
     "I wave goodbye to Chandra and step out of the library"
 
     return
+
+    show nahiri at center
+
+    nahiri "Ahem, so as you all know our school's Bunka no Hi celebration
+    will be held next week"
+
+    "I had absolutely no knowledge of this"
+
+    nahiri "You will all be required to help"
+
+    "Heck"
+
+    nahiri "And because of the testing schedule this year preparations will
+    need to take place over the weekend"
+
+    "Double Heck"
+
+    nahiri "Now we need to decide what our class will be doing for the
+    {i}festival{/i}"
+
+    nahiri "If you have an suggestion, write it down and you can turn it in
+    up front"
+
+    nahiri "I'd say there are no bad ideas, but after last year I think I'll
+    refrain"
+
+    "Some kids take out scraps of paper to write on"
+
+    "I don't have any ideas myself, and I was never really fond of Culture
+    Day to begin with"
+
+    "After some time a few students walk to the front of the class to deposit
+    their suggestions, but it's not many"
+
+    "When it seems like nobody else has anything to add, the class president
+    picks up the meager stack of papers"
+
+    nahiri "Well aren't you guys just a {i}well of ideas{/i} today"
+
+    nahiri "*sigh* Let's see what we have"
+
+    nahiri "\"{i}Death match{/i} in the quad, {i}last one standing{/i} gets
+    college admittance\""
+
+    nahiri "What? What does that even mean?"
+
+    nahir "And oh my gosh, we are not going to have a freaking {i}fight to the
+    death{i} in the middle of the school {i}festival{/i}"
+
+    nahiri "\"Human sacrificial rituals on the {i}altar of dementia{/i}\""
+
+    nahiri "What is wrong with all of you!? We are not going to be killing
+    people!"
+
+    nahiri "*sigh*"
+
+    nahiri "What the hell!? I'm not reading that!"
+
+    nahiri "Next"
+
+    nahiri "\"Drag race\""
+
+    nahiri "*sigh*"
+
+    nahiri "\"Baking contest\""
+
+    nahiri "Finally! Something actually reasonable!"
+
+    nahiri "And of course it ends there"
+
+    nahiri "Well, y'all're voting between the baking and I guess the
+    cross-dressing because everything else we absolutely cannot do"
+
+    nahiri "Write your vote on paper and leave it up front I guess"
+
+    show nahiri:
+        center
+        linear 1.0 left
+
+    "Nahiri unceremoniously dumps the suggestions in the trash before returning
+    to her seat"
+
+    hide nahiri
+
+    "I guess my choice is between a baking competition and a cross-dressing
+    event"
+
+    "Next to me, Ulamog is looking at me expectantly"
+
+    "I already know what he wants me to vote for"
+
+    "I don't have any particularly strong feelings either way, so I suppose
+    I'll help Ulamog's effort"
+
+    "I write down my vote and leave it on the teacher's desk"
+
+    show nahiri at center
+
+    "Once everyone's cast their vote Nahiri gathers the papers and starts
+    counting"
+
+    nahiri "And the winner is.. Baking"
+
+    nahiri "Although it was disturbingly close"
+
+    # bell rings
+
+    nahiri "Okay, we start preparations tomorrow, please be here"
+
+    if skip_flag:
+        jump day3_scene3
+    else:
+        jump day3_scene4
+
+        scene bg hall with dissolve
+
+        "Well it's third period and I absolutely do not have the mental energy
+        to deal with that hot mess of a class"
+
+        scene bg library 2 with dissolve
+
+        scene bg library 1 with dissolve
+
+        show kozilek at center
+
+        "Kozilek is in the library as I've come to expect"
+
+        "I sit down across from him"
+
+        mc "So.. What's your class doing for culture day"
+
+        kozilek "A historical play or something. I don't really care"
+
+        mc "Does that mean I get to see you in a yukata?"
+
+        "Kozilek pushes his face further into his book"
+
+        kozilek "It's not that kind of play"
+
+        mc "Hmm.. A cat-maid outfit maybe?"
+
+        kozilek "N-no. I would never agree to something like that"
+
+        mc "Anime schoolgirl uniform"
+
+        kozilek "Shut up!"
+
+        mc "Now that's something I'd pay to see"
