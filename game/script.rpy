@@ -1986,12 +1986,21 @@ label day2_scene3_nissa:
 
     show nissa at center
 
-    maybe have scene here?
+    if gender == "male":
+        nissa "Hey [name_1]-kun"
+    elif gender == "female":
+        nissa "Hey [name_1]-chan"
+    else:
+        nissa "Hey [name_1]-san"
+
+    nissa "Walk home with me?"
+
+    mc "Certainly"
+
+    show bg park with dissolve
 
     python:
         date_1 = "nissa"
-
-    jump day3_scene1
 
     return
 
