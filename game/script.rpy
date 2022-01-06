@@ -8,6 +8,11 @@ define emrakul = Character("Emrakul")
 
 # credit house of imagi studio
 
+# and add
+# “[Eldrazi Dating Sim] is unofficial Fan Content permitted under the Fan
+# Content Policy. Not approved/endorsed by Wizards. Portions of the materials
+# used are property of Wizards of the Coast. ©Wizards of the Coast LLC.”
+
 python:
     name_1 = "mc1"
     name_2 = "mc2"
@@ -839,6 +844,12 @@ label day2_scene2:
     "But the {i}crooked scales{/i} of 'The Big Horny' leave each side
     looking just as enticing as the other"
 
+    jump day2_scene3
+
+    return
+
+label day2_scene3:
+
     scene bg library 3 with dissolve
 
     "You end up walking through the library doors. Nissa and the rest are
@@ -898,15 +909,15 @@ label day2_scene2:
         "Now, who should you help organize?"
 
         "Ulamog":
-            jump day2_scene3_ulamog
+            jump day2_scene4_ulamog
         "Kozilek":
-            jump day2_scene3_kozilek
+            jump day2_scene4_kozilek
         "Emrakul":
-            jump day2_scene3_emrakul
+            jump day2_scene4_emrakul
         "Nissa":
-            jump day2_scene3_nissa
+            jump day2_scene4_nissa
 
-label day2_scene3_ulamog:
+label day2_scene4_ulamog:
 
     show ulamog at center
 
@@ -1062,11 +1073,11 @@ label day2_scene3_ulamog:
     python:
         date_1 = "ulamog"
 
-    jump day2_scene4
+    jump day2_scene5
 
     return
 
-label day2_scene3_kozilek:
+label day2_scene4_kozilek:
 
     "You spot Kozilek reading in the corner of the library sitting up against a
     bookshelf"
@@ -1274,11 +1285,11 @@ label day2_scene3_kozilek:
     python:
         date_1 = "kozilek"
 
-    jump day2_scene4
+    jump day2_scene5
 
     return
 
-label day2_scene3_emrakul:
+label day2_scene4_emrakul:
 
     show emrakul at center
 
@@ -1586,7 +1597,7 @@ label day2_scene3_emrakul:
 
     return
 
-label day2_scene3_nissa:
+label day2_scene4_nissa:
 
     show nissa at center
 
@@ -2057,7 +2068,7 @@ label day2_scene3_nissa:
 
     return
 
-label day2_scene4:
+label day2_scene5:
 
     show bg hall with dissolve
 
@@ -2210,93 +2221,599 @@ label day3_scene3:
 
     scene bg library 2 with dissolve
 
-    jump day3_scene4
+    show nissa at left
 
-    return
+    show ulamog at center
 
-label day3_scene4:
+    show kozilek at right
 
-    scene bg hall with dissolve
+    nissa "Well, the {i}festival{/i} starts on Monday so today's our last day
+    get everything together unless we want to be working over the weekend"
 
-    # bell rings
+    nissa "I guess we can get started then. Is everybody here?"
 
-    "And it's only lunch break"
+    "You look around the library. And count: 1, 2 humanoids; and 1, 2 eldrazi.
+    Hmmmm.. Upon closer inspection there seems to be a distinct lack of
+    Emrakul in the room"
 
-    "I grab some bread from the cafeteria and walk out to the courtyard"
+    ulamog "Oh no!! We're missing Emmy-chan!"
 
-    scene bg monele with dissolve # courtyard
+    "Yes, keen observation Ulamog"
 
-    "Chandra and Nissa are sitting together in their usual spot"
+    nissa "That's strange, she's never late. Where could she be?"
 
-    "Ulamog is uncharacteristically sitting alone on the opposite side of the
-    court"
+    scene bg library 2 with hpunch
+
+    emrakul "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    "Suddenly, a {i}resounding scream{/i} rings out from the hallway outside
+    the library"
+
+    nissa "What was that? It sounded like Emrakul-chan"
+
+    show ulamog:
+        center
+        linear 0.25 right
+
+    show kozilek:
+        right
+        linear 0.25 xpos 0.6
+
+    "Ulamog runs over to the windows"
+
+    ulamog "Emmy-chan!!"
+
+    emrakul "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    "Another shrill screech of pure, unadulterated {i}terror{/i} pierces the
+    hallways"
+
+    "That's strange"
+
+    "What could possibly scare the most powerful being in all the multiverse?"
+
+    "{i}Emrakul, the Aeons Torn{/i}, master of time and space"
+
+    "Who bends the {i}field of reality{/i} at a whim"
+
+    emrakul "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    "What deeply unfathomable {i}twisted abomination{/i}?"
+
+    "What unspeakable {i}horror of horrors{/i} could elicit such a {i}shriek
+    of dread{/i} from {i}Emrakul, the Promised End{/i}?"
+
+    emrakul "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    emrakul "FIFTEEN FLYING SQUIRRELS!!!!"
+
+    "..."
+
+    "Oh.."
+
+    "Yes, you suppose a massive flying {i}squirrel mob{/i} would be
+    understandably scary"
+
+    "But somehow you still feel an inkling of disillusionment"
+
+    show kozilek:
+        xpos 0.6
+        linear 0.25 xpos 1.0
+
+    show nissa:
+        left
+        linear 0.25 xpos 0.25
+
+    show chandra at left
+
+    show emrakul at center
+
+    emrakul "HEELLLLPP!"
+
+    "Emrakul bursts through the library doors with, indeed, fifteen flying
+    squirrels behind her"
+
+    "Everybody else stares blankly as the squirrels mindlessly flap around the
+    room"
+
+    nissa "Ummmm.."
+
+    chandra "Maybe we should.. Deal with that..?"
+
+    "A quick {i}blazing volley{/i} from Chandra {i}incinerate{/i}s the
+    squirrels and Emrakul breathes an audible sigh of relief"
+
+    show chandra:
+        left
+        linear 0.5 xpos -0.5
+
+    show emrakul:
+        center
+        linear 0.5 xpos 1.0
+
+    show ulamog:
+        right
+        linear 0.5 xpos 1.0
+
+    nissa "So..."
+
+    nissa "Everybody's here"
+
+    nissa "I guess we should get started.."
 
     menu:
-        "Sit with Chandra and Nissa":
-            jump day3_scene4_chandraNissa
-        "Sit with Ulamog":
+
+        "Help whom?"
+
+        "Ulamog":
             jump day3_scene4_ulamog
-
-    return
-
-label day3_scene4_chandraNissa:
-
-    # snitties?
+        "Kozilek":
+            jump day3_scene4_kozilek
+        "Emrakul":
+            jump day3_scene4_emrakul
+        "Nissa":
+            jump day3_scene4_nissa
 
     return
 
 label day3_scene4_ulamog:
 
-    "I walk across the field to Ulamog and take a take a seat next to him"
+    "You wander over to Ulamog who's scribbling down on a sheet of paper"
 
     show ulamog at center
 
-    mc "Hey Ulamog-kun"
+    "Just as you approach him, he stands up"
 
-    ulamog "[name_1]-senpai!"
+    if gender == "male":
+        ulamog "Oh. Hi [name_2]-kun"
+    elif gender == "female":
+        ulamog "Oh. Hi [name_2]-chan"
+    else:
+        ulamog "Oh. Hi [name_2]-san"
 
-    ulamog "Would you like some pie?"
+    ulamog "I was just about to go {i}hunt down{/i} all the stuff I need"
 
-    mc "You brought an entire pie to school?"
+    ulamog "Come with me!"
 
-    ulamog "Mmhm, I woke up extra early to bake it"
+    mc "Sure"
 
-    mc "Wow, I can't imagine waking up any earlier than it takes to get to
-    school"
+    scene bg hall with dissolve
 
-    ulamog "So..?"
+    if date_1 == "ulamog":
+        mc "So baking huh. What's it you're looking for then?"
 
-    mc "Yes, I would love some"
+        ulamog "Well, I was gonna check the kitchen we borrowed for all the
+        tools and ingredients we need"
 
-    "Ulamog cuts a generous slice and hands it to me on a paper plate"
+        mc "Sounds like a plan"
+    else:
+        mc "So what're you planning for your event?"
 
-    mc "So our class is doing a bake-off, huh"
+        ulamog "We're going to host a baking contest"
 
-    mc "It tastes like you'd be quite talented at that"
+        ulamog "So I was gonna check the school kitchen for all the tools and
+        ingredients we need"
 
-    ulamog "Well, Nahiri-chan thought baking might be too restrictive so we
-    broadened it to include cooking as well"
+        mc "Oh my, well that sounds ambitious"
 
-    mc "That sounds like a mess"
+        ulamog "It sounds fun!"
 
-    mc "I mean.. Uh, it sounds like a lot of fun"
+    scene bg kitchen with dissolve
 
-    ulamog "You'll be helping with preparations right?"
+    "You and Ulamog arrive at the kitchen you'll be using"
 
-    mc "I dunno.. My weekends are something of an inestimable treasure for all
-    the world holds dear"
+    "It's significantly more impressive than you expected from this school"
 
-    ulamog "Please, I think you would have a lot of fun"
+    ulamog "Alright, so we just need to clean it and make sure it has all the
+    supplies"
 
-    # bell rings
+    show ulamog:
+        center
+        linear 2.0 xpos 2.0
+
+    scene bg kitchen with dissolve
+
+    show ulamog at center
+
+    ulamog "Ooooo! It looks so professional"
+
+    ulamog "I'm so excited! I can't wait to cook in here!"
+
+    show ulamog:
+        center
+        linear 0.25 left
+
+    "Ulamog scurries around the room, opening every cabinet and drawer like
+    a {i}rummaging goblin{/i}"
+
+    show ulamog:
+        left
+        linear 0.5 right
+
+    ulamog "Woah! So many utensils"
+
+    show ulamog at center with fade
+
+    "After Ulamog is done beholding the kitchen he pulls out a checklist of
+    tools and cooking ware"
+
+    "You don't know the names of many them, so you just read them off as Ulamog
+    finds them"
+
+    mc "Stainless steel cooking pot"
+
+    ulamog "Check"
+
+    mc "Cast iron wok"
+
+    ulamog "Check"
+
+    mc "Knives"
+
+    ulamog "Many"
+
+    mc "Cutting boards"
+
+    ulamog "Check"
+
+    mc "Food processor"
+
+    ulamog "Would a food processor put food tokens from exile into the
+    graveyard?"
+
+    mc "I have no clue, do we have one or not?"
+
+    ulamog "No, no. Food tokens, not clue tokens"
+
+    mc "Tokens can't exist outside of the battlefield"
+
+    ulamog "What about {i}bone rattler{/i}?"
 
     mc "..."
 
-    mc "Well, I'll think about it. Thanks for the pie Ulamog-kun"
+    mc "Do we have a food processor or not?"
 
-    jump day4_scene1
+    ulamog "Oh, um.. Yes we do"
 
-    # fade to black?
+    mc "{i}Pulverize{i/}r"
+
+    ulamog "Check"
+
+    mc "Meat tenderizer"
+
+    ulamog "Check"
+
+    mc "These are very violent names"
+
+    ulamog "It's fine, don't worry about it"
+
+    mc "Shredder"
+
+    ulamog "Let's see..."
+
+    mc "This can't be real right?"
+
+    ulamog "Ah, here it is"
+
+    mc "Geez, okay"
+
+    mc "Guillotine!?"
+
+    ulamog "Um.. Let me check"
+
+    mc "Why would we possibly need a guillotine in the kitchen?"
+
+    ulamog "You've never used a guillotine before?"
+
+    mc "Can't say I have"
+
+    ulamog "The guillotine is a staple of any kitchen arsenal"
+
+    ulamog "It brings the oft lacking {i}gratuitous violence{/i} into home
+    gastronomy"
+
+    ulamog "Vive la révolution!"
+
+    mc "Uhh.. So is there actually a guillotine in the school kitchen?"
+
+    ulamog "Oui oui, je viens d'en trouver un dans ce placard"
+
+    mc "Oh, you actually speak French?"
+
+    ulamog "Well of course, it's easy!"
+
+    mc "Really? Will you teach me?"
+
+    ulamog "Teach you?"
+
+    mc "Yeah, teach me. Since you seem to be quite fluent"
+
+    ulamog "Oh, silly. You can't learn French"
+
+    mc "What?"
+
+    ulamog "Didn't you know? You only gain the ability to speak French by
+    inserting a baguette into your asshole"
+
+    mc "I'm sorry, what the fuck?"
+
+    ulamog "In fact, most Frenchmen are born with baguettes already in their
+    ass"
+
+    mc "No, no. I wasn't being rhetorical, it's a genuine question. What the
+    actual fuck?"
+
+    ulamog "C'mon, I'll show you!"
+
+    scene bg bathroom with dissolve
+
+    "Ulamog takes your hand and pulls you into a nearby bathroom"
+
+    "He shoves you into a stall and manifests a 60cm baguette seemingly from
+    thin air"
+
+    ulamog "Now pull your pants down and bend over"
+
+    menu:
+
+        mc "Um..."
+
+        "Do as Ulamog says":
+            jump baguette_comply
+        "Blow the rape whistle":
+            jump baguette_whistle
+
+    return
+
+label baguette_comply:
+
+    "You do as Ulamog says"
+
+    "You rest your hands on the toilet seat and {i}brace for impact{/i}"
+
+    "You can see Ulamog preparing the baguette in the reflection of the
+    porcelain"
+
+    "Then it starts"
+
+    "One centimeter"
+
+    "Then another"
+
+    mc "Is this really necessary?"
+
+    ulamog "It's this, or take your chances with the Duolingo owl"
+
+    mc "Continue then"
+
+    "You feel the crusty exterior of the bread {i}explore{/i} deeper inside
+    you"
+
+    "Suddenly, you feel a {i}rush of knowledge{/i} flowing into you mind"
+
+    "Words fill your head in a {i}swirling torrent{/i} of language"
+
+    "The baguette continues, pushing further into your rectum"
+
+    "And as the doughy enema reaches its climax, a {i}flood of recollection{/i}
+    washes over you"
+
+    "Vocabulary, grammar, pronunciation. In a {i}flash of insight{/i} you've
+    gained the entirety of the French language without so much as picking up
+    a book"
+
+    jump day3_scene4_ulamog_french
+
+    return
+
+label baguette_whistle:
+
+    "You pull the rape whistle from your pocket and blow into it as hard as you
+    can"
+
+    # whistle sound
+
+    "The shrill sound {i}reverberate{i}s around the room"
+
+    mc "RAPE!!!"
+
+    "Then, as if summoned, a blue light tears through the air opening a
+    {i}planar portal{/i} in the bathroom stall"
+
+    "From the portal, out step two sharp men in uniforms"
+
+    "And in heavy French accents they start yelling"
+
+    "Man 1" "Arret!"
+
+    "Man 2" "Au sol!"
+
+    "The first man tackles Ulamog to the floor and pins their arms down"
+
+    ulamog "Wait! Wait! I can explain!"
+
+    if gender == "male":
+        "Man 2" "There will be no explanation necessary. How dare you try to
+        violate this young man"
+    elif gender == "female":
+        "Man 2" "There will be no explanation necessary. How dare you try to
+        violate this young lady"
+    else:
+        "Man 2" "There will be no explanation necessary. How dare you try to
+        violate this young person"
+
+    ulamog "No, please! I was just trying to teach my friend French"
+
+    "Man 1" "Hm?"
+
+    ulamog "See, I have the baguette in my hand"
+
+    "Man 2" "Well, so he does"
+
+    "Man 1" "Oh my, we are terribly sorry"
+
+    "The man removes himself from Ulamog"
+
+    "Man 2" "Please, continue. French is such a beautiful language"
+
+    mc "Wait! What!?"
+
+    "The men step back into the portal and {i}disappear{/i} from reality"
+
+    "Ulamog picks himself up from the bathroom floor and grabs the baguette"
+
+    ulamog "So?"
+
+    menu:
+
+        ulamog "So?"
+
+        "Continue":
+            jump baguette_whistle_continue
+        "Decline":
+            jump baguette_whistle_decline
+
+    return
+
+label baguette_whistle_continue:
+
+    mc "Okay"
+
+    ulamog "Then you'll do it?"
+
+    mc "Sure, I guess"
+
+    ulamog "Wonderful!"
+
+    jump baguette_comply
+
+    return
+
+label baguette_whistle_decline:
+
+    mc "Please, I'd rather not do this"
+
+    ulamog "Oh, okay.."
+
+    "Ulamog lowers the baguette looking dejected"
+
+    scene bg hall with dissolve
+
+    "You awkwardly leave the bathroom without any more words"
+
+    jump day3_scene4_ulamog_english
+
+    return
+
+label day3_scene4_ulamog_french:
+
+    scene bg hall with dissolve
+
+    show ulamog at center
+
+    mc "C'est vraiment fou, je peux parler français maintenant"
+
+    ulamog "Isn't it great!?"
+
+    mc "I don't know if I should be impressed or concerned"
+
+    ulamog "Impressed!"
+
+    mc "Concerned it is then"
+
+    jump day3_scene4_ulamog_enlgish
+
+    return
+
+label day3_scene4_ulamog_english:
+
+    scene bg library 3 with dissolve
+
+    "You return to the library just as the rest of the group is wrapping up"
+
+    scene bg library 2 with dissolve
+
+    show ulamog at center
+
+    mc "So did you find everything you needed"
+
+    ulamog "Yep, I think we're ready. Now I just need to show up to school
+    early on Monday so I can set up"
+
+    if gender == "male":
+        ulamog "Come help me [name_2]-kun!"
+    elif gender == "female":
+        ulamog "Come help me [name_2]-chan!"
+    else:
+        ulamog "Come help me [name_2]-san!"
+
+    mc "Uh, and wake up at 6:00am?"
+
+    ulamog "C'mon it'll be fun"
+
+    mc "I'll set my quantum alarm clock. Might happen, might not"
+
+    ulamog "Hmmm.. Okay. Well, either way I'll see you Monday right?"
+
+    mc "Yeah, I'll be there"
+
+    ulamog "Yay!"
+
+    python:
+        date_2 = "ulamog"
+
+    jump day3_scene5
+
+    return
+
+label day3_scene4_kozilek:
+
+    closet scene
+
+    return
+
+label day3_scene4_emrakul:
+
+    more hentai or smth idk
+
+    return
+
+label day3_scene4_nissa:
+
+    snitties?
+
+    return
+
+label day3_scene5:
+
+    scene bg hall with dissolve
+
+    "Nissa's staying late to help everybody with final preparations. You're
+    already pretty drained from today so you decide to walk home by yourself"
+
+    "She'll understand you're sure"
+
+    scene bg park with dissolve
+
+    "Despite only starting to walk with Nissa for the past couple days, the
+    {i}isolate{/i}d walk home feels unusually lonesome"
+
+    "You're left alone with only your {i}wandering mind{/i} to keep you
+    company"
+
+    if date_2 == "ulamog":
+        "Your {i}train of thought{/i} inevitably drifts toward Ulamog"
+    elif date_2 == "kozilek":
+        "Your {i}train of thought{/i} inevitably drifts toward Kozilek"
+    elif date_2 == "emrakul":
+        "Your {i}train of thought{/i} inevitably drifts toward Emrakul"
+    elif date_2 == "nissa":
+        "Your {i}train of thought{/i} inevitably drifts toward Nissa and
+        Chandra"
 
     return
 
@@ -2368,7 +2885,7 @@ label day4_scene2:
 
 label day4_scene2_kozilek:
 
-    "Y'know, I'm starting to have {i}second thoughts{/i} about all this"
+    "Y'know, I'm starting to have yee haw about all this"
 
     "Everybody's leaving the classroom, already knowing what to do"
 
@@ -2647,297 +3164,3 @@ label day4_scene2_ulamog:
     scene bg hall with dissolve
 
     ulamog "Okay, so we're borrowing the school kitchen for our event"
-
-    ulamog "We needs to clean it and make sure it has all the supplies"
-
-    show ulamog:
-        center
-        linear 2.0 xpos 2.0
-
-    scene bg kitchen with dissolve
-
-    show ulamog at center
-
-    ulamog "Ooooo! It looks so professional"
-
-    ulamog "I'm so excited! I can't wait to cook in here!"
-
-    show ulamog:
-        center
-        linear 0.25 left
-
-    "Ulamog scurries around the room, opening every cabinet and drawer like
-    a {i}rummaging goblin{/i}"
-
-    show ulamog:
-        left
-        linear 0.5 right
-
-    ulamog "Woah! So many utensils"
-
-    show ulamog at center with fade
-
-    "After Ulamog is done beholding the kitchen he pulls out a checklist of
-    tools and cooking ware"
-
-    "I don't know the names of many them, so I just read them off as Ulamog
-    finds them"
-
-    mc "Stainless steel cooking pot"
-
-    ulamog "Check"
-
-    mc "Cast iron wok"
-
-    ulamog "Check"
-
-    mc "Knives"
-
-    ulamog "Many"
-
-    mc "Cutting boards"
-
-    ulamog "Check"
-
-    mc "Food processor"
-
-    ulamog "Would a food processor put food tokens from exile into the
-    graveyard?"
-
-    mc "I have no clue, do we have one or not?"
-
-    ulamog "No, no. Food tokens, not clue tokens"
-
-    mc "..."
-
-    mc "Do we have a food processor or not?"
-
-    ulamog "Oh, um.. Yes we do"
-
-    mc "Pulverizer"
-
-    ulamog "Check"
-
-    mc "Meat tenderizer"
-
-    ulamog "Check"
-
-    mc "These are very violent names"
-
-    ulamog "It's fine, don't worry about it"
-
-    mc "Shredder"
-
-    ulamog "Let's see..."
-
-    mc "This can't be real right?"
-
-    ulamog "Ah, here it is"
-
-    mc "Geez, okay"
-
-    mc "Guillotine!?"
-
-    ulamog "Um.. Let me check"
-
-    mc "Why would we possibly need a guillotine in the kitchen?"
-
-    ulamog "You've never used a guillotine before?"
-
-    mc "Can't say I have"
-
-    ulamog "The guillotine is a staple of any kitchen arsenal"
-
-    # shameless inserts from the one npr show with the kitche executioner
-    # also use that to segue into the french thing (viva la revolution)
-
-    # somehow get ulamog to speak in french, i dunno..
-
-    return
-
-label baguette_scene:
-
-    scene bg hass with dissolve
-
-    show ulamog at center
-
-    mc "Wow Ulamog, you know French?"
-
-    ulamog "Well of course, it's easy!"
-
-    mc "Really? Will you teach me?"
-
-    ulamog "Teach you?"
-
-    mc "Yeah, teach me. Since you seem to be quite fluent"
-
-    ulamog "Oh, silly senpai. You can't learn French"
-
-    mc "What?"
-
-    ulamog "Didn't you know? You only gain the ability to speak French by
-    inserting a baguette into your asshole"
-
-    mc "I'm sorry, what the fuck?"
-
-    ulamog "In fact, most Frenchmen are born with baguettes already in their
-    ass"
-
-    mc "No, no. I wasn't being rhetorical, it's a genuine question. What the
-    actual fuck?"
-
-    ulamog "C'mon, I'll show you!"
-
-    scene bg bathroom with dissolve
-
-    "Ulamog takes my hand and pulls me into a nearby bathroom"
-
-    "He shoves me into a stall and manifests a 60cm baguette seemingly from
-    thin air"
-
-    ulamog "Now pull your pants down and bend over"
-
-    menu:
-
-        mc "Um..."
-
-        "Do as Ulamog says":
-            jump baguette_comply
-        "Blow the rape whistle":
-            jump baguette_whistle
-
-    return
-
-label baguette_comply:
-
-    "I do as Ulamog says"
-
-    "I rest my hands on the toilet seat and {i}brace for impact{/i}"
-
-    "I can see Ulamog preparing the baguette in the reflection of the
-    porcelain"
-
-    "Then it starts"
-
-    "One centimeter"
-
-    "Then another"
-
-    mc "Is this really necessary?"
-
-    ulamog "It's this, or take your chances with the duolingo owl"
-
-    mc "Continue then"
-
-    "I feel the crusty exterior of the bread {i}explore{/i} deeper inside me"
-
-    "Suddenly I feel a {i}rush of knowledge{/i} flowing into my mind"
-
-    "Words fill my mind in a {i}swirling torrent{/i} of language"
-
-    "The baguette continues, pushing further into my asshole"
-
-    "And as the doughy enema reaches its climax, a {i}flood of recollection{/i}
-    washes over me"
-
-    "Vocabulary, grammar, pronunciation. In a {i}flash of insight{/i} I've
-    gained the entirety of the French language without so much as picking up
-    a book"
-
-    return
-
-label baguette_whistle:
-
-    "I pull the rape whistle from my pocket and blow into it as hard as I can"
-
-    # whistle sound
-
-    "The shrill sound {i}reverberate{i}s around the room"
-
-    mc "RAPE!!!"
-
-    "Then, as if summoned, a blue light tears through the air opening a
-    portal in the bathroom stall"
-
-    "From the portal, out step two sharp men in uniforms"
-
-    "And in heavy French accents they start yelling"
-
-    "Man 1" "Arret!"
-
-    "Man 2" "Au sol!"
-
-    "The first man tackles Ulamog to the floor and pins their arms down"
-
-    ulamog "Wait! Wait! I can explain!"
-
-    if gender == "male":
-        "Man 2" "There will be no explanation necessary. How dare you try to
-        violate this young man"
-    elif gender == "female":
-        "Man 2" "There will be no explanation necessary. How dare you try to
-        violate this young lady"
-    else:
-        "Man 2" "There will be no explanation necessary. How dare you try to
-        violate this young person"
-
-    ulamog "No, please! I was just trying to teach my friend French"
-
-    "Man 1" "Hm?"
-
-    ulamog "See, I have the baguette in my hand"
-
-    "Man 2" "Well, so he does"
-
-    "Man 1" "Oh my, we are terribly sorry"
-
-    "The man removes himself from Ulamog"
-
-    "Man 2" "Please, continue. French is such a beautiful language"
-
-    mc "Wait! What!?"
-
-    "The men step back into the portal and {i}disappear{/i} from reality"
-
-    "Ulamog picks himself up from the bathroom floor and grabs the baguette"
-
-    ulamog "So?"
-
-    menu:
-
-        ulamog "So?"
-
-        "Continue":
-            jump baguette_whistle_continue
-        "Decline":
-            jump baguette_whistle_decline
-
-    return
-
-label baguette_whistle_continue:
-
-    mc "Okay"
-
-    ulamog "Then you'll do it?"
-
-    mc "Sure, I guess"
-
-    ulamog "Wonderful!"
-
-    jump baguette_comply
-
-    return
-
-label baguette_whistle_decline:
-
-    mc "Please, I'd rather not do this"
-
-    ulamog "Oh, okay.."
-
-    "Ulamog lowers the baguette looking dejected"
-
-    scene bg hall with dissolve
-
-    "We awkwardly leave the bathroom without any more words"
-
-    return

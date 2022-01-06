@@ -1541,3 +1541,75 @@ label day2_scene6:
         kozilek "Shut up!"
 
         mc "Now that's something I'd pay to see"
+
+        scene bg hall with dissolve
+
+        # bell rings
+
+        "And it's only lunch break"
+
+        "I grab some bread from the cafeteria and walk out to the courtyard"
+
+        scene bg monele with dissolve # courtyard
+
+        "Chandra and Nissa are sitting together in their usual spot"
+
+        "Ulamog is uncharacteristically sitting alone on the opposite side of the
+        court"
+
+        menu:
+            "Sit with Chandra and Nissa":
+                jump day3_scene4_chandraNissa
+            "Sit with Ulamog":
+                jump day3_scene4_ulamog
+
+                "I walk across the field to Ulamog and take a take a seat next to him"
+
+                show ulamog at center
+
+                mc "Hey Ulamog-kun"
+
+                ulamog "[name_1]-senpai!"
+
+                ulamog "Would you like some pie?"
+
+                mc "You brought an entire pie to school?"
+
+                ulamog "Mmhm, I woke up extra early to bake it"
+
+                mc "Wow, I can't imagine waking up any earlier than it takes to get to
+                school"
+
+                ulamog "So..?"
+
+                mc "Yes, I would love some"
+
+                "Ulamog cuts a generous slice and hands it to me on a paper plate"
+
+                mc "So our class is doing a bake-off, huh"
+
+                mc "It tastes like you'd be quite talented at that"
+
+                ulamog "Well, Nahiri-chan thought baking might be too restrictive so we
+                broadened it to include cooking as well"
+
+                mc "That sounds like a mess"
+
+                mc "I mean.. Uh, it sounds like a lot of fun"
+
+                ulamog "You'll be helping with preparations right?"
+
+                mc "I dunno.. My weekends are something of an inestimable treasure for all
+                the world holds dear"
+
+                ulamog "Please, I think you would have a lot of fun"
+
+                # bell rings
+
+                mc "..."
+
+                mc "Well, I'll think about it. Thanks for the pie Ulamog-kun"
+
+                jump day4_scene1
+
+                # fade to black?
