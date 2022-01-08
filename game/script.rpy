@@ -1202,7 +1202,7 @@ label day2_scene4_kozilek:
 
     kozilek "..."
 
-    "The next several minutes pass in awkward silence"
+    "The next several minutes pass in awkward {i}silence{/i}"
 
     "Well, awkward for Kozilek, you're more just amused"
 
@@ -2772,7 +2772,278 @@ label day3_scene4_ulamog_english:
 
 label day3_scene4_kozilek:
 
-    closet scene
+    "You wander over to Kozilek who's sorting papers on the table"
+
+    show kozilek at center
+
+    "As you approach, Kozilek stands up and shoves the papers at you"
+
+    kozilek "Hold these"
+
+    mc "Oh, uhh.."
+
+    "You take the papers before your mouth can formulate a response"
+
+    kozilek "This way"
+
+    "Kozilek walks out but stops at the library exit and turn to you"
+
+    kozilek "Ugh, could you be any slower?"
+
+    "Kozilek stares at you. You suppose you should follow him"
+
+    scene bg hall with dissolve
+
+    mc "Wait, so what exactly are we doing?"
+
+    kozilek "We're gathering props, okay, just shut up and follow me"
+
+    mc "Fair enough"
+
+    "You look down at the papers in your hands"
+
+    "It looks to be a list, although the chirography balances the fine
+    line between 'barely legible' and 'demonic scratchings'"
+
+    if date_1 == "kozilek":
+        mc "Forgive me if I ask what this list is of"
+
+        kozilek "Just stuff we need. I already got the rest of my class ready
+        with scripts, we just need to get the rest of that list"
+    else:
+        mc "So what are the props for?"
+
+        kozilek "Our class is doing a play for the {i}festival{/i}"
+
+        kozilek "We need props for a play, so were getting some, it's not that
+        difficult"
+
+    kozilek "I'm only asking you to help because you weren't doing anything and
+    the rest of our class is busy"
+
+    kozilek "So don't get the wrong idea"
+
+    kozilek "It's not like I like you or anything, baka" # we did it bois
+
+    "You suddenly feel a great disturbance in the fabric of reality. As if a
+    thousands weebs cried out and were suddenly {i}silence{/i}d"
+
+    mc "Understandable"
+
+    scene bg closet with dissolve
+
+    mc "A janitorial closet?"
+
+    kozilek "One of the items we need is a mop, the school said we could
+    borrow one from here"
+
+    mc "Huh. Well, it's not my place to question it"
+
+    # door opening sound
+
+    hide kozilek
+
+    scene bg closet open with dissolve
+    # mmm you know exactly what's going here
+
+    "..."
+
+    mc "Um..."
+
+    # door slamming sound
+
+    scene bg hall # with dissolve?
+
+    show kozilek
+
+    kozilek "..."
+
+    kozilek "There's another custodial closet on the other side of school"
+
+    mc "Yeah, let's do that"
+
+    kozilek "..."
+
+    mc "..."
+
+    kozilek "..."
+
+    scene bg closet with dissolve
+
+    kozilek "Okay, this is it. Just get in there and find a mop, don't
+    make this any more awkward than it needs to be"
+
+    mc "Why? Is this awkward for you?"
+
+    kozilek "No!"
+
+    kozilek "I mean.. Just go!"
+
+    hide kozilek
+
+    scene bg closet dark with dissolve
+
+    "You and Kozilek enter the closet and hear the door swing close behind you"
+
+    "The light from the hallway disperses and you're {i}cast into darkness{/i}"
+
+    mc "It's dark in here"
+
+    kozilek "Turn on the light, idiot"
+
+    mc "I can't find it"
+
+    kozilek "Ugh"
+
+    mc "..."
+
+    mc "I don't think there's even a light in here"
+
+    kozilek "Okay! Then just find the mop, you don't need a light!"
+
+    mc "Alright"
+
+    # shuffling noises
+
+    mc "..."
+
+    mc "I think I found the mop"
+
+    kozilek "You think?"
+
+    mc "I don't know, it's dark"
+
+    mc "I can't reach it, can you help?"
+
+    kozilek "Ugh, fine. But I'm not doing this for you"
+
+    show kozilek at center
+
+    mc "Sure"
+
+    kozilek "Shut up!"
+
+    kozilek "Where?"
+
+    "You point"
+
+    kozilek "Ugh"
+
+    # more shuffling noises
+
+    "Kozilek grabs the mop and pulls"
+
+    # crashing sound
+
+    # delay, then door slamming sound
+
+    hide kozilek
+
+    # scene bg black without any transition
+
+    kozilek "AAAH!"
+
+    kozilek "What did you do!?!"
+
+    mc "I didn't do anything!"
+
+    kozilek "Get it off!"
+
+    mc "I can't see anything"
+
+    # more crashing noises
+
+    kozilek "Just AAAAAH!"
+
+    mc "Are you okay"
+
+    "You {i}fumble{/i} your hand through the {i}darkness{/i} until you feel
+    Kozilek's bony exterior"
+
+    kozilek "Don't touch me!"
+
+    "Despite what he says, Kozilek grabs your hand"
+
+    "You can't see anything in the pitch black closet, but holding Kozilek's
+    hand in yours is enough to get your heart racing" # hnnnnngh, the cringe
+
+    "You both sit there in {i}deafening silence{/i} for a bit too long"
+
+    "After a mildly discomforting amount of time a crack of
+    {i}blinding light{/i} casts itself into the closet and the door gives way
+    behind you"
+
+    scene bg classroom frontleft with dissolve
+
+    "You and Kozilek tumble to the cold tiled floor of the classroom. Above you
+    stands Chandra with a mixture of disappointment and amusement on her face"
+
+    show kozilek at center
+
+    show chandra at left
+
+    mc "Oh, uhh.. Thanks Nalaar-san"
+
+    chandra "Y'all were literally up against the door"
+
+    chandra "It wasn't even locked or anything"
+
+    kozilek "It was dark.."
+
+    chandra "What were y'all even doing in there?"
+
+    mc "Well--"
+
+    chandra "Actually, y'know what? Nevermind, I don't want to know"
+
+    show chandra:
+        left
+        linear 1.0 xpos -1.0
+
+    show kozilek:
+        xpos 0.5
+        linear 1.0 center
+
+        #--
+
+    mc "Is that everything you need then?"
+
+    kozilek "Yeah, I think so"
+
+    mc "So when do I get to see this play?"
+
+    kozilek "I don't really know"
+
+    mc "Surely you must, you're helping prepare it"
+
+    kozilek "I guess I wasn't really paying attention"
+
+    mc "What role will you be playing?"
+
+    kozilek "Just a minor part, it really doesn't matter"
+
+    mc "You know I'm going to see it. So I'll know by the end of the week
+    anyway"
+
+    kozilek "It's just a stupid play, you shouldn't even bother coming"
+
+    mc "Challenge accepted"
+
+    kozilek "No! I mean.. It's embarrassing"
+
+    mc "Embarrassing?"
+
+    kozilek "Because it's you!"
+
+    kozilek "I mean.. It would be.. For anybody..."
+
+    kozilek "Just shut up! Baka!"
+
+    show kozilek:
+        center
+        linear 0.5 xpos -1.0
+
+    # running and door slamming sound
 
     return
 
@@ -2816,351 +3087,3 @@ label day3_scene5:
         Chandra"
 
     return
-
-label day4_scene1:
-
-    scene bg bedroom with dissolve
-
-    "Saturday"
-
-    "Saturdays are the best days"
-
-    "Unlike Fridays, you get the entire day free. And unlike Sundays, there's
-    no homework or the lingering {i}dread{/i} of the following Monday"
-
-    "Saturdays truly are the best"
-
-    "But not this Saturday"
-
-    "No, today I need to help my class with preparations"
-
-    "They say it's mandatory, but they prolly wouldn't even notice if I
-    ditched"
-
-    jump day4_scene2
-
-    return
-
-label day4_scene2:
-
-    scene bg schoolgrounds with dissolve
-
-    "Despite my *not derisions, I find I've ended up at school anyways"
-
-    "Starting since 2002 schools have stopped requiring students to attend
-    on Saturdays. I'm starting to realize how much I took that for granted"
-    # ^ fact check this pls
-
-    scene bg hall with dissolve
-
-    "I'm a bit late, so the halls are pretty empty"
-
-    "I stand in front of my homeroom door. Looking inside, not even half the
-    class showed up. Maybe this was a mistake"
-
-    "I mentally prepare myself for whatever awaits me inside"
-
-    # door opening sound
-
-    scene bg classroom frontleft with dissolve
-
-    show nahiri at right
-
-    if gender == "male":
-        nahiri "[name_2]-kun, wow. You are the last person I expected to show
-        up today"
-    else:
-        nahiri "[name_2]-san, wow. You are the last person I expected to show
-        up today"
-
-    nahiri "Well, I already explained everything. And I'm not doing it twice,
-    so ask someone for the details and get to work"
-
-    if kozilek_points > 10:
-        jump day4_scene2_kozilek
-    else:
-        jump day4_scene2_ulamog
-
-    return
-
-label day4_scene2_kozilek:
-
-    "Y'know, I'm starting to have yee haw about all this"
-
-    "Everybody's leaving the classroom, already knowing what to do"
-
-    scene bg hall with dissolve
-
-    "I stand outside feeling clueless"
-
-    "I know I should ask somebody what I can help with, but I really don't have
-    the motivation to bother anybody about it"
-
-    "It's not even my fault. Nahiri absolutely could've explained whatever
-    she needed to twice and this all could've been avoided"
-
-    show kozilek at center
-
-    kozilek "Hey!"
-
-    mc "Kozilek-kun?"
-
-    kozilek "I need you to help with our class' event"
-
-    mc "Your class isn't doing that?"
-
-    kozilek "Well, uh.. Not enough people showed up so..."
-
-    mc "I'd be happy to help"
-
-    kozilek "Oh, okay"
-
-    mc "What do you need help with?"
-
-    show kozilek:
-        center
-        linear 2.0 xpos 2.0
-
-    kozilek "This way"
-
-    "Kozilek turns around and walks down the hallway without answering my
-    question"
-
-    "I follow"
-
-    show kozilek at center
-
-    mc "So remind me again, what is you class doing?"
-
-    kozilek "Some kind of play, I don't really care"
-
-    mc "And how are we helping?"
-
-    kozilek "We're gathering props, okay, just shut up and follow me"
-
-    kozilek "I'm only asking you to help because our class ran out of people"
-
-    kozilek "So don't get the wrong idea"
-
-    kozilek "It's not like I like you or anything, baka" # we did it bois
-
-    "Fair enough"
-
-    # scene bg closet with dissolve
-
-    mc "A janitor's closet?"
-
-    kozilek "We need a mop, our class president said we could borrow one from
-    here"
-
-    # door opening sound
-
-    hide kozilek
-
-    # scene bg closet open with dissolve
-    # mmm you know exactly what's going here
-
-    "..."
-
-    mc "Um..."
-
-    # door slamming sound
-
-    scene bg hall # with dissolve?
-
-    show kozilek
-
-    kozilek "..."
-
-    kozilek "There's another custodial closet on the other side of school"
-
-    mc "Yeah, let's do that"
-
-    kozilek "..."
-
-    mc "..."
-
-    kozilek "..."
-
-    # scene bg closet with dissolve
-
-    kozilek "Okay, this is it. Just get in there and find a mop, don't make
-    this any more awkward than it needs to be"
-
-    mc "Why? Is this awkward for you?"
-
-    kozilek "No!"
-
-    kozilek "I mean.. Just go!"
-
-    mc "Hai hai, wakatta"
-
-    hide kozilek
-
-    # scene bg closet dark with dissolve
-
-    mc "It's dark in here"
-
-    kozilek "Turn on the light, idiot"
-
-    mc "I can't find it"
-
-    kozilek "Ugh"
-
-    mc "..."
-
-    mc "I don't think there's even a light in here"
-
-    kozilek "Okay! Then just find the mop, you don't need a light!"
-
-    mc "Alright"
-
-    # shuffling noises
-
-    mc "..."
-
-    mc "I think I found the mop"
-
-    kozilek "You think?"
-
-    mc "I don't know, it's dark"
-
-    mc "I can't reach it, can you help?"
-
-    kozilek "Ugh, fine. But I'm not doing this for you"
-
-    show kozilek at center
-
-    mc "Sure"
-
-    kozilek "Shut up!"
-
-    kozilek "Where?"
-
-    "I point"
-
-    kozilek "Ugh"
-
-    # more shuffling noises
-
-    "Kozilek grabs the mop and pulls"
-
-    # crashing sound
-
-    # delay, then door slamming sound
-
-    hide kozilek
-
-    # scene bg black without any transition
-
-    kozilek "AAAH!"
-
-    kozilek "What did you do!?!"
-
-    mc "I didn't do anything!"
-
-    kozilek "Get it off!"
-
-    mc "I can't see anything"
-
-    # more crashing noises
-
-    kozilek "Just AAAAAH!"
-
-    mc "Are you okay"
-
-    "I fumble my hand through the dark until I can feel Kozilek's bony
-    exterior"
-
-    kozilek "Don't touch me!"
-
-    "Despite what he says, Kozilek grabs my hand"
-
-    "I can't see anything in the pitch black closet, but holding Kozilek's
-    hand in mine is enough to get my heart racing" # hnnnnngh, the cringe
-
-    scene bg classroom frontleft with dissolve
-
-    show kozilek at center
-
-    show chandra at left
-
-    mc "Thanks again Nalaar-san"
-
-    chandra "Y'all were literally up against the door"
-
-    chandra "It wasn't even locked or anything"
-
-    kozilek "It was dark.."
-
-    chandra "What were y'all even doing in there?"
-
-    mc "Well--"
-
-    chandra "Actually, y'know what? Nevermind, I don't want to know"
-
-    show chandra:
-        left
-        linear 1.0 xpos -1.0
-
-    show kozilek:
-        xpos 0.5
-        linear 1.0 center
-
-    mc "Is that everything you need then?"
-
-    kozilek "Yeah, I think so"
-
-    mc "So when do I get to see this play?"
-
-    kozilek "I don't really know"
-
-    mc "Surely you must, you're helping prepare it"
-
-    kozilek "I guess I wasn't really paying attention"
-
-    mc "What role will you be playing?"
-
-    kozilek "Just a minor part, it really doesn't matter"
-
-    mc "You know I'm going to see it. So I'll know by the end of the week
-    anyway"
-
-    kozilek "It's just a stupid play, you shouldn't even bother coming"
-
-    mc "Challenge accepted"
-
-    kozilek "No! I mean.. It's embarrassing"
-
-    mc "Embarrassing?"
-
-    kozilek "Because it's you!"
-
-    kozilek "I mean.. It would be.. For anybody..."
-
-    kozilek "Just shut up! Baka!"
-
-    show kozilek:
-        center
-        linear 0.5 xpos -1.0
-
-    # running and door slamming sound
-
-    return
-
-label day4_scene2_ulamog:
-
-    show ulamog at center
-
-    ulamog "I can help you senpai!"
-
-    mc "Oh, hi Ulamog-kun"
-
-    ulamog "Let's go"
-
-    "Ulamog takes my arm without even passing priority and drags me out of the
-    classroom"
-
-    scene bg hall with dissolve
-
-    ulamog "Okay, so we're borrowing the school kitchen for our event"

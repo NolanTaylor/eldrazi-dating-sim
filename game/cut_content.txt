@@ -1613,3 +1613,129 @@ label day2_scene6:
                 jump day4_scene1
 
                 # fade to black?
+                label day4_scene1:
+
+                    scene bg bedroom with dissolve
+
+                    "Saturday"
+
+                    "Saturdays are the best days"
+
+                    "Unlike Fridays, you get the entire day free. And unlike Sundays, there's
+                    no homework or the lingering {i}dread{/i} of the following Monday"
+
+                    "Saturdays truly are the best"
+
+                    "But not this Saturday"
+
+                    "No, today I need to help my class with preparations"
+
+                    "They say it's mandatory, but they prolly wouldn't even notice if I
+                    ditched"
+
+                    jump day4_scene2
+
+                    return
+label day4_scene2:
+
+    scene bg schoolgrounds with dissolve
+
+    "Despite my *not derisions, I find I've ended up at school anyways"
+
+    "Starting since 2002 schools have stopped requiring students to attend
+    on Saturdays. I'm starting to realize how much I took that for granted"
+    # ^ fact check this pls
+
+    scene bg hall with dissolve
+
+    "I'm a bit late, so the halls are pretty empty"
+
+    "I stand in front of my homeroom door. Looking inside, not even half the
+    class showed up. Maybe this was a mistake"
+
+    "I mentally prepare myself for whatever awaits me inside"
+
+    # door opening sound
+
+    scene bg classroom frontleft with dissolve
+
+    show nahiri at right
+
+    if gender == "male":
+        nahiri "[name_2]-kun, wow. You are the last person I expected to show
+        up today"
+    else:
+        nahiri "[name_2]-san, wow. You are the last person I expected to show
+        up today"
+
+    nahiri "Well, I already explained everything. And I'm not doing it twice,
+    so ask someone for the details and get to work"
+
+    if kozilek_points > 10:
+        jump day4_scene2_kozilek
+    else:
+        jump day4_scene2_ulamog
+
+    return
+
+    "Y'know, I'm starting to have yee haw about all this"
+
+    "Everybody's leaving the classroom, already knowing what to do"
+
+    scene bg hall with dissolve
+
+    "I stand outside feeling clueless"
+
+    "I know I should ask somebody what I can help with, but I really don't have
+    the motivation to bother anybody about it"
+
+    "It's not even my fault. Nahiri absolutely could've explained whatever
+    she needed to twice and this all could've been avoided"
+
+    show kozilek at center
+
+    kozilek "Hey!"
+
+    mc "Kozilek-kun?"
+
+    kozilek "I need you to help with our class' event"
+
+    mc "Your class isn't doing that?"
+
+    kozilek "Well, uh.. Not enough people showed up so..."
+
+    mc "I'd be happy to help"
+
+    kozilek "Oh, okay"
+
+    mc "What do you need help with?"
+
+    show kozilek:
+        center
+        linear 2.0 xpos 2.0
+
+    kozilek "This way"
+
+    "Kozilek turns around and walks down the hallway without answering my
+    question"
+
+    "I follow"
+
+    show kozilek at center
+
+    mc "So remind me again, what is you class doing?"
+
+    kozilek "Some kind of play, I don't really care"
+
+    mc "And how are we helping?"
+
+    kozilek "We're gathering props, okay, just shut up and follow me"
+
+    kozilek "I'm only asking you to help because our class ran out of people"
+
+    kozilek "So don't get the wrong idea"
+
+    kozilek "It's not like I like you or anything, baka" # we did it bois
+
+they say there's a fine line between madness and genius. emrakul has taken that
+line and snorted it
