@@ -1582,7 +1582,7 @@ label day2_scene4_emrakul:
     "The rest shuffle out of the library leaving you, Nissa, and dubious set of
     clothes in your arms"
 
-    scene bg hallway with dissolve
+    scene bg hall with dissolve
 
     show nissa at center
 
@@ -3004,26 +3004,65 @@ label day3_scene4_kozilek:
         xpos 0.5
         linear 1.0 center
 
-        #--
+    mc "..."
 
-    mc "Is that everything you need then?"
+    mc "So.."
 
-    kozilek "Yeah, I think so"
+    mc "What else is on this list?"
+
+    kozilek "..."
+
+    "But Kozilek turns their head and starts walking out"
+
+    kozilek "Whatever. We don't need anything else today"
+
+    mc "What about everything else on this list?"
+
+    kozilek "Whatever!"
+
+    show kozilek:
+        center
+        linear 1.0 xpos -1.0
+
+    "Kozilek storms out of the room"
+
+    mc "Fair enough"
+
+    scene bg hall with dissolve
+
+    "You follow Kozilek out into the hall where he's standing outside the door"
+
+    show kozilek at center
+
+    mc "Oh, you didn't run away?"
+
+    kozilek "No. I mean, I could've"
+
+    mc "But you didn't"
+
+    kozilek "I just didn't feel like it"
+
+    mc "Because you wanted to keep talking to me?"
+
+    kozilek "No. That's stupid. You're stupid!"
+
+    mc "This is not false.. But you're evading the question"
+
+    kozilek "..."
+
+    "Kozilek looks away and doesn't answer"
+
+    "Maybe you've been teasing too much"
 
     mc "So when do I get to see this play?"
 
-    kozilek "I don't really know"
-
-    mc "Surely you must, you're helping prepare it"
-
-    kozilek "I guess I wasn't really paying attention"
+    kozilek "Monday, I guess"
 
     mc "What role will you be playing?"
 
     kozilek "Just a minor part, it really doesn't matter"
 
-    mc "You know I'm going to see it. So I'll know by the end of the week
-    anyway"
+    mc "You know I'm going to see it. So I'll know by Monday anyway"
 
     kozilek "It's just a stupid play, you shouldn't even bother coming"
 
@@ -3039,23 +3078,234 @@ label day3_scene4_kozilek:
 
     kozilek "Just shut up! Baka!"
 
-    show kozilek:
-        center
-        linear 0.5 xpos -1.0
+    "There it is again. That strange feeling"
 
-    # running and door slamming sound
+    mc "Well, I'm just letting you know that I'm going to see this and there's
+    nothing you can do to stop me"
+
+    kozilek "O-okay"
+
+    mc "I'm glad we understand"
+
+    mc "Now, is there anything else you need to prepare before Monday"
+
+    kozilek "Uh, no it's fine. I'll do it over the weekend"
+
+    mc "Are you sure? I can help you now"
+
+    kozilek "No, no. It's fine, I need to leave early anyways"
+
+    mc "Huh, alright. Well, don't stress too much about it"
+
+    kozilek "Okay, bye"
+
+    hide kozilek
+
+    mc "Bye"
+
+    "Well, that was..."
+
+    "Interesting"
+
+    jump day3_scene5
 
     return
 
 label day3_scene4_emrakul:
 
-    more hentai or smth idk
+    "You walk over to Emrakul who's curled up underneath the table"
+
+    mc "Uhh.. Hey Emrakul-chan"
+
+    emrakul "..."
+
+    mc "You good?"
+
+    emrakul "s q u i r r e l s"
+
+    mc "Mhm, yep. That sounds about right"
+
+    emrakul "so  m a n y"
+
+    mc "I mean.. There were only like fifteen"
+
+    mc "Although I suppose that's about fifteen more than I would expect in
+    the middle of a school library"
+
+    mc "Anyways, are you gonna get out from under that table anytime soon"
+
+    show emrakul at center
+
+    mc "Ahh, that's better"
+
+    mc "So the {i}festival{/i}'s on Monday, what have you done to prepare for
+    it?"
+
+    emrakul "..."
+
+    if date_1 == "emrakul":
+        "Has she seriously done nothing but look at hentai this entire time?"
+
+        emrakul "Yeah..."
+
+        mc "Yeah what?"
+
+        emrakul "Yeah, I've done nothing but look at hentai this entire time"
+    else:
+        "Has she seriously done nothing to prepare for her event?"
+
+        emrakul "Yeah..."
+
+        mc "Yeah what?"
+
+        emrakul "Yeah, I've done nothing to prepare for my event"
+
+    mc "..."
+
+    mc "Oh, um.."
 
     return
 
 label day3_scene4_nissa:
 
-    snitties?
+    "You walk over to Chandra and Nissa who both still seem to be digesting
+    the situation that just played out"
+
+    show chandra at left
+
+    show nissa at center
+
+    nissa "What just happened?"
+
+    "You all look down at the {i}char{/i}red mound of dead squirrels on the
+    library floor"
+
+    chandra "I think it's best not to think about it"
+
+    "Chandra makes a sweeping motion with her hand and the pile of squirrels
+    turns to {i}crumbling ashes{/i}"
+
+    chandra "See. Don't worry about it"
+
+    nissa "Uhh.. Okay"
+
+    chandra "Anyways, why don't we try actually being productive then?"
+
+    nissa "Yeah, yeah we should probably do that"
+
+    chandra "Oh wait. Really? I was joking. You thought I actually wanted to
+    be productive!?"
+
+    nissa "I--"
+
+    chandra "Should know better than to think that? Yes, you really should"
+
+    chandra "Man, school events are so lame anyways. There's no spectacle,
+    no drama"
+
+    nissa "Well, sure there's spectacle"
+
+    chandra "What, you mean your tea party? Does your tea party have eight
+    fucking bears?"
+
+    mc "holY shit!"
+
+    nissa "..."
+
+    chandra "Yeah, I didn't think so. Here, let me help you with your event.
+    Hand me that organizing sheet"
+
+    "Chandra reaches over and grabs the paper in front of Nissa before she can
+    respond"
+
+    chandra "Bowl, caddy, scoop, whisk, kimono, cushion. See, this is all
+    boring paraphernalia. You need something with flair"
+
+    nissa "We're not bringing eight bears onto school campus"
+
+    chandra "No, you're right. Eight fucking bears isn't nearly grandiose
+    enough"
+
+    mc "holY shit!"
+
+    if gender == "male":
+        chandra "What do you think [name_2]-kun? What would really elevate
+        this {i}festival{/i} to the next level?"
+    elif gender == "female":
+        chandra "What do you think [name_2]-chan? What would really elevate
+        this {i}festival{/i} to the next level?"
+    else:
+        chandra "What do you think [name_2]-san? What would really elevate
+        this {i}festival{/i} to the next level?"
+
+    mc "Hmm.. Oh! I got it"
+
+    mc "{i}Goreclaw, Terror of Qal Sisma{/i}"
+
+    chandra "Hmmm..."
+
+    mc "What's wrong?"
+
+    chandra "Dies to {i}doomblade{/i}"
+
+    mc "{i}Damn{/i}, you're right!"
+
+    mc "..."
+
+    mc "Okay, okay okay. This time I got it"
+
+    mc "{i}Glyph Keeper{/i}"
+
+    chandra "Dies to playset of {i}doomblade{/i}s"
+
+    mc "{i}Damn{/i}, right again"
+
+    mc "..."
+
+    mc "Hmm.. This is tough indeed"
+
+    mc "Okay, How about.."
+
+    mc "A giant 8/8 Octopus token!"
+
+    chandra "Dies to Steve's crossbow smh my head"
+
+    mc "Heck"
+
+    mc "..."
+
+    mc "Okay. This time. This time I definitely got it"
+
+    chandra "Hit me"
+
+    mc "{i}Yargle, Glutton of Urborg{/i}"
+
+    chandra "..."
+
+    chandra "OMG, I think you've got it"
+
+    chandra "The perfect addition to our tea party"
+
+    nissa "Tea ceremony"
+
+    chandra "Whatever"
+
+    chandra "There's no way any school event could be boring when Yargle's
+    there"
+
+    mc "You're absolutely right"
+
+    chandra "C'mon, let's go get them. I have Yargle on speed dial"
+
+    "Chandra stands up"
+
+    nissa "Uh, what's happening?"
+
+    chandra "We're helping you!"
+
+    "Chandra runs out of the library. You and Nissa tentatively follow"
+
+    scene bg hall with dissolve
 
     return
 
@@ -3068,7 +3318,7 @@ label day3_scene5:
 
     "She'll understand you're sure"
 
-    scene bg park with dissolve
+    scene bg park with
 
     "Despite only starting to walk with Nissa for the past couple days, the
     {i}isolate{/i}d walk home feels unusually lonesome"
@@ -3078,12 +3328,53 @@ label day3_scene5:
 
     if date_2 == "ulamog":
         "Your {i}train of thought{/i} inevitably drifts toward Ulamog"
+
+        "You wonder how his class' event is going to turn out. It is quite
+        ambitious after all"
+
+        "But he's clearly passionate about it, so there shouldn't be any
+        problems"
     elif date_2 == "kozilek":
         "Your {i}train of thought{/i} inevitably drifts toward Kozilek"
+
+        "You wonder how his class' event is going to turn out. He didn't end
+        up getting much done today. Hopefully he'll be able to get everything
+        ready for Monday"
+
+        "His attitude toward you seems.. Fickle, at best. Maybe you should
+        stop teasing him"
+
+        "..."
+
+        "Nah"
     elif date_2 == "emrakul":
         "Your {i}train of thought{/i} inevitably drifts toward Emrakul"
+
+        "You wonder how her class' event is going to turn out. Actually, you
+        don't have to wonder at all. You're confident it's going to be an
+        absolute disasterpiece"
     elif date_2 == "nissa":
         "Your {i}train of thought{/i} inevitably drifts toward Nissa and
         Chandra"
+
+        "You wonder how Nissa's class event is going to turn out. She seems to
+        have prepared pretty well considering all you and Chandra did was try
+        to distract her the entire time"
+
+    scene bg street with dissolve
+
+    "Oh well, it seems you've arrived at your house. A perfect excuse to stop
+    thinking and start mindlessly scrolling through the void of social media
+    until it's time to fall asleep"
+
+    jump day4_scene1
+
+    return
+
+label day4_scene1:
+
+    scene bg bedroom with dissolve
+
+    jump day4_scene2
 
     return
