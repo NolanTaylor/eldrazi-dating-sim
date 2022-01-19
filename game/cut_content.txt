@@ -1750,9 +1750,9 @@ chimney imp
 
 34 rhino
 
-avacyn hates fishermen
+// avacyn hates fishermen
 
-hit him with ur crossbow steve
+// hit him with ur crossbow steve
 
 humility + opalescence
 
@@ -1764,4 +1764,4 @@ meandering towershell
 
 cat oven
 
-dies to doomblade
+// dies to doomblade

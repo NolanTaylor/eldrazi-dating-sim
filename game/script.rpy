@@ -5,6 +5,7 @@ define nahiri = Character("Nahiri")
 define ulamog = Character("Ulamog")
 define kozilek = Character("Kozilek")
 define emrakul = Character("Emrakul")
+define yargle = Character("Yargle")
 
 # credit house of imagi studio
 
@@ -127,8 +128,8 @@ label day1_scene1:
 
     "You suppose it's time to start getting ready for school"
 
-    "You grab your backpack off the floor and a protein bar from the pantry
-    which will need to suffice as your breakfast for the day"
+    "You grab your backpack off the floor and and stuff a +1/+1 counter in your
+    mouth, which will need to suffice as your breakfast for the day"
 
     "You grab your keys and stare at the front door, preparing to mentally
     disassociate yourself from reality for the next eight or so hours"
@@ -171,7 +172,7 @@ label day1_scene1:
 
     show nissa:
         left
-        linear 1.0 xpos 1.0
+        linear 1.0 xpos offscreenright
 
     "Without waiting for your response, Nissa grabs your arm and starts
     dragging you down the steps of your porch"
@@ -934,7 +935,7 @@ label day2_scene4_ulamog:
 
     mc "I'd love to. What is it you're planning?"
 
-    ulamog "Well, I was thinking we could host a baking competition like you
+    ulamog "Well, I was thinking we could host a cooking competition like you
     see on TV"
 
     mc "Oh my, that's quite ambitious of you"
@@ -952,8 +953,8 @@ label day2_scene4_ulamog:
 
     ulamog "Ummm... Well, that's the thing. I have no idea where to start"
 
-    mc "Oh, well. The contestants will need to be baking, right? So you could
-    start with whatever is needed to bake"
+    mc "Oh, well. The contestants will need to be cooking, right? So you could
+    start with whatever is needed to cook"
 
     ulamog "Yeah, that's good. Uhhh.. Like, ingredients?"
 
@@ -1007,7 +1008,7 @@ label day2_scene4_ulamog:
 
     show ulamog:
         center
-        linear 0.5 xpos 1.0
+        linear 0.5 xpos offscreenright
 
     "Ulamog runs past you back toward the library"
 
@@ -1031,14 +1032,14 @@ label day2_scene4_ulamog:
 
     mc "No, actually. Probably a bit more"
 
-    ulamog "Now we just need to get dough and flour and baking soda..."
+    ulamog "Now we just need to get knives, and pots, and bowls..."
 
-    "Ulamog starts to ramble off ingredients as he moves toward his usual spot
+    "Ulamog starts to ramble off tools as he moves toward his usual spot
     at the back of the library"
 
     show ulamog:
         center
-        linear 0.5 xpos 1.0
+        linear 0.5 xpos offscreenright
 
     nissa "So umm... I see it went well"
 
@@ -1051,14 +1052,14 @@ label day2_scene4_ulamog:
     mc "Yeah, I guess that just--"
 
     show ulamog:
-        xpos 1.0
+        xpos offscreenright
         linear 0.25 center
 
     ulamog "YOINK!!"
 
     show ulamog:
         center
-        linear 0.25 xpos 1.0
+        linear 0.25 xpos offscreenright
 
     show bg library 3 with moveinright
 
@@ -1235,10 +1236,10 @@ label day2_scene4_kozilek:
 
     show kozilek:
         center
-        linear 0.5 xpos 1.0
+        linear 0.5 xpos offscreenright
 
     show kozilek:
-        xpos 1.0
+        xpos offscreenright
         linear 0.5 right
 
     kozilek "Aren't you going to come with me?"
@@ -1414,11 +1415,11 @@ label day2_scene4_emrakul:
 
     show nissa:
         left
-        linear 1.0 xpos -1.0
+        linear 1.0 xpos offscreenleft
 
     show chandra:
         xpos 0.25
-        linear 1. xpos -1.0
+        linear 1. xpos offscreenleft
 
     if emrakul_date_1 == "compliment":
         mc "Huh"
@@ -1455,16 +1456,16 @@ label day2_scene4_emrakul:
 
     emrakul "Fufufufufu"
 
-    mc "Oh, wonderful"
+    mc "Oh, {i}wonder{/i}ful"
 
-    "Not wonderful"
+    "Not {i}wonder{/i}ful"
 
     show emrakul:
         center
-        linear 0.5 xpos 1.0
+        linear 0.5 xpos offscreenright
 
     show emrakul:
-        xpos 1.0
+        xpos offscreenright
         linear 0.5 center
 
     "Emrakul floats over to the tables and returns with a set of..."
@@ -1544,15 +1545,15 @@ label day2_scene4_emrakul:
     nissa "So umm... Hey guys!"
 
     show ulamog:
-        xpos 1.0
+        xpos offscreenright
         linear 0.25 center
 
     show kozilek:
-        xpos 1.0
+        xpos offscreenright
         linear 0.25 xpos 0.6
 
     show emrakul:
-        xpos 1.0
+        xpos offscreenright
         linear 0.25 xpos 0.8
 
     nissa "I think we should stop here for today, you've all done great work"
@@ -1569,15 +1570,15 @@ label day2_scene4_emrakul:
 
     show ulamog:
         center
-        linear 0.25 xpos 1.0
+        linear 0.25 xpos offscreenright
 
     show kozilek:
         xpos 0.6
-        linear 0.25 1.0
+        linear 0.25 offscreenright
 
     show emrakul:
         xpos 0.8
-        linear 0.25 1.0
+        linear 0.25 offscreenright
 
     "The rest shuffle out of the library leaving you, Nissa, and dubious set of
     clothes in your arms"
@@ -2302,7 +2303,7 @@ label day3_scene3:
 
     show kozilek:
         xpos 0.6
-        linear 0.25 xpos 1.0
+        linear 0.25 xpos offscreenright
 
     show nissa:
         left
@@ -2333,11 +2334,11 @@ label day3_scene3:
 
     show emrakul:
         center
-        linear 0.5 xpos 1.0
+        linear 0.5 xpos offscreenright
 
     show ulamog:
         right
-        linear 0.5 xpos 1.0
+        linear 0.5 xpos offscreenright
 
     nissa "So..."
 
@@ -2384,7 +2385,7 @@ label day3_scene4_ulamog:
     scene bg hall with dissolve
 
     if date_1 == "ulamog":
-        mc "So baking huh. What's it you're looking for then?"
+        mc "So cooking huh. What's it you're looking for then?"
 
         ulamog "Well, I was gonna check the kitchen we borrowed for all the
         tools and ingredients we need"
@@ -2393,7 +2394,7 @@ label day3_scene4_ulamog:
     else:
         mc "So what're you planning for your event?"
 
-        ulamog "We're going to host a baking contest"
+        ulamog "We're going to host a cooking contest"
 
         ulamog "So I was gonna check the school kitchen for all the tools and
         ingredients we need"
@@ -2687,7 +2688,7 @@ label baguette_whistle_continue:
 
     mc "Sure, I guess"
 
-    ulamog "Wonderful!"
+    ulamog "{i}Wonder{/i}ful!"
 
     jump baguette_comply
 
@@ -2998,7 +2999,7 @@ label day3_scene4_kozilek:
 
     show chandra:
         left
-        linear 1.0 xpos -1.0
+        linear 1.0 xpos offscreenleft
 
     show kozilek:
         xpos 0.5
@@ -3022,7 +3023,7 @@ label day3_scene4_kozilek:
 
     show kozilek:
         center
-        linear 1.0 xpos -1.0
+        linear 1.0 xpos offscreenleft
 
     "Kozilek storms out of the room"
 
@@ -3107,6 +3108,9 @@ label day3_scene4_kozilek:
 
     "Interesting"
 
+    python:
+        date_2 == "kozilek"
+
     jump day3_scene5
 
     return
@@ -3163,6 +3167,11 @@ label day3_scene4_emrakul:
     mc "..."
 
     mc "Oh, um.."
+
+    python:
+        date_2 == "emrakul"
+
+    jump day3_scene5
 
     return
 
@@ -3282,7 +3291,7 @@ label day3_scene4_nissa:
 
     chandra "..."
 
-    chandra "OMG, I think you've got it"
+    chandra "Oh my god, I think you've got it"
 
     chandra "The perfect addition to our tea party"
 
@@ -3291,7 +3300,7 @@ label day3_scene4_nissa:
     chandra "Whatever"
 
     chandra "There's no way any school event could be boring when Yargle's
-    there"
+    there. Yargle's the entire party"
 
     mc "You're absolutely right"
 
@@ -3303,9 +3312,97 @@ label day3_scene4_nissa:
 
     chandra "We're helping you!"
 
+    show chandra:
+        left
+        linear 0.25 xpos offscreenright
+
     "Chandra runs out of the library. You and Nissa tentatively follow"
 
     scene bg hall with dissolve
+
+    show chandra at right
+
+    chandra "This way!"
+
+    scene bg classroom frontleft with dissolve
+
+    nissa "Does anybody even use this classroom anymore?"
+
+    mc "We are, of course"
+
+    nissa "I see..."
+
+    "Chandra returns from the back closet carrying a box of red chalk and
+    several scented candles"
+
+    chandra "Ready to summon The Glutton of Urborg?"
+
+    nissa "I really don't see how this is going to help my class' event"
+
+    chandra "Oh silly, we already explained this to you. We're inviting Yargle
+    to your tea party"
+
+    nissa "Tea ceremony"
+
+    chandra "Whatever"
+
+    "Chandra draws a pattern on the center desk with the red chalk and places
+    the candles around the pattern"
+
+    "She makes a motion with her hands and the candles ignite"
+
+    "Billowing {i}smoke{/i} begins to spill out from the desk and the room
+    starts to smell faintly of lavender"
+
+    nissa "Umm.. What's going on?"
+
+    "Suddenly, a {i}brilliant spectrum{/i} of colored lasers start firing out
+    of the {i}smoke{/i}"
+
+    "The entire classroom lights up like a rave party as electro-synth pop
+    music starts to blast out of the summoning desk in the middle"
+
+    # play electro-synth pop
+
+    show nissa at left
+
+    show yargle at center
+
+    yargle "YARGLE'S COME TO BARGLE!!!"
+
+    chandra "YARGLE!"
+
+    mc "BARGLE ME YARGLE!!"
+
+    nissa "That actually worked?"
+
+    chandra "Oh great Yargle, we humbly request that you bargle our tea party
+    next week"
+
+    nissa "Tea ceremony"
+
+    chandra "Whatever"
+
+    yargle "Tea party you say?"
+
+    yargle "Tea parties are the best for bargling"
+
+    mc "Thank you great Yargle!"
+
+    nissa "I... I'm just gonna leave.."
+
+    show nissa:
+        left
+        linear 1.0 xpos offscreenleft
+
+    "All" "BARGLE!!"
+
+    # music fades
+
+    python:
+        date_2 == "nissa"
+
+    jump day3_scene5
 
     return
 
@@ -3329,15 +3426,20 @@ label day3_scene5:
     if date_2 == "ulamog":
         "Your {i}train of thought{/i} inevitably drifts toward Ulamog"
 
-        "You wonder how his class' event is going to turn out. It is quite
+        "You {i}wonder{/i} how his class' event is going to turn out. It is quite
         ambitious after all"
 
         "But he's clearly passionate about it, so there shouldn't be any
         problems"
+
+        "You do however, sincerely hope there will be no guillotines, or
+        baguettes, or anything French related for that matter"
+
+        "Ewww, Fr*nce"
     elif date_2 == "kozilek":
         "Your {i}train of thought{/i} inevitably drifts toward Kozilek"
 
-        "You wonder how his class' event is going to turn out. He didn't end
+        "You {i}wonder{/i} how his class' event is going to turn out. He didn't end
         up getting much done today. Hopefully he'll be able to get everything
         ready for Monday"
 
@@ -3347,19 +3449,26 @@ label day3_scene5:
         "..."
 
         "Nah"
+
+        "Way too much fun"
+
+        "Maybe you'll consider it if he ever stops being so cliche"
     elif date_2 == "emrakul":
         "Your {i}train of thought{/i} inevitably drifts toward Emrakul"
 
-        "You wonder how her class' event is going to turn out. Actually, you
-        don't have to wonder at all. You're confident it's going to be an
+        "You {i}wonder{/i} how her class' event is going to turn out. Actually, you
+        don't have to {i}wonder{/i} at all. You're confident it's going to be an
         absolute disasterpiece"
     elif date_2 == "nissa":
         "Your {i}train of thought{/i} inevitably drifts toward Nissa and
         Chandra"
 
-        "You wonder how Nissa's class event is going to turn out. She seems to
+        "You {i}wonder{/i} how Nissa's class event is going to turn out. She seems to
         have prepared pretty well considering all you and Chandra did was try
         to distract her the entire time"
+
+        "But there's no use in worrying about it. There's absolutely no way
+        she could mess up this tea party when Yargle will be there"
 
     scene bg street with dissolve
 
@@ -3375,6 +3484,491 @@ label day4_scene1:
 
     scene bg bedroom with dissolve
 
+    "The weekend passes by in relative tedium as time skips often leave you
+    sprawled out on the couch with nothing to do"
+
+    "It's Monday morning now and you're struggling for reasons to get out of
+    bed"
+
+    "Food, you think to yourself"
+
+    "Food's not a bad reason to get out of bed"
+
+    "What about a shower? Shower's are nice"
+
+    "Well, not really the showering part. Moreso just the standing under warm
+    water part"
+
+    "Hmm..."
+
+    if date_2 == "ulamog":
+        "Ulamog"
+
+        "That's right. How could you forget?"
+
+        "Ulamog's cooking thing is today"
+    elif date_2 == "kozilek":
+        "Kozilek"
+
+        "That's right. How could you forget?"
+
+        "Kozilek's play thing is today"
+    elif date_2 == "emrakul":
+        "Emrakul"
+
+        "That's right. How could you forget?"
+
+        "Emrakul's // "
+    elif date_2 == "nissa":
+        "Yargle"
+
+        "That's right. How could you forget?"
+
+        "Nissa's tea party is today"
+
+        "And Yargle'll be there"
+
+    "That's enough to get you out of bed"
+
+    "Maybe Monday's aren't as bad as everyone thinks they are"
+
     jump day4_scene2
+
+    return
+
+label day4_scene2:
+
+    scene bg street with dissolve
+
+    "Nissa must've gone to school early to help set up for the {i}festival{/i}"
+
+    scene bg park with dissolve
+
+    "You make the walk to school by yourself, the once familar path now foreign
+    and solitary"
+
+    scene bg schoolgrounds with dissolve
+
+    "There are no classes, the whole day has been blocked out for
+    {i}festival{/i} events"
+
+    scene bg hall with dissolve
+
+    "You wander the halls in {i}contemplation{/i} of where you should go first"
+
+    if date_2 == "ulamog":
+        jump day4_scene3_ulamog
+    elif date_2 == "kozilek":
+        jump day4_scene3_kozilek
+    elif date_2 == "emrakul":
+        jump day4_scene3_emrakul
+    elif date_2 == "nissa":
+        jump day4_scene3_nissa
+
+    return
+
+label day4_scene3_ulamog:
+
+    scene bg kitchen with dissolve
+
+    "You enter the kitchen where Ulamog is preparing his event"
+
+    show ulamog at center
+
+    if gender == "male":
+        ulamog "Hi [name_2]-kun!"
+    elif gender == "female":
+        ulamog "Hi [name_2]-chan!"
+    else:
+        ulamog "Hi [name_2]-san!"
+
+    mc "Hi there, are you preparing your cooking thing?"
+
+    ulamog "I just finished!"
+
+    mc "Oh my"
+
+    "You look around the school kitchen. Various cooking paraphernelia are
+    spread out across the counters and tables"
+
+    mc "So how is this going to work?"
+
+    ulamog "I gathered a panel of expert judges to evaluate the dishes"
+
+    "Ulamog gestures at a small group of tired students who look as if they'd
+    rather be {i}eaten alive{/i} than sitting there right now"
+
+    ulamog "Then we'll have the next few people that show up participate in the
+    competition"
+
+    mc "And who would that be?"
+
+    show ulamog:
+        center
+        linear 0.5 right
+
+    show nissa:
+        left
+        linear 1.0 xpos 0.25
+
+    show chandra at left
+
+    chandra "--told you Yargle's got it covered. I just want to set things on
+    fire"
+
+    ulamog "Hi guys!!"
+
+    nissa "Hi Ulamog-kun!"
+
+    ulamog "Omygosh! You two are the last ones we need"
+
+    nissa "What do you mean?"
+
+    ulamog "Do you know how to cook?"
+
+    chandra "I can set things on fire"
+
+    ulamog "Perfect! You can enter our competition"
+
+    nissa "Wait, what?"
+
+    ulamog "C'mon, we're starting soon"
+
+    "As soon as the realization sets in, a crowd of students begin to pour
+    into the room buzzing with excitement"
+
+    if gender == "male":
+        ulamog "You too [name_2]-kun"
+    elif gender == "female":
+        ulamog "You too [name_2]-chan"
+    else:
+        ulamog "You too [name_2]-san"
+
+    "Ulamog grabs your arm and drags you to the other side of the kitchen"
+
+    show chandra:
+        left
+        linear 0.5 xpos offscreenleft
+
+    show nissa:
+        xpos 0.25
+        linear 0.5 xpos offscreenleft
+
+    show ulamog:
+        right
+        linear 0.5 center
+
+    mc "Huh!?"
+
+    ulamog "You'll be my partner!"
+
+    mc "There are partners?"
+
+    "Judge" "We will begin in three seconds"
+
+    mc "What are even the rules?"
+
+    "Judge" "There are no rules"
+
+    mc "Oh..."
+
+    "Judge" "Start!"
+
+    "On the word, Ulamog starts rushing around the kitchen grabbing metallic
+    instruments of unknown use. You see Chandra and Nissa doing the same over
+    on the other side of the kitchen"
+
+    mc "What are we even making?"
+
+    ulamog "Anything!"
+
+    "Ulamog returns to the counter with four handfuls of food and tools"
+
+    "You pick up a long serrated knife to examine"
+
+    "You could definitely {i}eviscerate{/i} somebody with this"
+
+    ulamog "Here! Fillet this!"
+
+    "Ulamog throws a fish at you"
+
+    "You barely react in time to {i}redirect{/i} it away from your face
+    with a slap"
+
+    "The fish flops onto the countertop. You start searching for a cutting
+    board"
+
+    ulamog "No time! Just cut it there"
+
+    mc "Oh, okay"
+
+    hide ulamog
+
+    scene bg counter with dissolve
+
+    "You hastily make an incision in the fish's underside"
+
+    "You think about how the fish must've felt when being caught"
+
+    "It must be painful to have a hook in your mouth"
+
+    "You make a {i}surgical extraction{/i} of the fish's spine and begin to
+    slice up the flesh"
+
+    scene bg counter filleted with dissolve
+
+    "But more than that, you think about the fisherman who caught the fish"
+
+    "You hope they're okay. After all, if there's anything Avacyn hates more
+    than heretics, it's fishermen"
+
+    "You finish filleting the fish and look over at Ulamog"
+
+    scene kitchen with dissolve
+
+    show ulamog at center
+
+    "He's tossing way too many ingredients to count into a giant wok in the
+    center of the stove"
+
+    "You throw the fish in as well and look around for the next thing to do"
+
+    hide ulamog
+
+    show nissa at left
+
+    show chandra at center
+
+    "Across the room you see Chandra and Nissa scurrying around their side of
+    the kitchen while a comically oversized chicken breast {i}roast{/i}s over
+    an {i}open fire{/i}"
+
+    "The {i}blaze{/i} reaches higher as the {i}engulfing flames{/i} of the
+    stove {i}threaten{/i} to {i}burn down the house{/i}"
+
+    "At the other end of the kitchen, a horde of students have shown up to
+    cheer on the contestents"
+
+    "The {i}roar of the crowd{/i} makes you feel {i}invigorate{/i}d"
+
+    "You run up to the center of the kitchen thinking you might use that
+    guillotine for something"
+
+    chandra "Eww, Fr*nce"
+
+    mc "Hey, you're not wrong. But I'm not about to dice this onion with
+    a regular knife, like a plebeian"
+
+    chandra "Oh honey, you don't have to worry about being a plebeian"
+
+    chandra "With the food you'll be serving, you'll have more people lined up
+    to see your beheading than any French aristocrat"
+
+    mc "Oh? We're smack-talking now? It's on"
+
+    chandra "It's on fire, yeah. Better stop talking and keep an eye on your
+    dish"
+
+    mc "You're one to talk, I heard they had to disable to {i}smoke{/i} alarms
+    on your side of the room"
+
+    "Chandra turns around"
+
+    chandra "Darn it Nissa-chan! What're you doing to the fire?"
+
+    nissa "Uhhh..."
+
+    hide chandra
+
+    hide nissa
+
+    "You return to your side of the kitchen with onion and beheading device in
+    hand"
+
+    show ulamog at center
+
+    mc "Okay Ulamog-kun. It gets serious now"
+
+    ulamog "Oh boy! I love dramatic tension"
+
+    mc "Yes, exactly. Now, what's our secret ingredient?"
+
+    ulamog "Secret ingredient?"
+
+    mc "Yes Ulamog-kun. Don't you know that every good recipe has a secret
+    ingredient?"
+
+    ulamog "Oh.."
+
+    ulamog "Well how about friendship?"
+
+    mc "Perfect! There's no way we'll lose this competition with the power
+    of friendship in our judge's mouths"
+
+    mc "..."
+
+    ulamog "Question:"
+
+    mc "Yes?"
+
+    ulamog "How do we add friendship to our dish?"
+
+    mc "Hmmm..."
+
+    mc "Oh!"
+
+    mc "We could scream like anime protagonists and cook in overly animated
+    fashion"
+
+    ulamog "That's a fantastic idea!"
+
+    mc "Okay, ready?"
+
+    ulamog "I've been training for this my entire life"
+
+    "You and Ulamog look across the room to lock eyes with Chandra and Nissa"
+
+    mc "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    # screen shake
+
+    ulamog "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    hide ulamog
+
+    show nissa at left
+
+    show chandra at center
+
+    "Chandra and Nissa stare at you from the other side of the room"
+
+    "They look at each other, then back at you"
+
+    chandra "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    "Chandra and Nissa start screaming as well. Even the fires flicker higher
+    in response to the increased excitement"
+
+    "Then {i}the crowd goes wild{/i} and not a single person in the room isn't
+    releasing a {i}bloodcurdling scream{/i}"
+
+    "This is where the real cooking begins. You think to yourself"
+
+    hide chandra
+
+    hide nissa
+
+    show ulamog at center
+
+    mc "Okay Ulamog-kun. It's time to go super saiyan, unleash your final form"
+
+    if gender == "male":
+        ulamog "No [name_2]-kun, we do it together"
+    elif gender == "female":
+        ulamog "No [name_2]-chan, we do it together"
+    else:
+        ulamog "No [name_2]-san, we do it together"
+
+    mc "Yes Ulamog-kun. With the power of friendship, nothing can stop us"
+
+    "You grab Ulamog's hand and together you raise the wok above your heads"
+
+    "You look into Ulamog's eyes. And together you nod in silent understanding"
+
+    # more screen shake
+
+    "You and Ulamog" "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+    "The flames of both the stoves rise higher until they lap the ceiling of
+    the kitchen"
+
+    # friendship rainbow?
+
+    "A friendship rainbow explodes from your wok and fires into the air,
+    breaking a hole through the roof"
+
+    "The noise from your anime-empowered screams shake the entire building and
+    {i}tremor{/i}s emenate from your stove"
+
+    "When all is settled, a wave of silence washes over the crowd"
+
+    "You and Ulamog drop to the floor not having realized your anime powers
+    temporarily {i}suspend{/i}ed you in the air"
+
+    "Judge" "And the winner of the competition is..."
+
+    if gender == "male":
+        "Judge" "Ulamog-kun and [name_2]-kun!!!"
+    elif gender == "female":
+        "Judge" "Ulamog-kun and [name_2]-chan!!!"
+    else:
+        "Judge" "Ulamog-kun and [name_2]-san!!!"
+
+    "The crowd bursts into cheers and applause"
+
+    ulamog "We did it! We did it!!"
+
+    "For the event that he organized where the judges didn't even taste the
+    food"
+
+    "But you don't want to ruin it for him"
+
+    "So instead you just give him a {i}chef's kiss{/i}"
+
+    ulamog "Yay!!!"
+
+    jump final_scene
+
+    return
+
+label day4_scene3_kozilek:
+
+    scene bg stage with dissolve
+
+    "You enter the school's theater and spot Kozilek in the wings holding a
+    script"
+
+    show kozilek at center
+
+    mc "Hey Kozilek-kun"
+
+    if gender == "male":
+        kozilek "[name_2]-kun? What're you doing here?"
+    elif gender == "female":
+        kozilek "[name_2]-chan? What're you doing here?"
+    else:
+        kozilek "[name_2]-san? What're you doing here?"
+
+    mc "I said I'd come didn't I?"
+
+    kozilek "I-I.. You did! But--"
+
+    mc "But what?"
+
+    return
+
+label day4_scene3_emrakul:
+
+    # some yandere jazz idk
+
+    return
+
+label day4_scene3_nissa:
+
+    # tea party w/ yargle
+
+    return
+
+label final_scene:
+
+    scene bg schoolgrounds with dissolve
+
+    "And they all lived {i}happily ever after{/i}"
+
+    "THE END"
+
+    # return to menu prolly
 
     return
