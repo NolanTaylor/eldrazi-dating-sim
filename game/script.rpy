@@ -1329,7 +1329,7 @@ label day2_scene4_emrakul:
             face Emrakul"
 
             "You mutter the {i}magic word{/i}s \"Go fish\" and prepare to banish
-            her to the shadow realm"
+            her to The Shadow Realm"
 
             "Then, with a fervent {i}display of dominance{/i}, you thrust the
             UNO reverse card in Emrakul's face and scream"
@@ -2657,7 +2657,7 @@ label baguette_whistle:
 
     "Man 1" "Oh my, we are terribly sorry"
 
-    "The man removes himself from Ulamog"
+    "The man {i}remove{/i}s himself from Ulamog"
 
     "Man 2" "Please, continue. French is such a beautiful language"
 
@@ -3846,8 +3846,8 @@ label day4_scene3_ulamog:
 
     chandra "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
-    "Chandra and Nissa start screaming as well. Even the fires flicker higher
-    in response to the increased excitement"
+    "Chandra and Nissa start screaming as well. Even the fires {i}flicker{/i}
+    higher in response to the increased excitement"
 
     "Then {i}the crowd goes wild{/i} and not a single person in the room isn't
     releasing a {i}bloodcurdling scream{/i}"
@@ -3925,7 +3925,7 @@ label day4_scene3_ulamog:
 
 label day4_scene3_kozilek:
 
-    scene bg stage with dissolve
+    scene bg theater with dissolve
 
     "You enter the school's theater and spot Kozilek in the wings holding a
     script"
@@ -3943,27 +3943,931 @@ label day4_scene3_kozilek:
 
     mc "I said I'd come didn't I?"
 
-    kozilek "I-I.. You did! But--"
+    kozilek "I-- Yeah, you did"
 
-    mc "But what?"
+    kozilek "But I didn't think you actually would"
+
+    mc "I'm never one to turn down a challenge"
+
+    "Stage Manager" "ON IN FIVE!!"
+
+    "Student" "Thank you five!"
+
+    kozilek "Oh, I have to go"
+
+    mc "Okay then, \"Break a leg\" is it?"
+
+    kozilek "I don't have legs"
+
+    mc "Tentacle, then"
+
+    hide kozilek
+
+    "The lights dim on the house and the curtains rise"
+
+    "Standing center stage is Kozilek dressed in a long white beard and flowing
+    white robes"
+
+    "God Himself" "In the beginning, circa 2016, the people of Modern lived in
+    relative harmony"
+
+    "God Himself" "Recovering from the recent {i}splinter twin{/i} ban, the
+    state of Modern was tumultulous but the future looked bright"
+
+    "God Himself" "Hope was in the air, and a smile touched the face of every
+    Modern player in the land"
+
+    "God Himself" "The optimism was even enough to bring a semblence of warmth
+    to the cold dead heart of the Grinch of Modern himself, Luis Scott-Vargas"
+
+    "God Himself" "Until one fateful day, on February 7th of 2016. With Pro
+    Tour Oath of the Gatewatch on the horizon, tension was thick"
+
+    "God Himself" "There was great pressure for Pro Tour Oath of the Gatewatch
+    to succeed"
+
+    "God Himself" "The banning of {i}splinter twin{/i} may have left a sour
+    taste in the mouths of Modern players, but that was only more reason for
+    the upcoming Pro Tour to succeed"
+
+    "God Himself" "As Modern players from all walks of life converged on
+    Atlanta, Georgia and Twitch.tv a {i}titan's presence{/i} could be felt"
+
+    "God Himself" "A {i}hidden horror{/i} was soon to awaken"
+
+    "Eye of Ugin" "Ooooo. It is I, {i}Eye of Ugin{/i}"
+
+    "Thought-Knot Seer" "And I, {i}Thought-Knot Seer{/i}"
+
+    "Eye of Ugin" "And we are here to take over Modern"
+
+    "Affinity" "Stay back foul beasts! Our format diversity shall not be
+    {i}corrupt{/i}ed by the likes of you"
+
+    "Thought-Knot Seer" "And who are you to defy us?"
+
+    "Affinity" "I am Affinity, the fastest aggro-combo deck in the format"
+
+    "Affinity" "You are no match for turn 2 {i}cranial plating{/i} on
+    {i}ornithopter{/i} for eight damage in the air"
+
+    "Eye of Ugin" "Fool. {i}Eldrazi Temple{/i}, {i}Eldazi Mimic{/i} into
+    {i}Eye of Ugin{/i} and {i}Thought-Knot Seer{/i}"
+
+    "Thought-Knot Seer" "Now with {i}Reality Smasher{/i} and Chalice on zero,
+    you cannot defeat our value curve"
+
+    "Affinity" "Nooooooooo!"
+
+    "God Himself" "The Eldrazi, both colorless and U/R variants, were
+    {i}crush{/i}ing the metagame with their speed and value"
+
+    "God Himself" "By the end of Day 1, they were {i}predict{/i}ed to have a near 80%
+    conversion rate into Day 2"
+
+    "God Himself" "But while the Eldrazi were usurping Modern, an old menace
+    was continuing to run rampant around the mythical land of Standard"
+
+    "Thirty-four Siege Rhinos in a Trenchcoat" "Hello R&D. Yes, I am a fair and
+    balanced Magic: The Gathering card, please print me into Standard"
+
+    "Magic R&D" "Hmmm.. It makes a convincing argument. After all, three
+    casting pips makes it difficult to play in just any deck"
+
+    "Thirty-four Siege Rhinos in a Trenchcoat" "Yes, yes it does. Please ignore
+    the fact that both fetchlands and tango lands in the same format allow
+    4c/5c decks to be played with virtually no drawback"
+
+    "Magic R&D" "Why yes, of course. And surely a fifth point of toughness
+    won't do any harm"
+
+    "Thirty-four Siege Rhinos in a Trenchcoat" "No, no of course not. And
+    please ignore that five toughness renders both {i}savage knuckleblade{/i}
+    and {i}languish{/i} ineffective"
+
+    "Thirty-four Siege Rhinos in a Trenchcoat" "Along with making sure other
+    rhinos bounce off each other, turning Standard into a painfully slow
+    grindfest"
+
+    "Magic R&D" "Naturally. Oh, and why not add a life drain ETB for good
+    measure?"
+
+    "Thirty-four Siege Rhinos in a Trenchcoat" "Splediferous! Now to just
+    ignore that life gain and trample make me a powerhouse in all aggressive,
+    midrange, and anti-aggro control strategies"
+
+    "Magic R&D" "Perfect. Everything looks set. Welcome to Standard Mr.
+    {i}Siege Rhino{/i}"
+
+    "Saffron Olive" "*sniff*"
+
+    "Saffron Olive" "*snifffffff*"
+
+    "Saffron Olive" "Is that jank I smell?"
+
+    "God Himself" "Oath of the Gatewatch was The Rhino's last set in Standard,
+    and it soon fell out of Modern fashion as well"
+
+    "Eye of Ugin" "Not even thirty-four rhinos are a match for the
+    {i}cosmic horror{/i} of the Eldrazi"
+
+    "God Himself" "Going into Day 2 of Pro Tour Oath of the Gatewatch, it was
+    just {i}as foretold{/i}. The Eldrazi decks surpassed even the most generous
+    of estimates, reaching up to a 90% conversion rate"
+
+    "God Himself" "And if there as any optimism left, the six Eldrazi decks
+    that entered the top eight made sure to {i}extinguish all hope{/i} left"
+
+    "God Himself" "There could be no more {i}stubborn denial{/i}, everybody
+    knew. The Eldrazi Winter had begun"
+
+    "Thought-Knot Seer" "OoOooOoOOooooOOo"
+
+    "Eye of Ugin" "{i}Fear{/i} usSssSSsSSSssSs!"
+
+    "God Himself" "Over the next few months, Modern was a cold and grueling
+    place to be. Everywhere one looked, the Eldrazi had a {i}deathgrip{/i} on
+    the format"
+
+    "God Himself" "Nearly 40% of the metagame was comprised of Eldrazi decks"
+
+    "God Himself" "But just when it seemed Modern had reached its
+    {i}darkest hour{/i}, the {i}light of hope{/i} rang through the
+    {i}darkness{/i}"
+
+    "God Himself" "April 4th, 2016. WoTC makes the greatly {i}anticipate{/i}d
+    B&R announcement. Everybody knows what's coming, but the stakes are high
+    enough to keep them anxious nonetheless"
+
+    "God Himself" "But the Gods are merciful and {i}Eye of Ugin{/i} is
+    banned bringing The Eldrazi Winter to its {i}fateful end{/i}"
+
+    "Affinity" "Wooooooo!!!"
+
+    "Abzan Company" "Yeaahhhhhh!!"
+
+    "Titanshift" "We are freeeeeeee!!!"
+
+    "God Himself" "Cheers sound throughout the land and much celebration is
+    had. Nobody is sad to see the Eldrazi go"
+
+    "God Himself" "And thus brings an end to our cautionary tale, informing the
+    safety of our beloved format. At least until October 4th, 2019"
+
+    "The stage lights dim and when they fade back in the rest of the cast is
+    out on the stage taking a bow"
+
+    "The {i}captive audience{/i} stares briefly before breaking out into
+    applause"
+
+    # applause
+
+    "After several rounds of bows and hands sore from clapping, the curtains
+    finally close and lights come up in the house"
+
+    show kozilek at center
+
+    kozilek "..."
+
+    mc "God Himself huh?"
+
+    kozilek "..."
+
+    mc "You were great!"
+
+    kozilek "... T-Thank you.."
+
+    mc "// hecc"
 
     return
 
 label day4_scene3_emrakul:
 
-    # some yandere jazz idk
+    scene bg hall with dissolve
+
+    "You end up wandering the halls looking for somewhere to go"
+
+    "As you walk by a classroom you notice a strange group of students inside"
+
+    "You {i}peek{/i} through the window and see Emrakul among them"
+
+    "Well, it's a good an excuse as any"
+
+    scene bg clasroom frontleft with dissolve
+
+    "You enter the classroom and everyone turns to look at you"
+
+    "As the door closes you hear a distinct click as it locks behind you"
+
+    show emrakul at center
+
+    "Well, that's mildly concerning"
+
+    emrakul "It's not concerning at all, come, take a seat"
+
+    "You look around and see that the rest of the students have been bound and
+    gagged to their seat"
+
+    "How did you not notice that before? It's moderately concerning"
+
+    emrakul "Stop saying it's concerning! Just sit down"
+
+    mc "I didn't say anything"
+
+    emrakul "Oh..."
+
+    "Majorly concerning"
+
+    emrakul "Here, I have a seat for you!"
+
+    "Like a spell with split second, Emrakul shoves a chair underneath you
+    before you have a chance to respond"
+
+    "She {i}bind{/i}s your arms to the chair and wraps another strip of cloth
+    around your mouth"
+
+    emrakul "Yay! Another friend!"
+
+    "Emrakul brings out a large duffle bag and starts rummaging through it"
+
+    "She brings out a very tacky anime schoolgirl uniform and turns around to
+    look at you and the rest of the students lined up and bound to chairs"
+
+    "Oh no"
+
+    emrakul "Oh yes"
+
+    "It was a mechanically dextrous process and more than likely required a bit
+    of eldritch magic, but you and the rest of the students end up in a various
+    array of cliche costumes"
+
+    emrakul "Fufufufu"
+
+    "You, of course, got the short end of the stick with barely any clothes
+    at all"
+
+    "There's probably more rope than clothes touching your body"
+
+    "You bite down on the cloth covering your mouth, Emrakul didn't do a very
+    good job of gagging you. It seems like it's more for presentation than
+    anything"
+
+    "Emrakul floats over to the other end of the room to god-knows-what"
+
+    "While she's distracted, you whisper to the student next to you"
+
+    mc "Do you know why she's doing thi?"
+
+    "Student" "I don't know, she's crazy"
+
+    "Student" "I was supposed to be helping her set up our class' event. She
+    never got permission to do anything like this"
+
+    mc "I think that's the least of our problems at the moment"
+
+    mc "Is there any way we could get out of this?"
+
+    "Student" "..."
+
+    mc "Yeah, I suppose I was being too optimistic. She is the most powerful
+    being in all the multiverse"
+
+    "Student" "There may be one way..."
+
+    mc "What? You mean fifteen flying squirrels?"
+
+    "Student" "Huh?"
+
+    mc "Oh, nevermind.."
+
+    "Student" "They say there is a forbidden-jutsu that acts as a
+    {i}reality anchor{/i} to all otherworldly beings"
+
+    "Student" "If anyone is brave, or stupid, enough to make such a
+    {i}dubious challenge{/i} in this forbidden-jutsu, the being must accept the
+    conditions"
+
+    mc "And if they fail?"
+
+    "Student" "Then they are banished from reality, never to set foot on the
+    material plane again"
+
+    mc "Spooky"
+
+    "Student" "This is serious"
+
+    mc "Yeah, sure. What is this challenge then?"
+
+    "The student leans closer to you and lowers their voice even futher"
+
+    "Student" "A best-of-one game of Legacy"
+
+    mc "Okay, I was being sarcastic before, but this isn't even deserving of
+    that. A game of Legacy? Who even plays Legacy anymore?"
+
+    "Student" "Exactly, that's why nobody has succeeded this challenge in
+    recorded history"
+
+    mc "Well, if it's our only way out"
+
+    "Student" "You're not actually thinking of doing it? I was just trying to
+    be cryptic and mysterious"
+
+    mc "Don't you know? I always keep a Legacy deck on me"
+
+    "Student" "I have literally never seen you before"
+
+    mc "Right. Anyways, I just so happen to have a tier 1 Legacy deck right
+    here in my pocket"
+
+    "You wiggle your chin until the gag has dropped below your mouth"
+
+    mc "Emrakul! I invoke the forbbiden-jutsu. I challenge you to a game of
+    Legacy!"
+
+    "Emrakul turns around, her single eye piercing through your mind"
+
+    emrakul "Ohohoh. And what is it you desire for this challenge?"
+
+    mc "I want our freedom, and for you to stop being so creepy"
+
+    emrakul "Well, by eldritch law I must accept"
+
+    "Emrakul floats over to you and unties you from the chair"
+
+    "She lifts a tentacle to reach into an extra-dimensional pocket in space
+    and produces a deckbox"
+
+    "You reach into your normal pocket and pull out a pile of sixty Magic: The
+    Gathering trading cards scuffed and worn from being played unsleeved on the
+    blacktop during recess"
+
+    emrakul "Then let's {i}commence the endgame{/i}, high roll?"
+
+    mc "No, low roll. My luck may be an on-fire dumpster but at least I can
+    take advantage of that"
+
+    emrakul "Fair enough"
+
+    "Emrakul tosses the d20 across the classroom floor"
+
+    "7"
+
+    "You pick it up and do the same"
+
+    "Natural 1. Just as planned"
+
+    emrakul "Play or draw?"
+
+    mc "I don't answer rhetorical questions"
+
+    "You let Emrakul cut your deck and lay out seven cards before you"
+
+    "As you fan your opening hand in front of you a smile creeps onto your
+    face"
+
+    "Your trusty Mono G Burn deck has never failed you, but this is on a whole
+    different level. It's the closest statistical probability to a god-hand"
+
+    "You look up at Emrakul and say the well-practiced word"
+
+    mc "Keep"
+
+    emrakul "Same"
+
+    "You take the initiative and slam a basic {i}Forest{/i} onto the
+    battlefield"
+
+    "Then, after establishing your dominance, you look Emrakul in the eye and
+    say"
+
+    mc "Pass"
+
+    "Emrakul draws for turn and drops a basic {i}Wastes{/i} before passing to
+    you"
+
+    "Truly powerful magic you are playing"
+
+    "You draw your card, drop a {i}Prismatic Vista{/i} and cast your first
+    spell of the game"
+
+    "{i}Wild Cantor{/i}"
+
+    "Incredible, you just played a 1 mana 1/1. Emrakul must be shaking in
+    terror"
+
+    "You pass the turn and Emrakul draws"
+
+    "She plays another basic {i}Wastes{/i} and passes. You wonder what her
+    {i}game plan{/i} could be"
+
+    "You draw and drop another {i}Forest{/i}"
+
+    "Now it's time to get into the red zone, you swing all out with your single
+    {i}Wild Cantor{/i} and smack Emrakul in the face for a single damage"
+
+    "First blood, the students begin to murmur. Only turn three and you've
+    already dealt a whole damage to your opponent. You're making fantastic
+    progress"
+
+    "But it's not over yet. No, not in the least. This is powerful magic you're
+    playing"
+
+    "Post-combat main phase, you sacrifice the {i}Wild Cantor{/i} for a green
+    mana and tap a {i}Forest{/i}"
+
+    "With two green now floating you cast {i}Channel{/i}, now is when the real
+    fun begins"
+
+    "You pay 9 life, then pay another life to fetch a third {i}Forest{/i} from
+    your deck with {i}Prismatic Vista{/i} and tap your last two {i}Forest{/i}s"
+
+    "With two green and nine colorless floating you cast what could possibly be
+    the most powerful card in your deck"
+
+    "{i}Borrowing the East Wind{/i} for X = 9"
+
+    "You dome Emrakul in the face for 9 damage, dropping her to 10 life. Sure,
+    you may have payed 10 life and also dealt 9 damage to yourself to pull it
+    off, but that just the Mono G Burn way"
+
+    "With Emrakul at half her health and you down to 1/20th your health, you
+    pass the turn feeling pretty confident in yourself"
+
+    "Emrakul draws and plays a third {i}Wastes{/i} before passing"
+
+    "Pathetic, you think to yourself, now it's time to show her what real
+    magic looks like"
+
+    "You draw and drop a fourth {i}Forest{/i}. With four mana you point an
+    {i}Unyaro Bee Sting{/i} at Emrakul"
+
+    "You pass priority and the spell resolves. Emrakul takes 2 more damage
+    and drops to 8"
+
+    "Powerful magic, you reassert to yourself"
+
+    "You pass the turn and Emrakul plays a fourth {i}Wastes{/i}. Then, she
+    passes the turn back to you"
+
+    "You're beginning to get nervous. Emrakul hasn't played anything but basic
+    lands for the past four turns. What could she have in that hand of hers?"
+
+    "But it's probably fine, you've already got an overwhelming amount of
+    pressure on her with your four mana {i}Shock{/i}s there's no possible
+    way she could get out of this"
+
+    "You untap and draw. Then, with your four {i}Forest{/i}s you cast
+    {i}Storm Seeker{/i}"
+
+    "Because Emrakul hasn't cast any spells the entire game she's got a full
+    grip of cards"
+
+    "The situation couldn't be more perfect. {i}Storm Seeker{/i} deals a full
+    7 damage to Emrakul dropping her to just 1 life"
+
+    "You pass the turn feeling immensely confident. Emrakul's at 1 life with
+    a full hand and you're at 2 with only two cards in hand, there's no
+    conceivable way for her to stabilize from this"
+
+    "Emrakul draws and plays her fifth land, but this time it's not a
+    {i}Wastes{/i}. It's a {i}Mountain{i}"
+
+    "Hmmmmm.."
+
+    "Then she taps all her lands and casts {i}Through the Breach{/i}"
+
+    "Uh oh"
+
+    "The crowd audibly gasps"
+
+    "{i}Emrakul, the Aeons Torn{/i} hits the battlefield with haste and attacks
+    you, {i}threaten{/i}ing 15 damage to your measly life total of 1"
+
+    "Emrakul (the card, not the player), annihilates your board with her
+    trigger and you're left with no board presence"
+
+    "Emrakul passes priority before combat damage, a formality to be sure.
+    There's nothing you can do to get out of this"
+
+    "Or is there.."
+
+    "You look down at the last two cards in your hand, {i}Nourishing Shoal{/i}
+    and {i}Autochthon Wurm{/i}"
+
+    "Wait a second..."
+
+    "You've got it!"
+
+    "You exile the wurm from your hand to pay the alternate casting cost of
+    {i}Nourishing Shoal{/i}, gaining exactly 15 life"
+
+    "Emrakul (card version) slams you in the face for 15 damage, bringing you
+    back down to 1"
+
+    "It wasn't pretty, but now you get to live to see another untap"
+
+    "At the end of turn, Emrakul (card version) shuffles back into Emrakul's
+    library"
+
+    "You untap with zero cards in hand,zero permanents on the battlefield, and
+    a life total of 1"
+
+    "You tentatively take the top card of your library, as you turn it over in
+    your hand you breath a sigh of disappointment"
+
+    "{i}Elvish Spirit Guide{/i}"
+
+    "That doesn't help you at all"
+
+    "You're forced to pass the turn as Emrakul untaps with all her lands and
+    six cards in hand"
+
+    "She makes only one play on her turn. A {i}Memnite{/i}, just enough
+    power to kill you on her next turn. Thank God it has summoning sickness,
+    now you have one final chance to turn this game around"
+
+    "You make it to what could be your last untap step, sadly untapping zero
+    permanents. You stare at the faded back of the Magic: The Gathering card
+    resting face down on the top of your library. You {i}hope against hope{/i}
+    for anything that could save you this turn"
+
+    "Both you and Emrakul are at 1 life, and Emrakul has lethal on board.
+    You're not sure what could save you right now, much less that it's even
+    in your deck"
+
+    "But this is Mono G Burn, and it's never failed you yet"
+
+    "You turn your head to look at the row of students bound to their chairs.
+    All their hope is pinned on you and this card you're about to draw"
+
+    "You pass priority to Emrakul on your upkeep"
+
+    "She passes back"
+
+    "Now it's your draw step. You rest your hand on top of your library,
+    preparing to reveal the card when you feel something inside you"
+
+    "A newfound feeling of hope and {i}vigor{/i}. You feel a sudden {i}rush of
+    vitality{/i}"
+
+    "What is this feeling? But you already know, it's the heart of the cards"
+
+    "You let your faith do the work, believing in the heart of the cards you
+    flip the top card of your library"
+
+    "The stray murmurs among the captives suddenly {i}silence{/i}"
+
+    "It's a miracle"
+
+    "No, not the mechanic miracle. A literal miracle"
+
+    "You look down at the face up card now over the battlefield"
+
+    "It's a {i}Hornet Sting{/i}"
+
+    "You exile the {i}Elvish Spirit Guide{/i} from your hand and cast the
+    {i}Hornet Sting{/i}"
+
+    "{i}The crowd goes wild{/i}. Muffled cheers erupt from behind gags and
+    the sound of chair legs hitting the floor as the students rock back and
+    forth"
+
+    emrakul "I-I just wanted to *hic* h-have a harem of anime schoolgirls"
+
+    "Emrakul mumbles into the floor"
+
+    "You stand up and begin untying the rest of the students from their
+    respective chairs"
+
+    "You're not really sure what to say to Emrakul"
+
+    "But thankfully that burden is lifted as a teacher walks through the door"
+
+    "Teacher" "What the fuck?"
+
+    mc "Uhhhhhhhhhhhhhhhhhhhhhhh"
+
+    hide emrakul
+
+    scene bg hall with dissolve
+
+    "You walk out of the classroom. The rest of the students can explain what
+    happened, or at least try to"
+
+    "You think you've had enough existing for today. It's time to go home and
+    {i}sleep{/i} so you no longer need to see, think, or feel"
+
+    "Yes, yes that sounds quite nice"
+
+    "You already had your attendance recorded anyways, you don't need to be
+    at school for the rest of the day"
+
+    jump final_scene
 
     return
 
 label day4_scene3_nissa:
 
-    # tea party w/ yargle
+    scene bg tea room with dissolve
+
+    "You enter Nissa's classroom to see that it's be {i}refurbish{/i}ed into
+    a traditional tea room"
+
+    show nissa at center
+
+    show chandra at left
+
+    "Chandra and Nissa are there along with a few other students"
+
+    if gender == "male":
+        nissa "Oh, hi [name_1]-kun"
+    elif gender == "female":
+        nissa "Oh, hi [name_1]-chan"
+    else:
+        nissa "Oh, hi [name_1]-san"
+
+    mc "Hello"
+
+    chandra "Hey hey"
+
+    mc "So where's this tea I've been promised?"
+
+    nissa "Follow me"
+
+    hide chandra
+
+    "Nissa escorts you to the front of the room and hands you a cup of hot
+    water"
+
+    "You exchange silent bows and Nissa leads you through the motions of the
+    ceremony"
+
+    show nissa:
+        center
+        linear 1.0 right
+
+    # screen shake and crash sound
+
+    "As you're {i}purify{/i}ing yourself in the water basin, you hear a loud
+    {i}crash{/i} from the entrance behind you"
+
+    show yargle at center
+
+    yargle "YARGLE'S COME TO BARGLE"
+
+    show chandra at left
+
+    chandra "Yooo! Yargle! You made it!"
+
+    yargle "Yargle always arrives fashionably late"
+
+    chandra "Please, help us Yargle. This tea party is so boring without you.
+    We need your partying expertise"
+
+    yargle "Do not fret, Yargle knows exactly what this party needs"
+
+    # smoke, lasers, and electro synth music
+
+    "Student 1" "Yeah Yargle!"
+
+    "Student 2" "I love you Yargle!!"
+
+    nissa "Ummm.. Hi Yargle"
+
+    yargle "Nissaaaaa! What's crackin'? This is a killer tea party Nissa"
+
+    nissa "Oh, uh. Thank you Yargle-san"
+
+    nissa "Yargle-san, you're so cool. Why did you choose our tea ceremony?"
+
+    yargle "Nissa, Nissa, Nissa. This lack of confidence thing is really
+    killing the vibe at this party"
+
+    yargle "I want you to repeat after me"
+
+    yargle "I am the best. My tea party is the best"
+
+    nissa "Uhhhh... I am the best.."
+
+    yargle "Go on"
+
+    nissa "My tea party is the best"
+
+    yargle "My tea party slays. I can do anything"
+
+    nissa "My tea party slays. I can do anything?"
+
+    yargle "It's not a question. It's an affirmation"
+
+    yargle "I am the tea. I can kill God"
+
+    nissa "Wait, what?"
+
+    yargle "Repeat it Nissa"
+
+    nissa "I-I am the tea. I can... I can kill God"
+
+    yargle "Yes Nissa!! The world is your teacup. Make God kneel before you!"
+
+    yargle "Yeahhhhhhh!!!!!"
+
+    "Yargle shouts and gets {i}absorb{/i}ed into the noticably larger crowd in
+    the back"
+
+    hide yargle
+
+    show nissa:
+        right
+        linear 1.0 center
+
+    chandra "You could definitely kill God Revane-chan"
+
+    nissa "Uhhhh.. Thank you?"
+
+    chandra "You're quite welcome"
+
+    chandra "So, are you liking your tea party so far?"
+
+    nissa "Tea ceremony"
+
+    chandra "Whatever"
+
+    nissa "It's... Not what I expected"
+
+    chandra "Yargle often exceeds expectations, it's true"
+
+    nissa "Why did you do this, Nalaar-san?"
+
+    chandra "Do what?"
+
+    nissa "I mean.."
+
+    "Nissa gestures around her"
+
+    nissa "This"
+
+    nissa "You're not even in my class, why did you go through so much trouble
+    to help with this"
+
+    chandra "I really didn't do anything, you did all this yourself"
+
+    nissa "No, you organized everything, and gathered all the supplies, and
+    summoned Yargle"
+
+    if gender == "male"
+        nissa "You just pretended to slack off in front of [name_1]-kun
+        because.."
+    elif gender == "female":
+        nissa "You just pretended to slack off in front of [name_1]-chan
+        because.."
+    else:
+        nissa "You just pretended to slack off in front of [name_1]-san
+        because"
+
+    nissa "Well, I don't really know why"
+
+    nissa "But you definitely did most of the work"
+
+    chandra "Oop. I guess I did. Oh well"
+
+    nissa "You still haven't answered the question"
+
+    chandra "Isn't it obvious Revane-chan?"
+
+    chandra "I like you"
+
+    nissa "You like me?"
+
+    chandra "Yes"
+
+    nissa "Like, like like me?"
+
+    chandra "Yes, I do"
+
+    nissa "Really?"
+
+    # NotC pose
+
+    chandra "No"
+
+    nissa "Huh?"
+
+    chandra "No, I don't like you Revane-san"
+
+    chandra "I'm only interested in decidedly-male Gideon"
+
+    nissa "What?"
+
+    mc "Ay, you good Nalaar-san?"
+
+    show yargle at right
+
+    yargle "Do I smell corporate diversity retconning?"
+
+    mc "Oh gosh, yes. Please help us Yargle! They're trying to retcon Chandra
+    into being straight"
+
+    yargle "Well we can't have that now, can we"
+
+    yargle "This calls for an {i}urgent exorcism{/i}. We must flush the evil
+    NotC spirit from her body"
+
+    nissa "What's going on?"
+
+    yargle "Fear not dear Nissa, you shall have your happy ending. Quick, get
+    the Twitter Cancel threats ready!"
+
+    nissa "The what?"
+
+    mc "I got it Yargle!"
+
+    "You pull out your mobile device and start preparing to Twitter Cancel
+    Wizards of the Coast"
+
+    "Your fingers fly across the screen, spewing out tweet after tweet"
+
+    yargle "Nissa, I need you to hold Chandra down while I prepare the
+    {i}forbidden ritual{/i}"
+
+    nissa "Wait, why is it forbidden!?"
+
+    yargle "There's no time for plot exposition, just hold on to Chandra!"
+
+    nissa "Okay okay!"
+
+    "Nissa grabs Chandra and holds her in place"
+
+    "You tweet your final cancellation threat and go to help Nissa as well"
+
+    "Yargle begins to chant in an ancient language"
+
+    "As the ritual begins Chandra starts to rise into the air, her irises blank
+    until her eyes are pools of blinding white void"
+
+    "You and Nissa struggle to pull her down, within range of the ritual"
+
+    "Yargle's chanting grows louder, the music stops and the rest of the
+    students turn to watch"
+
+    "The chanting crescendos and Chandra's body starts to spasm in the air"
+
+    "Nissa hugs her as you try to keep her appendages in place"
+
+    "You notice a wispy figure start to emerge from Chandra body in the
+    distinct shape of Nic Kelman"
+
+    "The crowd waits in bated breath, another ghost gets excorsized from
+    Chandra, this time in the shape of Greg Weisman"
+
+    "Yargle's chanting stops and he turn to the crowd"
+
+    yargle "The ritual is almost complete"
+
+    yargle "It just needs one more thing"
+
+    yargle "For everybody in this room to raise a hearty middle finger at these
+    malicious spirits!!"
+
+    "The crowd cheers and everyone raises their hands to flip off the ghosts
+    of queerbaiting writers"
+
+    "Nic Kelman and Greg Weisman begin to writhe and squirm in the space above
+    Chandra"
+
+    "Their incorporeal forms shift and stretch, their mouths agape in silent
+    screams"
+
+    "Some of the students raise a second middle finger to speed up the process"
+
+    "And before long, the ghosts have popped out of existence. Banished to The
+    Shadow Realm"
+
+    "The force keeping Chandra afloat {i}dispel{/i}s, and she drops into
+    Nissa's arms"
+
+    "{i}The crowd goes wild{/i} with screams of joy"
+
+    "Chandra's eyes {i}flicker{/i} open to see Nissa above her"
+
+    nissa "I-I--"
+
+    "Nissa stumbles over her words before Chandra interrupts her by grabbing
+    her neck"
+
+    "They share {i}true love's kiss{/i} with Nissa's eyes still wide open"
+
+    yargle "Well, it looks like Yargle's Bargled today quite well"
+
+    yargle "You can thank me later"
+
+    "He vanishes in a {i}smoke shroud{/i}"
+
+    jump final_scene
 
     return
 
 label final_scene:
-
-    scene bg schoolgrounds with dissolve
 
     "And they all lived {i}happily ever after{/i}"
 
