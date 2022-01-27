@@ -1748,7 +1748,7 @@ ALL HAIL THE GREAT LORD EGOTIST!!
 
 chimney imp
 
-34 rhino
+// 34 rhino
 
 // avacyn hates fishermen
 
@@ -1756,7 +1756,7 @@ chimney imp
 
 humility + opalescence
 
-yargle/slimefoot
+// yargle/slimefoot
 
 // eight fucking bears
 

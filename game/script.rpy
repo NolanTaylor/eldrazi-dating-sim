@@ -4151,7 +4151,7 @@ label day4_scene3_emrakul:
 
     "You {i}peek{/i} through the window and see Emrakul among them"
 
-    "Well, it's a good an excuse as any"
+    "Well, it's as good an excuse as any"
 
     scene bg clasroom frontleft with dissolve
 
@@ -4771,7 +4771,7 @@ label day4_scene3_nissa:
     yargle "Well we can't have that now, can we"
 
     yargle "This calls for an {i}urgent exorcism{/i}. We must flush the evil
-    NotC spirit from her body"
+    NotC spirits from her body"
 
     nissa "What's going on?"
 
