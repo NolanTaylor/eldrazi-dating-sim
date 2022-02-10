@@ -1,11 +1,9 @@
-define nissa = Character("Nissa")
-define chandra = Character("Chandra")
-define sorin = Character("Sorin")
-define nahiri = Character("Nahiri")
-define ulamog = Character("Ulamog")
-define kozilek = Character("Kozilek")
-define emrakul = Character("Emrakul")
-define yargle = Character("Yargle")
+define nissa = Character("Nissa", image = "nissa")
+define chandra = Character("Chandra", image = "chandra")
+define ulamog = Character("Ulamog", image = "ulamog")
+define kozilek = Character("Kozilek", image = "kozilek")
+define emrakul = Character("Emrakul", image = "emrakul")
+define yargle = Character("Yargle", image = "yargle")
 
 # credit house of imagi studio
 
@@ -22,7 +20,6 @@ python:
     # flags
     date_1 = ""
     date_2 = ""
-    date_3 = ""
 
     emrakul_date_1 = ""
 
@@ -95,7 +92,7 @@ label day1_scene1:
     "And although this would be a problem on any day of the week, today is a
     Wednesday"
 
-    "And Wednesdays suck"
+    "And as has been established: Wednesdays suck"
 
     "Well, since you're up this early. You might as well try getting some
     homework done"
@@ -136,7 +133,7 @@ label day1_scene1:
 
     scene bg street with dissolve
 
-    show nissa at left
+    show nissa wave at left
 
     if gender == "male":
         nissa "[name_1]-kun!!"
@@ -145,7 +142,7 @@ label day1_scene1:
     else:
         nissa "[name_1]-san!!"
 
-    nissa "You're early today! Eheheh"
+    nissa smile "You're early today! Eheheh"
 
     "Oh... Right. You almost forgot"
 
@@ -170,9 +167,8 @@ label day1_scene1:
     "Normally she's the one to wake you up. But as both of you noticed, that
     didn't happen today"
 
-    show nissa:
-        left
-        linear 1.0 xpos offscreenright
+    show nissa excited:
+        linear 1.0 offscreenright
 
     "Without waiting for your response, Nissa grabs your arm and starts
     dragging you down the steps of your porch"
@@ -209,6 +205,8 @@ label day1_scene1:
 
     "You arrive at school with nearly half and hour to spare"
 
+    hide nissa
+
     "Nissa leaves to get to her class, as you should probably be doing too"
 
     jump day1_scene2
@@ -237,7 +235,7 @@ label day1_scene2:
     "You curse your internal monologue for keeping you longer than absolutely
     necessary and make your way to the classroom door"
 
-    show nissa at center
+    show nissa wave at center
 
     if gender == "male":
         nissa "[name_1]-kun!!"
@@ -246,23 +244,24 @@ label day1_scene2:
     else:
         nissa "[name_1]-san!!"
 
-    nissa "You're late, eheheh. I caught you this time"
+    nissa neutral "You're late, eheheh. I caught you this time"
 
     mc "How did you know I'd stay late?"
 
-    nissa "I didn't. I do this every day, but this time you're the last one
-    here. I guess today's my luck day~"
+    nissa smile "I didn't. I do this every day, but this time you're the last
+    one here. I guess today's my luck day~"
 
     "Gee. She does this every day? And you never knew. Now you feel like
     the asshole"
 
-    nissa "C'mon! C'mon! Let's go"
+    nissa neutral @ excited "C'mon! C'mon! Let's go"
 
     "Nissa pulls at your arm with a playful smile on her face"
 
     mc "Go where?"
 
-    nissa "We're planning our class' event for the school {i}festival{/i}"
+    nissa smile "We're planning our class' event for the school
+    {i}festival{/i}"
 
     "That's right.. Nissa's the class president this year"
 
@@ -283,11 +282,11 @@ label day1_scene2:
     trying to avoid while actively feeling guilty about trying to avoid it"
 
     if gender == "male":
-        nissa "[name_1]-kun?"
+        nissa distracted "[name_1]-kun?"
     elif gender == "female":
-        nissa "[name_1]-chan?"
+        nissa distracted "[name_1]-chan?"
     else:
-        nissa "[name_1]-san?"
+        nissa distracted "[name_1]-san?"
 
     "{i}Damn{/i}. You really need to keep your internal monologues in check"
 
@@ -299,7 +298,7 @@ label day1_scene2:
     "You give the most half-assed response despite your heart's best
     intentions"
 
-    nissa "Yay!! C'mon c'mon!"
+    nissa smile @ excited "Yay!! C'mon c'mon!"
 
     "But Nissa's jubilant reaction shows no sign of disappointment"
 
@@ -338,7 +337,7 @@ label day1_scene3:
 
     "And in the library no less"
 
-    show nissa at right
+    show nissa wave at right
 
     if gender == "male":
         nissa "Over here [name_1]-kun!"
@@ -356,13 +355,12 @@ label day1_scene3:
 
     "What are you doing here again?"
 
-    show nissa:
-        right
+    show nissa smile:
         linear 0.2 left
 
-    show ulamog at Position(xpos = 0.3)
-    show kozilek at Position(xpos = 0.6)
-    show chandra at right
+    show chandra neutral at right
+    show ulamog neutral at Position(xpos = 0.3)
+    show kozilek neutral at Position(xpos = 0.6)
 
     nissa "Hi hi everyone! Sorry I'm late"
 
@@ -380,9 +378,9 @@ label day1_scene3:
     ulamog "I'm Ulamog! Nice to meet you"
 
     "The tall figure greets you with a smile. Its legs are made of tentacles
-    and its arms split at the elbows to form two sets of forearms.
-    Thick grey {i}carapace{/i} potrudes from exposed muscle and sinew creating
-    bone-like patterns along the reddish surface"
+    and its arms split at the elbows to form two sets of forearms. Thick grey
+    {i}carapace{/i} potrudes from exposed muscle and sinew creating bone-like
+    patterns along the reddish surface"
 
     kozilek "... Hey.."
 
@@ -432,7 +430,7 @@ label day1_scene3:
     of one of these Eldrazi?"
 
     "It's often cited that the perils of high school romance are much akin to
-    bringing Ladies Looking Left tribal to cEDH night"
+    piloting Ladies Looking Left tribal at cEDH night"
 
     "Well, actually.. No, nobody says that. But it certainly seems that way"
 
@@ -495,7 +493,7 @@ label day1_scene3:
 
     "You haven't needed to see a therapist in years. Is this a relapse?"
 
-    "No, it couldn't be. You're confident you didn't say all that embarrasing
+    "No, it couldn't be. You're confident you didn't say all that embarrassing
     tentacle stuff out loud"
 
     "Then what could have prompted Emrakul's sudden regurgitation of obscure
@@ -716,7 +714,7 @@ label day1_scene4:
 
             nissa "Oh, umm.. Yeah. that's..."
 
-            nissa "That's fine I guess.. I just mean, I just don't think a
+            nissa "That's fine I guess.. I just mean, I don't really think a
             hentai curation booth would be very school appropriate"
 
             nissa "But I mean. If both of you really wanted it, maybe we could
@@ -943,8 +941,9 @@ label day2_scene4_ulamog:
     ulamog "Oh? Do you think it's too much?"
 
     mc "No, no. It's just that, well.. The school {i}festival{/i}s have all
-    been pretty.. Uuh. Crappy. So it's just surprising to see you doing
-    something so elaborate"
+    been pretty.. Uuh. Crappy"
+
+    mc "So it's just surprising to see you doing something so elaborate"
 
     ulamog "Oh. Well I just think it'd be a lot of fun! And I'm willing to
     put in the work to make it happen"
@@ -969,6 +968,8 @@ label day2_scene4_ulamog:
 
     mc "Just go up and ask?"
 
+    hide ulamog
+
     "But Ulamog has already stood up and is dashing out of the library"
 
     mc "Huh.."
@@ -977,10 +978,15 @@ label day2_scene4_ulamog:
 
     scene bg hall with dissolve
 
-    "Ulamog makes an {i}expedite{/i}d pace down the hall with a skip in their step"
+    show ulamog at center
+
+    "Ulamog makes an {i}expedite{/i}d pace down the hall with a skip in their
+    step"
 
     "Well, not a literal skip as they have tentacles in place of legs, but a
     metaphorical skip"
+
+    hide ulamog
 
     "Ulamog turns the corner to the principal's office and you hear the door
     {i}crack open{/i}. What you don't hear is any knock or indication of
@@ -1020,9 +1026,10 @@ label day2_scene4_ulamog:
     scene bg library 3 with dissolve
 
     show nissa at left
+
     show ulamog at center
 
-    nissa "Oh, there you are. Where did you two go?"
+    nissa "Oh, there you are. Where'd you two go?"
 
     ulamog "We got a kitchen!!"
 
@@ -1275,8 +1282,8 @@ label day2_scene4_kozilek:
     interaction"
 
     "You could probably figure out what Kozilek meant. But the warranty on your
-    braincell has already expired, so it might be a bad idea to stress it too
-    much"
+    braincell has already expired, so it might be a bad idea to stress it any
+    further"
 
     "You pass the rest of the time in relative comfort as Kozilek makes a crude
     attempt to {i}reconstruct history{/i}"
@@ -1306,6 +1313,14 @@ label day2_scene4_emrakul:
 
     "You take a seat next to Emrakul and look down to see a mildly concerning
     amount of pornographic light novels spread out across the floor"
+
+    "Well, now that you think about it. Any amount of porn would be concerning.
+    So the sheer quantity of porn spread out in front of Emrakul isn't really
+    done justice by your description"
+
+    "If you were to try again, you think 'ungodly' would paint a much better
+    mental image of just how much porn is lying on the library floor of this
+    public school"
 
     mc "Ummm..."
 
@@ -1371,6 +1386,7 @@ label day2_scene4_emrakul:
                 emrakul_date_1 = "scream"
 
     show nissa at left
+
     show chandra at right
 
     nissa "Hey guys, what's going on over here?"
@@ -1388,7 +1404,7 @@ label day2_scene4_emrakul:
 
     nissa "I had meant to, b-but I shouldn't need to!"
 
-    nissa "Emrakul-chan, can you please just put these away for now"
+    nissa "Emrakul-chan, can you please just put these away for now?"
 
     "Nissa looks away and gestures a sweeping motion toward the floor covered
     in disproportionate drawings of naked humans"
@@ -1470,8 +1486,10 @@ label day2_scene4_emrakul:
 
     "Emrakul floats over to the tables and returns with a set of..."
 
-    "Technically clothes, in the same way {i}mind rot{/i} is technically
-    draw because it's card advantage"
+    "Technically clothes"
+
+    "In the same way {i}mind rot{/i} is technically draw because it's card
+    disadvantage for your opponent and therefore card advantage for you"
 
     "Which is to say, it's not draw at all"
 
@@ -1898,7 +1916,10 @@ label day2_scene4_nissa:
 
     nissa "Uhhhh..."
 
-    "The sudden change in subject doesn't seem to help Nissa's {i}increasing
+    "You can see the metaphorical whiplash Nissa just got from the sudden
+    shift in demeanor"
+
+    "The unexpected change in subject certainly isn't helping her {i}increasing
     confusion{/i}"
 
     "But she {i}rebound{/i}s surprisingly quickly and moves on"
@@ -2051,7 +2072,12 @@ label day2_scene4_nissa:
 
     nissa "Because she wants to be involved with school spirit?"
 
+    mc "My lord, how dense can you be?"
+
     mc "It's because of you"
+
+    mc "There's no reason on Heaven or Earth that somebody would go through
+    that except for lust"
 
     show bg street with dissolve
 
@@ -2176,6 +2202,18 @@ label day3_scene1:
 
     "But despite this, Fridays are still massively overvalued"
 
+    "If there were a way to short days of the week like a stock market, you
+    wouldn't even need to work of Fridays"
+
+    "But then, that would increase the value of Fridays back to being
+    accurately valued"
+
+    "And then you'd need to work of Fridays again"
+
+    "... Which means you could short them again?"
+
+    "Curse you Burton G. Malkiel"
+
     jump day3_scene2
 
     return
@@ -2233,8 +2271,9 @@ label day3_scene3:
 
     nissa "I guess we can get started then. Is everybody here?"
 
-    "You look around the library. And count: 1, 2 humanoids; and 1, 2 eldrazi.
-    Hmmmm.. Upon closer inspection there seems to be a distinct lack of
+    "You look around the library. And count: 1, 2 humanoids; and 1, 2 eldrazi"
+
+    "Hmmmm.. Upon closer inspection there seems to be a distinct lack of
     Emrakul in the room"
 
     ulamog "Oh no!! We're missing Emmy-chan!"
@@ -2295,6 +2334,8 @@ label day3_scene3:
     "..."
 
     "Oh.."
+
+    "..."
 
     "Yes, you suppose a massive flying {i}squirrel mob{/i} would be
     understandably scary"
@@ -3109,7 +3150,7 @@ label day3_scene4_kozilek:
     "Interesting"
 
     python:
-        date_2 == "kozilek"
+        date_2 = "kozilek"
 
     jump day3_scene5
 
@@ -3168,8 +3209,144 @@ label day3_scene4_emrakul:
 
     mc "Oh, um.."
 
+    mc "That doesn't sound very responsible"
+
+    emrakul "It's fine, the {i}festival{/i} isn't important anyways"
+
+    mc "It isn't?"
+
+    emrakul "No, I'd rather just spend this time with you"
+
+    mc "That's both flattering and slightly terrifying"
+
+    emrakul "It's not terrifying at all. C'mon I know exactly the place"
+
+    "Emrakul floats out of the library. And with nothing better to do with your
+    time, you follow her"
+
+    scene bg hall with dissolve
+
+    "She's probably right. There's nothing terrifying about this at all, you've
+    just been reading too many yandere light novels"
+
+    emrakul "Exactly, there's no need to be scared"
+
+    mc "What?"
+
+    emrakul "Nothing"
+
+    emrakul "Here we are"
+
+    scene bg classroom frontleft with dissolve
+
+    "Emrakul leads you into an empty classroom"
+
+    mc "So what are we doing here?"
+
+    emrakul "I just thought we could use some privacy"
+
+    "Your confidence in the level of creepiness of this situation is decreasing
+    by the minute"
+
+    emrakul "Stop saying it's creepy"
+
+    mc "I didn't say anything"
+
+    emrakul "Oh.."
+
+    emrakul "Just stay there then"
+
+    mc "Sure..."
+
+    "Emrakul pulls out a camera"
+
+    "She takes a picture of you"
+
+    "..."
+
+    mc "I should probably be leaving"
+
+    emrakul "Nonononono. Stay"
+
+    mc "Don't you have work to do?"
+
+    emrakul "It's fine"
+
+    "Emrakul reaches into a large duffel bag you just noticed was brought into
+    the room"
+
+    if date_1 == "emrakul":
+        "She pulls out a concerningly provocative outfit you recognize from the
+        magazines she was looking at yesterday"
+    else:
+        "She pulls out a concerningly provocative outfit from the bag"
+
+    emrakul "Now put this on"
+
+    mc "There's less actual cloth in that outfit than there are non-elk
+    creatures in Throne of Eldraine Standard"
+
+    emrakul "You don't like it?"
+
+    mc "I never said that"
+
+    mc "But yes, now that you mention it, I hate it"
+
+    emrakul "That's okay, just put it on"
+
+    "She smiles as if nothing's wrong"
+
+    "You struggle to fathom the sheer gap of logic present in Emrakul's
+    deduction"
+
+    emrakul "My logic is flawless, you should put on the costume because I want
+    you to"
+
+    "Like that Warlock invocation for {i}jump{/i}ing, except it applies to
+    conclusions"
+
+    emrakul "Warlock what?"
+
+    "Oops, wrong game"
+
+    emrakul "Game?"
+
+    "Oh, Emrakul was talking this entire time. You should probably be paying
+    attention to her"
+
+    emrakul "Yes! Stop ignoring me!"
+
+    mc "Yep, time to start ignoring Emrakul"
+
+    "Oh wait. You said that one out loud"
+
+    mc "Y'know, maybe I should just leave. You obviously have some important
+    stuff to do. I wouldn't want to bother you"
+
+    "You stand up to move toward the door. But Emrakul pushes you down into a
+    chair"
+
+    emrakul "No, you should stay"
+
+    mc "..."
+
+    mc "Yep, way too much Yandere Simulator"
+
+    "Although, the the if/else riddled spaghetti code is actually way more
+    stroke-inducing than the actual game"
+
+    "That's not the point though"
+
+    "The point is, you need to leave immediately"
+
+    "You stand up"
+
+    mc "Ight Imma head out"
+
+    "Emrakul watches as you leave the room"
+
     python:
-        date_2 == "emrakul"
+        date_2 = "emrakul"
 
     jump day3_scene5
 
@@ -3352,7 +3529,7 @@ label day3_scene4_nissa:
     "She makes a motion with her hands and the candles ignite"
 
     "Billowing {i}smoke{/i} begins to spill out from the desk and the room
-    starts to smell faintly of lavender"
+    starts to smell strongly of lavender"
 
     nissa "Umm.. What's going on?"
 
@@ -3385,7 +3562,7 @@ label day3_scene4_nissa:
 
     yargle "Tea party you say?"
 
-    yargle "Tea parties are the best for bargling"
+    yargle "Tea parties are the best for Bargling"
 
     mc "Thank you great Yargle!"
 
@@ -3400,7 +3577,7 @@ label day3_scene4_nissa:
     # music fades
 
     python:
-        date_2 == "nissa"
+        date_2 = "nissa"
 
     jump day3_scene5
 
@@ -3415,7 +3592,7 @@ label day3_scene5:
 
     "She'll understand you're sure"
 
-    scene bg park with
+    scene bg park with dissolve
 
     "Despite only starting to walk with Nissa for the past couple days, the
     {i}isolate{/i}d walk home feels unusually lonesome"
@@ -3426,8 +3603,8 @@ label day3_scene5:
     if date_2 == "ulamog":
         "Your {i}train of thought{/i} inevitably drifts toward Ulamog"
 
-        "You {i}wonder{/i} how his class' event is going to turn out. It is quite
-        ambitious after all"
+        "You {i}wonder{/i} how his class' event is going to turn out. It is
+        quite ambitious after all"
 
         "But he's clearly passionate about it, so there shouldn't be any
         problems"
@@ -3441,7 +3618,7 @@ label day3_scene5:
 
         "You {i}wonder{/i} how his class' event is going to turn out. He didn't end
         up getting much done today. Hopefully he'll be able to get everything
-        ready for Monday"
+        ready in time for Monday"
 
         "His attitude toward you seems.. Fickle, at best. Maybe you should
         stop teasing him"
@@ -3456,16 +3633,16 @@ label day3_scene5:
     elif date_2 == "emrakul":
         "Your {i}train of thought{/i} inevitably drifts toward Emrakul"
 
-        "You {i}wonder{/i} how her class' event is going to turn out. Actually, you
-        don't have to {i}wonder{/i} at all. You're confident it's going to be an
-        absolute disasterpiece"
+        "You {i}wonder{/i} how her class' event is going to turn out. Actually,
+        you don't have to {i}wonder{/i} at all. You're confident it's going to
+        be an absolute disasterpiece"
     elif date_2 == "nissa":
         "Your {i}train of thought{/i} inevitably drifts toward Nissa and
         Chandra"
 
-        "You {i}wonder{/i} how Nissa's class event is going to turn out. She seems to
-        have prepared pretty well considering all you and Chandra did was try
-        to distract her the entire time"
+        "You {i}wonder{/i} how Nissa's class event is going to turn out. She
+        seems to have prepared pretty well considering all you and Chandra did
+        was try to distract her the entire time"
 
         "But there's no use in worrying about it. There's absolutely no way
         she could mess up this tea party when Yargle will be there"
@@ -3518,7 +3695,9 @@ label day4_scene1:
 
         "That's right. How could you forget?"
 
-        "Emrakul's // "
+        "Emrakul's..."
+
+        "Something, is today"
     elif date_2 == "nissa":
         "Yargle"
 
@@ -3746,6 +3925,9 @@ label day4_scene3_ulamog:
     "The {i}blaze{/i} reaches higher as the {i}engulfing flames{/i} of the
     stove {i}threaten{/i} to {i}burn down the house{/i}"
 
+    "Chandra's hair has also burst into flame, and Nissa occasionally passes
+    a frying pan over her head to fry the collection of ingredients inside"
+
     "At the other end of the kitchen, a horde of students have shown up to
     cheer on the contestents"
 
@@ -3877,7 +4059,7 @@ label day4_scene3_ulamog:
 
     # more screen shake
 
-    "You and Ulamog" "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    "[name_1] and Ulamog" "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
@@ -3892,7 +4074,7 @@ label day4_scene3_ulamog:
     "The noise from your anime-empowered screams shake the entire building and
     {i}tremor{/i}s emenate from your stove"
 
-    "When all is settled, a wave of silence washes over the crowd"
+    "When all is settled, a wave of {i}silence{/i} washes over the crowd"
 
     "You and Ulamog drop to the floor not having realized your anime powers
     temporarily {i}suspend{/i}ed you in the air"
@@ -3913,9 +4095,9 @@ label day4_scene3_ulamog:
     "For the event that he organized where the judges didn't even taste the
     food"
 
-    "But you don't want to ruin it for him"
+    "But that never really mattered"
 
-    "So instead you just give him a {i}chef's kiss{/i}"
+    "You give Ulamog a {i}chef's kiss{/i}"
 
     ulamog "Yay!!!"
 
@@ -4022,8 +4204,8 @@ label day4_scene3_kozilek:
     "God Himself" "The Eldrazi, both colorless and U/R variants, were
     {i}crush{/i}ing the metagame with their speed and value"
 
-    "God Himself" "By the end of Day 1, they were {i}predict{/i}ed to have a near 80%
-    conversion rate into Day 2"
+    "God Himself" "By the end of Day 1, they were {i}predict{/i}ed to have a
+    near 80% conversion rate into Day 2"
 
     "God Himself" "But while the Eldrazi were usurping Modern, an old menace
     was continuing to run rampant around the mythical land of Standard"
@@ -4129,15 +4311,35 @@ label day4_scene3_kozilek:
 
     kozilek "..."
 
-    mc "God Himself huh?"
+    mc "Wow Kozilek-kun, you were amazing!"
 
-    kozilek "..."
+    mc "God Himself, huh"
 
-    mc "You were great!"
+    kozilek "Uhh, yeah. Thank you for coming to see me"
 
-    kozilek "... T-Thank you.."
+    mc "Of course"
 
-    mc "// hecc"
+    kozilek "Would.. Would you like to maybe.."
+
+    kozilek "Uhh.. Walk around the rest of the {i}festival{/i}.."
+
+    kozilek "With me?"
+
+    "Oh"
+
+    "Oh my gosh"
+
+    "It's actually happening"
+
+    "This is it"
+
+    "Peak character development"
+
+    "The pinnacle of character writing"
+
+    mc "I would love to"
+
+    jump final_scene
 
     return
 
@@ -4354,7 +4556,7 @@ label day4_scene3_emrakul:
     "{i}Wild Cantor{/i}"
 
     "Incredible, you just played a 1 mana 1/1. Emrakul must be shaking in
-    terror"
+    {i}terror{/i}"
 
     "You pass the turn and Emrakul draws"
 
@@ -4715,7 +4917,7 @@ label day4_scene3_nissa:
     nissa "No, you organized everything, and gathered all the supplies, and
     summoned Yargle"
 
-    if gender == "male"
+    if gender == "male":
         nissa "You just pretended to slack off in front of [name_1]-kun
         because.."
     elif gender == "female":
@@ -4817,7 +5019,7 @@ label day4_scene3_nissa:
     "You notice a wispy figure start to emerge from Chandra body in the
     distinct shape of Nic Kelman"
 
-    "The crowd waits in bated breath, another ghost gets excorsized from
+    "The crowd waits in bated breath, another ghost gets exorcized from
     Chandra, this time in the shape of Greg Weisman"
 
     "Yargle's chanting stops and he turn to the crowd"
@@ -4829,8 +5031,8 @@ label day4_scene3_nissa:
     yargle "For everybody in this room to raise a hearty middle finger at these
     malicious spirits!!"
 
-    "The crowd cheers and everyone raises their hands to flip off the ghosts
-    of queerbaiting writers"
+    "The crowd cheers and everyone raises their hands to flip off the
+    malevolent ghosts of queerbaiting writers"
 
     "Nic Kelman and Greg Weisman begin to writhe and squirm in the space above
     Chandra"
