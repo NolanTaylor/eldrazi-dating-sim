@@ -56,6 +56,8 @@ label main_menu:
 
 label start:
 
+    $ _dismiss_pause = False
+
     stop music fadeout 4.0
 
     python:
@@ -89,6 +91,8 @@ label start:
     return
 
 label day1_scene1:
+
+    $ _dismiss_pause = False
 
     stop music fadeout 2.0
     play music home_intro noloop fadein 1.0
@@ -259,6 +263,8 @@ label day1_scene1:
 
 label day1_scene2:
 
+    $ _dismiss_pause = False
+
     play music school fadeout 2.0 fadein 1.0
 
     scene bg classroom backleft with dissolve
@@ -373,6 +379,8 @@ label day1_scene2:
     return
 
 label day1_scene3:
+
+    $ _dismiss_pause = False
 
     play music library fadeout 2.0 fadein 1.0
 
@@ -760,6 +768,8 @@ label day1_scene3:
 
 label day1_scene4:
 
+    $ _dismiss_pause = False
+
     play music after_school_intro fadeout 2.0 fadein 1.0
     queue music after_school
 
@@ -874,6 +884,8 @@ label day1_scene4:
 
 label day2_scene1:
 
+    $ _dismiss_pause = False
+
     play music home_intro fadeout 2.0 fadein 1.0
     queue music home
 
@@ -909,6 +921,8 @@ label day2_scene1:
     return
 
 label day2_scene2:
+
+    $ _dismiss_pause = False
 
     play music school fadeout 2.0 fadein 1.0
 
@@ -982,6 +996,8 @@ label day2_scene2:
     return
 
 label day2_scene3:
+
+    $ _dismiss_pause = False
 
     play music library fadeout 2.0 fadein 1.0
 
@@ -1060,6 +1076,8 @@ label day2_scene3:
             jump day2_scene4_nissa
 
 label day2_scene4_ulamog:
+
+    $ _dismiss_pause = False
 
     show ulamog neutral at center with dissolve
 
@@ -1230,6 +1248,8 @@ label day2_scene4_ulamog:
     return
 
 label day2_scene4_kozilek:
+
+    $ _dismiss_pause = False
 
     "You spot Kozilek reading in the corner of the library sitting up against a
     bookshelf."
@@ -1465,6 +1485,8 @@ label day2_scene4_kozilek:
     return
 
 label day2_scene4_emrakul:
+
+    $ _dismiss_pause = False
 
     show emrakul neutral at center with dissolve
 
@@ -1788,6 +1810,8 @@ label day2_scene4_emrakul:
 
 label day2_scene4_nissa:
 
+    $ _dismiss_pause = False
+
     show nissa neutral at Position(xalign = 0.6) with dissolve
 
     if gender == "male":
@@ -1924,7 +1948,7 @@ label day2_scene4_nissa:
             mc "But--"
 
             chandra "One more word and I replace your modern deck with seventy
-            five {b}colossal dreadmaw{/b}s."
+            five {b}Colossal Dreadmaw{/b}s."
 
             mc "..."
 
@@ -2280,6 +2304,8 @@ label day2_scene4_nissa:
 
 label day2_scene5:
 
+    $ _dismiss_pause = False
+
     scene bg hall with dissolve
 
     show nissa neutral at center with dissolve
@@ -2372,6 +2398,8 @@ label day2_scene5:
 
 label day3_scene1:
 
+    $ _dismiss_pause = False
+
     play music home_intro fadeout 2.0 fadein 1.0
     queue music home
 
@@ -2411,6 +2439,8 @@ label day3_scene1:
 
 label day3_scene2:
 
+    $ _dismiss_pause = False
+
     play music school fadeout 2.0 fadein 1.0
 
     scene bg classroom backleft with dissolve
@@ -2445,6 +2475,8 @@ label day3_scene2:
     return
 
 label day3_scene3:
+
+    $ _dismiss_pause = False
 
     play music library fadeout 2.0 fadein 1.0
 
@@ -2600,6 +2632,8 @@ label day3_scene3:
     return
 
 label day3_scene4_ulamog:
+
+    $ _dismiss_pause = False
 
     scene bg library 2 with dissolve
 
@@ -2819,6 +2853,8 @@ label day3_scene4_ulamog:
 
 label baguette_comply:
 
+    $ _dismiss_pause = False
+
     "You do as Ulamog says."
 
     "You rest your hands on the toilet seat and {b}brace for impact{/b}."
@@ -2859,6 +2895,8 @@ label baguette_comply:
     return
 
 label baguette_whistle:
+
+    $ _dismiss_pause = False
 
     "You pull the rape whistle from your pocket and blow into it as hard as you
     can."
@@ -2929,6 +2967,8 @@ label baguette_whistle:
 
 label baguette_whistle_continue:
 
+    $ _dismiss_pause = False
+
     mc "Okay."
 
     ulamog "Then you'll do it?"
@@ -2942,6 +2982,8 @@ label baguette_whistle_continue:
     return
 
 label baguette_whistle_decline:
+
+    $ _dismiss_pause = False
 
     mc "Please, I'd rather not do this."
 
@@ -2960,6 +3002,8 @@ label baguette_whistle_decline:
     return
 
 label day3_scene4_ulamog_french:
+
+    $ _dismiss_pause = False
 
     stop music fadeout 2.0
 
@@ -2982,6 +3026,8 @@ label day3_scene4_ulamog_french:
     return
 
 label day3_scene4_ulamog_english:
+
+    $ _dismiss_pause = False
 
     play music library fadeout 2.0 fadein 1.0
 
@@ -3025,6 +3071,8 @@ label day3_scene4_ulamog_english:
     return
 
 label day3_scene4_kozilek:
+
+    $ _dismiss_pause = False
 
     hide nissa with dissolve
 
@@ -3372,6 +3420,8 @@ label day3_scene4_kozilek:
 
 label day3_scene4_emrakul:
 
+    $ _dismiss_pause = False
+
     scene bg library 3 with dissolve
 
     "You walk over to Emrakul who's curled up underneath the table."
@@ -3596,6 +3646,8 @@ label day3_scene4_emrakul:
     return
 
 label day3_scene4_nissa:
+
+    $ _dismiss_pause = False
 
     "You walk over to Chandra and Nissa who both still seem to be digesting
     the situation that just played out."
@@ -3843,6 +3895,8 @@ label day3_scene4_nissa:
 
 label day3_scene5:
 
+    $ _dismiss_pause = False
+
     scene bg hall with dissolve
 
     "Nissa's staying late to help everybody with final preparations. You're
@@ -3922,6 +3976,8 @@ label day3_scene5:
 
 label day4_scene1:
 
+    $ _dismiss_pause = False
+
     play music home_intro fadeout 2.0 fadein 1.0
     queue music home
 
@@ -3983,6 +4039,8 @@ label day4_scene1:
 
 label day4_scene2:
 
+    $ _dismiss_pause = False
+
     play music walking fadeout 2.0 fadein 1.0
 
     scene bg street with dissolve
@@ -4040,6 +4098,8 @@ label day4_scene2:
     return
 
 label day4_scene3_ulamog:
+
+    $ _dismiss_pause = False
 
     play music jealous fadeout 2.0 fadein 1.0
 
@@ -4432,6 +4492,8 @@ label day4_scene3_ulamog:
 
 label day4_scene3_kozilek:
 
+    $ _dismiss_pause = False
+
     play music school fadeout 2.0 fadein 1.0
 
     scene bg theater with dissolve
@@ -4744,6 +4806,8 @@ label day4_scene3_kozilek:
     return
 
 label day4_scene3_emrakul:
+
+    $ _dismiss_pause = False
 
     play music school fadeout 2.0 fadein 1.0
 
@@ -5260,6 +5324,8 @@ label day4_scene3_emrakul:
 
 label day4_scene3_nissa:
 
+    $ _dismiss_pause = False
+
     play music school fadeout 2.0 fadein 1.0
 
     scene bg tea room with dissolve
@@ -5616,6 +5682,8 @@ label day4_scene3_nissa:
     return
 
 label final_scene:
+
+    $ _dismiss_pause = False
 
     stop music fadeout 2.0
 

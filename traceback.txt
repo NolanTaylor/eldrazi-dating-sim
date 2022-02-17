@@ -1,28 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 5587, in script
-    nissa distracted "I-I--"
-  File "game/script.rpy", line 5587, in <module>
-    nissa distracted "I-I--"
-NameError: name 'Disssolve' is not defined
+Exception: config.merge_uniforms is not a known configuration variable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 5587, in script
-    nissa distracted "I-I--"
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\ast.py", line 1385, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 5587, in <module>
-    nissa distracted "I-I--"
-NameError: name 'Disssolve' is not defined
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
+    try:
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\main.py", line 388, in main
+    renpy.exports.load_module("_errorhandling")
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\exports.py", line 2516, in load_module
+    renpy.game.context().run(node)
+  File "renpy/common/_errorhandling.rpym", line 30, in script
+    init python:
+  File "renpy/common/_errorhandling.rpym", line 30, in script
+    init python:
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_errorhandling.rpym", line 31, in <module>
+    renpy.load_module("_shaders")
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\exports.py", line 2516, in load_module
+    renpy.game.context().run(node)
+  File "renpy/common/_shaders.rpym", line 142, in script
+    init python hide:
+  File "renpy/common/_shaders.rpym", line 142, in script
+    init python hide:
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_shaders.rpym", line 142, in <module>
+    init python hide:
+  File "renpy/common/_shaders.rpym", line 147, in _execute_python_hide
+    config.merge_uniforms["u_renpy_alpha"] = multiply
+  File "C:\PythonPrograms\renpy-7.3.5-sdk\renpy\defaultstore.py", line 91, in __getattr__
+    setattr(self, name, default)
+Exception: config.merge_uniforms is not a known configuration variable.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
-eldrazi_dating_sim 1.0
-Wed Feb 16 04:00:01 2022
+ 
+Wed Feb 16 18:41:38 2022

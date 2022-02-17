@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 5624: could not parse statement.
-    play music "menu.ogg" with fadein 1.0
-                          ^
+File "game/script.rpy", line 48: invalid syntax
+    $ _skipping = False
+     ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Feb 16 03:44:48 2022
+Wed Feb 16 18:26:11 2022
