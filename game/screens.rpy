@@ -565,6 +565,10 @@ screen about():
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
+            text _("\n")
+
+            text _("Eldrazi Dating Sim is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.")
+
 
 ## This is redefined in options.rpy to add text to the about screen.
 define gui.about = ""
